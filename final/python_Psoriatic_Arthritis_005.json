@@ -1,0 +1,300 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "badd7714-fed3-44d2-abe4-d4850a6e78cb",
+        "name": [
+          {
+            "use": "official",
+            "family": "Smith",
+            "given": [
+              "Brenda"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1996-07-26",
+        "address": [
+          {
+            "line": [
+              "639 Cameron Island Apt. 401"
+            ],
+            "city": "Matthewshire",
+            "state": "AR",
+            "postalCode": "65340",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "edbb99ab-816e-423a-bf31-7ce797946ddb",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "9631008",
+              "display": "Psoriatic Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M07.60",
+              "display": "Psoriatic Arthritis"
+            }
+          ],
+          "text": "Psoriatic Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/badd7714-fed3-44d2-abe4-d4850a6e78cb"
+        },
+        "onsetDateTime": "2023-10-26"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "cb7910c8-cf92-49b4-b2e7-a6fe8255931b",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/badd7714-fed3-44d2-abe4-d4850a6e78cb"
+        },
+        "payor": [
+          {
+            "display": "Cigna"
+          }
+        ],
+        "subscriberId": "106655165"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "7aba84e7-1012-476d-802e-bd13e7824aac",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/badd7714-fed3-44d2-abe4-d4850a6e78cb"
+        },
+        "effectiveDateTime": "2026-09-24",
+        "valueBoolean": false
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "b12cabbd-abed-41d0-bd39-9598d3033eda",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/badd7714-fed3-44d2-abe4-d4850a6e78cb"
+        },
+        "effectiveDateTime": "2026-09-09",
+        "valueQuantity": {
+          "value": 48.1,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0138ed1a-451a-4bd0-b743-f0ecb09ca0c2",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/badd7714-fed3-44d2-abe4-d4850a6e78cb"
+        },
+        "effectiveDateTime": "2026-08-26",
+        "valueQuantity": {
+          "value": 104.6,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "086f00dc-9f57-4774-914f-eefbcc857dc2",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "373747",
+              "display": "etanercept"
+            }
+          ],
+          "text": "etanercept"
+        },
+        "subject": {
+          "reference": "Patient/badd7714-fed3-44d2-abe4-d4850a6e78cb"
+        },
+        "effectivePeriod": {
+          "start": "2025-04-18",
+          "end": "2025-10-16"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "851faf7d-2f55-44e4-a392-2b0cff10dab2",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "105585",
+              "display": "methotrexate"
+            }
+          ],
+          "text": "methotrexate"
+        },
+        "subject": {
+          "reference": "Patient/badd7714-fed3-44d2-abe4-d4850a6e78cb"
+        },
+        "effectivePeriod": {
+          "start": "2025-08-06",
+          "end": "2026-03-18"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "1f96508c-8542-48ee-bf03-6181eb54ed9d",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "114194",
+              "display": "hydroxychloroquine"
+            }
+          ],
+          "text": "hydroxychloroquine"
+        },
+        "subject": {
+          "reference": "Patient/badd7714-fed3-44d2-abe4-d4850a6e78cb"
+        },
+        "effectivePeriod": {
+          "start": "2025-01-22",
+          "end": "2025-07-29"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "90464c81-8dfe-4063-90a1-0a7cf5edc296",
+        "status": "draft",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "614391",
+              "display": "Simponi Aria (golimumab)"
+            }
+          ],
+          "text": "Simponi Aria (golimumab)"
+        },
+        "subject": {
+          "reference": "Patient/badd7714-fed3-44d2-abe4-d4850a6e78cb"
+        }
+      }
+    }
+  ]
+}

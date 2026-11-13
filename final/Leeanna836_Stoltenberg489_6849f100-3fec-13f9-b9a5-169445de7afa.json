@@ -187484,40 +187484,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "f1a7525c-f7ba-4665-a868-72bc5caacb27",
+        "id": "9baa32bb-59df-414f-aa61-a278b57c1f04",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/6849f100-3fec-13f9-b9a5-169445de7afa"
         },
         "payor": [
           {
-            "display": "Humana"
+            "display": "UnitedHealthcare"
           }
         ],
-        "subscriberId": "400326242"
+        "subscriberId": "553856105"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "aa79091b-0cb3-4106-ab4c-2384674ee6c3",
+        "id": "8fba7bdc-73bf-486d-833f-01138c48dec2",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "105585",
-              "display": "methotrexate"
+              "code": "114194",
+              "display": "hydroxychloroquine"
             }
           ],
-          "text": "methotrexate"
+          "text": "hydroxychloroquine"
         },
         "subject": {
           "reference": "Patient/6849f100-3fec-13f9-b9a5-169445de7afa"
         },
         "effectivePeriod": {
-          "start": "2024-12-09",
-          "end": "2025-10-13"
+          "start": "2024-12-11",
+          "end": "2025-05-05"
         },
         "reasonCode": [
           {
@@ -187529,18 +187529,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "713fc295-fa49-4c45-8255-ce73c2c34689",
+        "id": "ca20e2d4-b57f-4dbc-a2f6-43264a25bcf8",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "358258",
-              "display": "Orencia (abatacept)"
+              "code": "614391",
+              "display": "Simponi Aria (golimumab)"
             }
           ],
-          "text": "Orencia (abatacept)"
+          "text": "Simponi Aria (golimumab)"
         },
         "subject": {
           "reference": "Patient/6849f100-3fec-13f9-b9a5-169445de7afa"

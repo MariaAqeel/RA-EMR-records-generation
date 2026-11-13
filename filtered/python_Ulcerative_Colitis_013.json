@@ -1,0 +1,161 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "00c31995-2972-4609-8895-725b5c34fe5a",
+        "name": [
+          {
+            "use": "official",
+            "family": "Bradley",
+            "given": [
+              "Devon"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1990-02-15",
+        "address": [
+          {
+            "line": [
+              "93392 Shannon Pass Suite 318"
+            ],
+            "city": "Port Alicialand",
+            "state": "PW",
+            "postalCode": "61134",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "e4b983df-b8c5-4f36-8b33-7cbfe39c228e",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "64766004",
+              "display": "Ulcerative Colitis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "K51.90",
+              "display": "Ulcerative Colitis"
+            }
+          ],
+          "text": "Ulcerative Colitis"
+        },
+        "subject": {
+          "reference": "Patient/00c31995-2972-4609-8895-725b5c34fe5a"
+        },
+        "onsetDateTime": "2023-01-02"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "c9ffa9f7-4f5a-440a-8c07-244a79305d10",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/00c31995-2972-4609-8895-725b5c34fe5a"
+        },
+        "payor": [
+          {
+            "display": "UnitedHealthcare"
+          }
+        ],
+        "subscriberId": "197473945"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "7cd06c77-1c47-4c2d-80ed-b63326f16b09",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/00c31995-2972-4609-8895-725b5c34fe5a"
+        },
+        "effectiveDateTime": "2026-09-28",
+        "valueQuantity": {
+          "value": 23.2,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "abc293cc-6c71-4eca-8825-3159a7b73ed7",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/00c31995-2972-4609-8895-725b5c34fe5a"
+        },
+        "effectiveDateTime": "2026-08-17",
+        "valueQuantity": {
+          "value": 25.7,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    }
+  ]
+}

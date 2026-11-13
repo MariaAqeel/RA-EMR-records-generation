@@ -159425,7 +159425,7 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "5e66167b-9aa5-41a3-ab30-022c83b99153",
+        "id": "28e448c3-3d94-4c24-a025-7779cd5c91c3",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/ed6c0c70-a24c-ab78-e049-4be2064817ca"
@@ -159435,42 +159435,13 @@
             "display": "Cigna"
           }
         ],
-        "subscriberId": "806638802"
+        "subscriberId": "697942424"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "6fe9b7d6-3389-4813-aa80-5d28af3df3f7",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327361",
-              "display": "leflunomide"
-            }
-          ],
-          "text": "leflunomide"
-        },
-        "subject": {
-          "reference": "Patient/ed6c0c70-a24c-ab78-e049-4be2064817ca"
-        },
-        "effectivePeriod": {
-          "start": "2025-04-21",
-          "end": "2026-02-16"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "6727978e-e3e3-4d61-8853-c7c33781af83",
+        "id": "79d121fb-7cb8-4a67-b9f8-78c55358fbaf",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -159486,8 +159457,8 @@
           "reference": "Patient/ed6c0c70-a24c-ab78-e049-4be2064817ca"
         },
         "effectivePeriod": {
-          "start": "2024-06-15",
-          "end": "2025-06-10"
+          "start": "2024-08-05",
+          "end": "2024-12-04"
         },
         "reasonCode": [
           {
@@ -159499,18 +159470,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "dd4cf259-a37c-4bc6-a1d9-f27069950665",
+        "id": "9c35db5a-a7d2-40a4-834e-ef4cc81982a6",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "614391",
-              "display": "Simponi Aria (golimumab)"
+              "code": "356248",
+              "display": "Cimzia (certolizumab pegol)"
             }
           ],
-          "text": "Simponi Aria (golimumab)"
+          "text": "Cimzia (certolizumab pegol)"
         },
         "subject": {
           "reference": "Patient/ed6c0c70-a24c-ab78-e049-4be2064817ca"

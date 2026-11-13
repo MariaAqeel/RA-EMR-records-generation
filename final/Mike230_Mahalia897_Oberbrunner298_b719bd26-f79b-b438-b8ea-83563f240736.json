@@ -106007,40 +106007,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "e5288977-2d9b-4014-92fe-3944f32547ad",
+        "id": "8115002b-c4b1-4e61-b57b-d9759dc43a7e",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/b719bd26-f79b-b438-b8ea-83563f240736"
         },
         "payor": [
           {
-            "display": "Humana"
+            "display": "Blue Shield of California"
           }
         ],
-        "subscriberId": "222127515"
+        "subscriberId": "374877457"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "340bf3d4-f1ef-42f3-b68c-e10eda577842",
+        "id": "d7b4f5b4-4a6d-451c-a845-ee8869c33a6c",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "114194",
-              "display": "hydroxychloroquine"
+              "code": "105585",
+              "display": "methotrexate"
             }
           ],
-          "text": "hydroxychloroquine"
+          "text": "methotrexate"
         },
         "subject": {
           "reference": "Patient/b719bd26-f79b-b438-b8ea-83563f240736"
         },
         "effectivePeriod": {
-          "start": "2025-06-07",
-          "end": "2025-09-25"
+          "start": "2025-01-27",
+          "end": "2025-12-22"
         },
         "reasonCode": [
           {
@@ -106052,24 +106052,53 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "af898329-92b1-4d6a-bc40-958e8e590e60",
+        "id": "d60c6870-c2f5-449c-85a0-38fe9378814a",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "114194",
-              "display": "hydroxychloroquine"
+              "code": "373747",
+              "display": "etanercept"
             }
           ],
-          "text": "hydroxychloroquine"
+          "text": "etanercept"
         },
         "subject": {
           "reference": "Patient/b719bd26-f79b-b438-b8ea-83563f240736"
         },
         "effectivePeriod": {
-          "start": "2025-10-01",
-          "end": "2026-04-09"
+          "start": "2024-08-23",
+          "end": "2025-05-31"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "67a390e8-341e-4680-9084-410dc32bbf6b",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "105585",
+              "display": "methotrexate"
+            }
+          ],
+          "text": "methotrexate"
+        },
+        "subject": {
+          "reference": "Patient/b719bd26-f79b-b438-b8ea-83563f240736"
+        },
+        "effectivePeriod": {
+          "start": "2024-12-29",
+          "end": "2025-12-19"
         },
         "reasonCode": [
           {
@@ -106081,18 +106110,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "558512d1-97d2-4418-87a5-59a099dd2f38",
+        "id": "63a6fc8f-1dc1-4b01-af15-a4c0e7f0f77a",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "614391",
-              "display": "Simponi Aria (golimumab)"
+              "code": "358258",
+              "display": "Orencia (abatacept)"
             }
           ],
-          "text": "Simponi Aria (golimumab)"
+          "text": "Orencia (abatacept)"
         },
         "subject": {
           "reference": "Patient/b719bd26-f79b-b438-b8ea-83563f240736"

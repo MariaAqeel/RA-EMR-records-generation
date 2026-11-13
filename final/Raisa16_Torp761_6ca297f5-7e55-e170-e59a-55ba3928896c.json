@@ -147851,7 +147851,7 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "9e40735c-23e8-4088-9e22-de0509d90d20",
+        "id": "e2d8199f-0af3-41dd-810d-e57d0a9fc639",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/6ca297f5-7e55-e170-e59a-55ba3928896c"
@@ -147861,13 +147861,13 @@
             "display": "Blue Shield of California"
           }
         ],
-        "subscriberId": "508893642"
+        "subscriberId": "148903680"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "4a64cf72-f6d3-4295-9f0b-1dac109ef8aa",
+        "id": "340b684b-c7db-4ff8-ba0f-926eeb962631",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -147883,8 +147883,8 @@
           "reference": "Patient/6ca297f5-7e55-e170-e59a-55ba3928896c"
         },
         "effectivePeriod": {
-          "start": "2024-09-04",
-          "end": "2025-07-04"
+          "start": "2025-05-30",
+          "end": "2026-04-23"
         },
         "reasonCode": [
           {
@@ -147896,36 +147896,7 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "d73e1cd7-a849-4d08-85aa-05dfe69e98f1",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327361",
-              "display": "leflunomide"
-            }
-          ],
-          "text": "leflunomide"
-        },
-        "subject": {
-          "reference": "Patient/6ca297f5-7e55-e170-e59a-55ba3928896c"
-        },
-        "effectivePeriod": {
-          "start": "2024-12-12",
-          "end": "2025-05-20"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "0f590b4a-d6e9-43de-918c-ec8976cf01f0",
+        "id": "2d1e0ccb-12c1-479d-a9eb-0ac06f2de505",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -147941,8 +147912,8 @@
           "reference": "Patient/6ca297f5-7e55-e170-e59a-55ba3928896c"
         },
         "effectivePeriod": {
-          "start": "2025-03-20",
-          "end": "2025-12-26"
+          "start": "2025-10-11",
+          "end": "2026-01-30"
         },
         "reasonCode": [
           {
@@ -147954,18 +147925,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "f6179c9e-23f7-4ffb-bbcd-5df1eb5ce840",
+        "id": "422db524-78f9-404b-8909-54b6467f3281",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "614391",
-              "display": "Simponi Aria (golimumab)"
+              "code": "356248",
+              "display": "Cimzia (certolizumab pegol)"
             }
           ],
-          "text": "Simponi Aria (golimumab)"
+          "text": "Cimzia (certolizumab pegol)"
         },
         "subject": {
           "reference": "Patient/6ca297f5-7e55-e170-e59a-55ba3928896c"

@@ -127414,23 +127414,23 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "bc91748f-c359-4592-84bd-f3cd83b9e773",
+        "id": "453099f7-0bc7-4b16-b48b-0bbd175d0c54",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/8956d95f-c1e6-865b-f08d-ca9d9e80c4db"
         },
         "payor": [
           {
-            "display": "Blue Shield of California"
+            "display": "Humana"
           }
         ],
-        "subscriberId": "240860765"
+        "subscriberId": "730503887"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "1dff5da6-a79f-4b09-a7dc-caec1080e033",
+        "id": "e2812dfb-0f5b-4327-a716-16b95b5b7a1b",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -127446,37 +127446,8 @@
           "reference": "Patient/8956d95f-c1e6-865b-f08d-ca9d9e80c4db"
         },
         "effectivePeriod": {
-          "start": "2025-07-18",
-          "end": "2026-06-01"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "de00fc0f-4d7c-4d3a-8411-e62fdfe4abea",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327362",
-              "display": "adalimumab"
-            }
-          ],
-          "text": "adalimumab"
-        },
-        "subject": {
-          "reference": "Patient/8956d95f-c1e6-865b-f08d-ca9d9e80c4db"
-        },
-        "effectivePeriod": {
-          "start": "2024-09-03",
-          "end": "2025-08-29"
+          "start": "2024-06-08",
+          "end": "2024-12-21"
         },
         "reasonCode": [
           {
@@ -127488,18 +127459,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "31216f68-4bfc-4385-a3ce-55027a10638a",
+        "id": "38dc12e8-908e-477f-93c7-26e7ed83a84f",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "356248",
-              "display": "Cimzia (certolizumab pegol)"
+              "code": "358258",
+              "display": "Orencia (abatacept)"
             }
           ],
-          "text": "Cimzia (certolizumab pegol)"
+          "text": "Orencia (abatacept)"
         },
         "subject": {
           "reference": "Patient/8956d95f-c1e6-865b-f08d-ca9d9e80c4db"

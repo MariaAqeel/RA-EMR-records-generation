@@ -1,0 +1,306 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "2d663584-9d84-4597-8984-3adae3aafc9d",
+        "name": [
+          {
+            "use": "official",
+            "family": "Jensen",
+            "given": [
+              "Tamara"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2021-04-05",
+        "address": [
+          {
+            "line": [
+              "296 Jade Freeway"
+            ],
+            "city": "Nathanstad",
+            "state": "MS",
+            "postalCode": "12189",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "75553f9d-80e7-4d00-b5ba-434925125acf",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "57160005",
+              "display": "Juvenile Idiopathic Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M08.00",
+              "display": "Juvenile Idiopathic Arthritis"
+            }
+          ],
+          "text": "Juvenile Idiopathic Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/2d663584-9d84-4597-8984-3adae3aafc9d"
+        },
+        "onsetDateTime": "2023-05-19"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "2a894ac5-fa5f-45e8-b0ed-35e64f64d39f",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/2d663584-9d84-4597-8984-3adae3aafc9d"
+        },
+        "payor": [
+          {
+            "display": "Aetna"
+          }
+        ],
+        "subscriberId": "220401789"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "582a872b-d9cd-49b0-ac8c-3719fe5565bf",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2d663584-9d84-4597-8984-3adae3aafc9d"
+        },
+        "effectiveDateTime": "2026-09-24",
+        "valueQuantity": {
+          "value": 61.4,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "8577382d-6ac8-4c24-8e8a-aee5880a9f0f",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2d663584-9d84-4597-8984-3adae3aafc9d"
+        },
+        "effectiveDateTime": "2026-09-25",
+        "valueQuantity": {
+          "value": 13.3,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "912ac06f-7121-43c1-b16e-435268553104",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2d663584-9d84-4597-8984-3adae3aafc9d"
+        },
+        "effectiveDateTime": "2026-10-01",
+        "valueQuantity": {
+          "value": 26.2,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "bad0622e-0c85-402f-b11d-b1674aa4c38e",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2d663584-9d84-4597-8984-3adae3aafc9d"
+        },
+        "effectiveDateTime": "2026-09-09",
+        "valueBoolean": false
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "6bd484a5-4ef0-4a2b-a523-e05714c8ae72",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "373747",
+              "display": "etanercept"
+            }
+          ],
+          "text": "etanercept"
+        },
+        "subject": {
+          "reference": "Patient/2d663584-9d84-4597-8984-3adae3aafc9d"
+        },
+        "effectivePeriod": {
+          "start": "2025-05-15",
+          "end": "2025-10-21"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "58b35045-1791-4048-9644-2f15e2115f03",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "373747",
+              "display": "etanercept"
+            }
+          ],
+          "text": "etanercept"
+        },
+        "subject": {
+          "reference": "Patient/2d663584-9d84-4597-8984-3adae3aafc9d"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-01",
+          "end": "2026-07-10"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "bbe1af4b-c60f-4a8d-a976-9e09857df68a",
+        "status": "draft",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "356248",
+              "display": "Cimzia (certolizumab pegol)"
+            }
+          ],
+          "text": "Cimzia (certolizumab pegol)"
+        },
+        "subject": {
+          "reference": "Patient/2d663584-9d84-4597-8984-3adae3aafc9d"
+        }
+      }
+    }
+  ]
+}

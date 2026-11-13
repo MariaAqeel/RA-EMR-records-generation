@@ -1,0 +1,335 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "7c3e4f23-6458-4601-92f8-8ca8efca105a",
+        "name": [
+          {
+            "use": "official",
+            "family": "Silva",
+            "given": [
+              "Mark"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "2000-11-17",
+        "address": [
+          {
+            "line": [
+              "663 Shannon Parkway"
+            ],
+            "city": "West Monica",
+            "state": "WI",
+            "postalCode": "46267",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "6acf5b27-a8eb-4060-828c-56878037e9f3",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "9566007",
+              "display": "Ankylosing Spondylitis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M45.9",
+              "display": "Ankylosing Spondylitis"
+            }
+          ],
+          "text": "Ankylosing Spondylitis"
+        },
+        "subject": {
+          "reference": "Patient/7c3e4f23-6458-4601-92f8-8ca8efca105a"
+        },
+        "onsetDateTime": "2023-01-04"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "ff41c92d-6235-48ec-9233-f9b869030c70",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/7c3e4f23-6458-4601-92f8-8ca8efca105a"
+        },
+        "payor": [
+          {
+            "display": "Cigna"
+          }
+        ],
+        "subscriberId": "439374862"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f3f8ff6e-f108-46a5-b084-57e653bafa90",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/7c3e4f23-6458-4601-92f8-8ca8efca105a"
+        },
+        "effectiveDateTime": "2026-10-03",
+        "valueBoolean": false
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "b191b21f-3159-4d5b-8cad-89f819bb7d8a",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/7c3e4f23-6458-4601-92f8-8ca8efca105a"
+        },
+        "effectiveDateTime": "2026-09-07",
+        "valueQuantity": {
+          "value": 25.2,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "282cb103-1abf-4432-9d3d-e26b3ff37998",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/7c3e4f23-6458-4601-92f8-8ca8efca105a"
+        },
+        "effectiveDateTime": "2026-10-12",
+        "valueQuantity": {
+          "value": 30.0,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "69272872-47e3-4906-be0e-1b90a53f2a67",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/7c3e4f23-6458-4601-92f8-8ca8efca105a"
+        },
+        "effectiveDateTime": "2026-08-29",
+        "valueQuantity": {
+          "value": 196.6,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "c2eadcf4-427b-4743-b62c-c0d901a1f6db",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "105585",
+              "display": "methotrexate"
+            }
+          ],
+          "text": "methotrexate"
+        },
+        "subject": {
+          "reference": "Patient/7c3e4f23-6458-4601-92f8-8ca8efca105a"
+        },
+        "effectivePeriod": {
+          "start": "2025-01-27",
+          "end": "2025-10-16"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "83e53d81-a5b1-44f3-b915-9485c984e6af",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "105585",
+              "display": "methotrexate"
+            }
+          ],
+          "text": "methotrexate"
+        },
+        "subject": {
+          "reference": "Patient/7c3e4f23-6458-4601-92f8-8ca8efca105a"
+        },
+        "effectivePeriod": {
+          "start": "2024-10-03",
+          "end": "2025-09-18"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "bb9148ea-241e-4d2e-8687-6fda22c9fb0a",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "114194",
+              "display": "hydroxychloroquine"
+            }
+          ],
+          "text": "hydroxychloroquine"
+        },
+        "subject": {
+          "reference": "Patient/7c3e4f23-6458-4601-92f8-8ca8efca105a"
+        },
+        "effectivePeriod": {
+          "start": "2025-08-11",
+          "end": "2026-08-06"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "ade28495-18f0-47bc-b433-b42cef2aea13",
+        "status": "draft",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "614391",
+              "display": "Simponi Aria (golimumab)"
+            }
+          ],
+          "text": "Simponi Aria (golimumab)"
+        },
+        "subject": {
+          "reference": "Patient/7c3e4f23-6458-4601-92f8-8ca8efca105a"
+        }
+      }
+    }
+  ]
+}

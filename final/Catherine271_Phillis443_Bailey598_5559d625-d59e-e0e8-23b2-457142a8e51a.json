@@ -123009,40 +123009,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "c906aa44-ab71-4384-a7fa-d76198a43aef",
+        "id": "7a896663-91d0-4ca0-ad07-fbc1730bae4a",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/5559d625-d59e-e0e8-23b2-457142a8e51a"
         },
         "payor": [
           {
-            "display": "Cigna"
+            "display": "Aetna"
           }
         ],
-        "subscriberId": "527667007"
+        "subscriberId": "928882433"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "8f6d8580-5b38-48d7-a56c-03eccc60c472",
+        "id": "9aab7200-84aa-45c7-b6f2-dfb452b95933",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "114194",
-              "display": "hydroxychloroquine"
+              "code": "327362",
+              "display": "adalimumab"
             }
           ],
-          "text": "hydroxychloroquine"
+          "text": "adalimumab"
         },
         "subject": {
           "reference": "Patient/5559d625-d59e-e0e8-23b2-457142a8e51a"
         },
         "effectivePeriod": {
-          "start": "2025-06-17",
-          "end": "2026-02-21"
+          "start": "2025-07-16",
+          "end": "2026-02-14"
         },
         "reasonCode": [
           {
@@ -123054,53 +123054,24 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "70acb7d9-660d-4049-a55e-99299c61f268",
+        "id": "878f207a-c1e4-4e92-a621-c0589fabcdfb",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "373747",
-              "display": "etanercept"
+              "code": "105585",
+              "display": "methotrexate"
             }
           ],
-          "text": "etanercept"
+          "text": "methotrexate"
         },
         "subject": {
           "reference": "Patient/5559d625-d59e-e0e8-23b2-457142a8e51a"
         },
         "effectivePeriod": {
-          "start": "2024-06-18",
-          "end": "2024-12-01"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "4a73bd2f-8746-43e4-b9c9-2665a420050f",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "114194",
-              "display": "hydroxychloroquine"
-            }
-          ],
-          "text": "hydroxychloroquine"
-        },
-        "subject": {
-          "reference": "Patient/5559d625-d59e-e0e8-23b2-457142a8e51a"
-        },
-        "effectivePeriod": {
-          "start": "2025-08-26",
-          "end": "2025-12-01"
+          "start": "2024-11-08",
+          "end": "2025-02-06"
         },
         "reasonCode": [
           {
@@ -123112,18 +123083,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "06010123-65b8-4232-8a71-b24f94f2c4e5",
+        "id": "d1013d7d-db45-4ffc-b262-9a606cf47ee2",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "356248",
-              "display": "Cimzia (certolizumab pegol)"
+              "code": "614391",
+              "display": "Simponi Aria (golimumab)"
             }
           ],
-          "text": "Cimzia (certolizumab pegol)"
+          "text": "Simponi Aria (golimumab)"
         },
         "subject": {
           "reference": "Patient/5559d625-d59e-e0e8-23b2-457142a8e51a"

@@ -1,0 +1,306 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "4124eebc-c547-4288-b036-95dd3ce9d89c",
+        "name": [
+          {
+            "use": "official",
+            "family": "Kelley",
+            "given": [
+              "Amanda"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1983-03-25",
+        "address": [
+          {
+            "line": [
+              "535 Cheryl Brooks"
+            ],
+            "city": "Griffinshire",
+            "state": "NV",
+            "postalCode": "69928",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "e135cca3-d31f-4799-ba09-79bcac133b73",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "34000006",
+              "display": "Crohn's Disease"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "K50.90",
+              "display": "Crohn's Disease"
+            }
+          ],
+          "text": "Crohn's Disease"
+        },
+        "subject": {
+          "reference": "Patient/4124eebc-c547-4288-b036-95dd3ce9d89c"
+        },
+        "onsetDateTime": "2023-10-23"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "09eab8d4-5a63-4a35-9eed-639477507256",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/4124eebc-c547-4288-b036-95dd3ce9d89c"
+        },
+        "payor": [
+          {
+            "display": "Cigna"
+          }
+        ],
+        "subscriberId": "997790006"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "e3bab329-3e4e-43d8-bc62-9788bcfe1884",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4124eebc-c547-4288-b036-95dd3ce9d89c"
+        },
+        "effectiveDateTime": "2026-09-09",
+        "valueQuantity": {
+          "value": 23.1,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "b136934a-a5ee-4100-9d47-60f42add1cbd",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4124eebc-c547-4288-b036-95dd3ce9d89c"
+        },
+        "effectiveDateTime": "2026-10-05",
+        "valueQuantity": {
+          "value": 48.5,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "c3ebf13e-3cc1-4b31-b2ba-699cf0edf2e2",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4124eebc-c547-4288-b036-95dd3ce9d89c"
+        },
+        "effectiveDateTime": "2026-10-11",
+        "valueBoolean": true
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ea94935a-1776-4def-bf92-e70ee13ec6cc",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4124eebc-c547-4288-b036-95dd3ce9d89c"
+        },
+        "effectiveDateTime": "2026-09-17",
+        "valueQuantity": {
+          "value": 28.1,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "2be52c8c-00aa-4302-8606-6d4bf068f14b",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "114194",
+              "display": "hydroxychloroquine"
+            }
+          ],
+          "text": "hydroxychloroquine"
+        },
+        "subject": {
+          "reference": "Patient/4124eebc-c547-4288-b036-95dd3ce9d89c"
+        },
+        "effectivePeriod": {
+          "start": "2025-11-13",
+          "end": "2026-02-14"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "2507af3b-eafe-4419-acc3-e41c108a019f",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "327362",
+              "display": "adalimumab"
+            }
+          ],
+          "text": "adalimumab"
+        },
+        "subject": {
+          "reference": "Patient/4124eebc-c547-4288-b036-95dd3ce9d89c"
+        },
+        "effectivePeriod": {
+          "start": "2025-01-30",
+          "end": "2026-01-19"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "9cd35924-9cdd-44a1-9be4-1e39da0d2311",
+        "status": "draft",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "358258",
+              "display": "Orencia (abatacept)"
+            }
+          ],
+          "text": "Orencia (abatacept)"
+        },
+        "subject": {
+          "reference": "Patient/4124eebc-c547-4288-b036-95dd3ce9d89c"
+        }
+      }
+    }
+  ]
+}

@@ -145622,40 +145622,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "6249e655-2d42-42d3-9015-a6b00fb5e847",
+        "id": "e547fed7-17f8-4f13-bb42-91fe4136741c",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/8441c1cc-e9c7-73c6-8a21-7c14eaa0a83d"
         },
         "payor": [
           {
-            "display": "Blue Shield of California"
+            "display": "UnitedHealthcare"
           }
         ],
-        "subscriberId": "438603255"
+        "subscriberId": "292796199"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "29aa3af6-355e-4acb-98a3-1c1d34847076",
+        "id": "d97fd6b1-c7bf-44fa-b187-8c1018759fe1",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "373747",
-              "display": "etanercept"
+              "code": "105585",
+              "display": "methotrexate"
             }
           ],
-          "text": "etanercept"
+          "text": "methotrexate"
         },
         "subject": {
           "reference": "Patient/8441c1cc-e9c7-73c6-8a21-7c14eaa0a83d"
         },
         "effectivePeriod": {
-          "start": "2025-10-02",
-          "end": "2026-03-30"
+          "start": "2025-05-15",
+          "end": "2026-03-31"
         },
         "reasonCode": [
           {
@@ -145667,7 +145667,36 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "d8e9306d-ba31-4439-996c-2c10bc0e5431",
+        "id": "56ca94d3-3ca8-4521-b3a1-3ff9cf362166",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "327361",
+              "display": "leflunomide"
+            }
+          ],
+          "text": "leflunomide"
+        },
+        "subject": {
+          "reference": "Patient/8441c1cc-e9c7-73c6-8a21-7c14eaa0a83d"
+        },
+        "effectivePeriod": {
+          "start": "2024-08-14",
+          "end": "2025-01-17"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "6fbaa07b-dbfe-49ca-aeb1-86f04d00810f",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -145683,8 +145712,8 @@
           "reference": "Patient/8441c1cc-e9c7-73c6-8a21-7c14eaa0a83d"
         },
         "effectivePeriod": {
-          "start": "2025-09-26",
-          "end": "2026-07-10"
+          "start": "2025-11-03",
+          "end": "2026-02-01"
         },
         "reasonCode": [
           {
@@ -145696,18 +145725,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "2b3f6695-5468-4d28-8111-ce7dd8f009ca",
+        "id": "88ce2338-b166-4bd4-a0d4-11de3ce65ead",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "358258",
-              "display": "Orencia (abatacept)"
+              "code": "356248",
+              "display": "Cimzia (certolizumab pegol)"
             }
           ],
-          "text": "Orencia (abatacept)"
+          "text": "Cimzia (certolizumab pegol)"
         },
         "subject": {
           "reference": "Patient/8441c1cc-e9c7-73c6-8a21-7c14eaa0a83d"

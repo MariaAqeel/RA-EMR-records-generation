@@ -1,0 +1,161 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "d4ded25c-d630-44b1-b66a-c90d3bea4f10",
+        "name": [
+          {
+            "use": "official",
+            "family": "Hoover",
+            "given": [
+              "Jesus"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1991-05-30",
+        "address": [
+          {
+            "line": [
+              "884 Ford Squares Suite 367"
+            ],
+            "city": "East Yvonne",
+            "state": "ID",
+            "postalCode": "03809",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "f9514f0c-0e21-4b76-8697-801996b3875e",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "9631008",
+              "display": "Psoriatic Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M07.60",
+              "display": "Psoriatic Arthritis"
+            }
+          ],
+          "text": "Psoriatic Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/d4ded25c-d630-44b1-b66a-c90d3bea4f10"
+        },
+        "onsetDateTime": "2025-02-07"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "e4b806db-837f-4029-ae69-8c6e04fa95be",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/d4ded25c-d630-44b1-b66a-c90d3bea4f10"
+        },
+        "payor": [
+          {
+            "display": "Humana"
+          }
+        ],
+        "subscriberId": "197408754"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "823d9a3c-5da2-42a0-8b65-53d30499c0e6",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/d4ded25c-d630-44b1-b66a-c90d3bea4f10"
+        },
+        "effectiveDateTime": "2026-09-27",
+        "valueQuantity": {
+          "value": 48.0,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "583b03b4-8412-4d77-bf8d-0c35bd4da5ff",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/d4ded25c-d630-44b1-b66a-c90d3bea4f10"
+        },
+        "effectiveDateTime": "2026-09-05",
+        "valueQuantity": {
+          "value": 20.8,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    }
+  ]
+}

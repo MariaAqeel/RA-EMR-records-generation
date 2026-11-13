@@ -145272,23 +145272,23 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "46ecaf32-5573-4be2-bea3-b5922335e848",
+        "id": "a4aa94a5-4b57-4ce6-b1db-0e1ddf6d6f0e",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/2ed6688b-212a-1188-38de-3554ee4c7a7a"
         },
         "payor": [
           {
-            "display": "UnitedHealthcare"
+            "display": "Aetna"
           }
         ],
-        "subscriberId": "430146557"
+        "subscriberId": "937975326"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "06fbbcb4-b7e2-448d-ba48-1f53cdf93fbf",
+        "id": "f575a832-c5db-42fd-bb40-8f291f8a437a",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -145304,8 +145304,8 @@
           "reference": "Patient/2ed6688b-212a-1188-38de-3554ee4c7a7a"
         },
         "effectivePeriod": {
-          "start": "2025-07-01",
-          "end": "2026-04-13"
+          "start": "2024-12-24",
+          "end": "2025-03-26"
         },
         "reasonCode": [
           {
@@ -145317,18 +145317,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "5f66fb54-35d8-4719-a133-9e1ffb61ae9b",
+        "id": "6f47f2e6-87d6-474c-98be-232dce30c53e",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "358258",
-              "display": "Orencia (abatacept)"
+              "code": "614391",
+              "display": "Simponi Aria (golimumab)"
             }
           ],
-          "text": "Orencia (abatacept)"
+          "text": "Simponi Aria (golimumab)"
         },
         "subject": {
           "reference": "Patient/2ed6688b-212a-1188-38de-3554ee4c7a7a"

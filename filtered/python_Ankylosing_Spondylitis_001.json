@@ -1,0 +1,157 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "791a96a4-a856-41eb-bc01-c51ea90fed57",
+        "name": [
+          {
+            "use": "official",
+            "family": "Rosales",
+            "given": [
+              "Shawn"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "2000-06-14",
+        "address": [
+          {
+            "line": [
+              "041 Sarah Inlet"
+            ],
+            "city": "Emilyburgh",
+            "state": "MP",
+            "postalCode": "74238",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "2a2e8422-8201-4aea-b0a4-f37e551ab382",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "9566007",
+              "display": "Ankylosing Spondylitis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M45.9",
+              "display": "Ankylosing Spondylitis"
+            }
+          ],
+          "text": "Ankylosing Spondylitis"
+        },
+        "subject": {
+          "reference": "Patient/791a96a4-a856-41eb-bc01-c51ea90fed57"
+        },
+        "onsetDateTime": "2023-10-20"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "08213dab-d98e-4352-bc31-f832e6feb5fe",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/791a96a4-a856-41eb-bc01-c51ea90fed57"
+        },
+        "payor": [
+          {
+            "display": "Aetna"
+          }
+        ],
+        "subscriberId": "134069332"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "319b137a-b66a-4cbc-8497-963f8e70690a",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/791a96a4-a856-41eb-bc01-c51ea90fed57"
+        },
+        "effectiveDateTime": "2026-09-21",
+        "valueQuantity": {
+          "value": 11.0,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "5dd2d054-6c42-4891-a94a-094259efa1b5",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/791a96a4-a856-41eb-bc01-c51ea90fed57"
+        },
+        "effectiveDateTime": "2026-08-18",
+        "valueBoolean": false
+      }
+    }
+  ]
+}

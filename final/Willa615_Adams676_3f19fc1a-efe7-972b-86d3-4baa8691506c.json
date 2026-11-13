@@ -131954,40 +131954,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "43c8c07b-12b9-46d5-9a1d-4ed3860dcb7e",
+        "id": "eb56711e-ea06-456a-9076-651a668f1422",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/3f19fc1a-efe7-972b-86d3-4baa8691506c"
         },
         "payor": [
           {
-            "display": "Blue Shield of California"
+            "display": "Aetna"
           }
         ],
-        "subscriberId": "610440019"
+        "subscriberId": "600724222"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "098f8fc6-316e-48ab-adfc-7a53eb6efa5c",
+        "id": "c03a7259-e5d8-497a-a5ae-c07eebd7d1d3",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "373747",
-              "display": "etanercept"
+              "code": "105585",
+              "display": "methotrexate"
             }
           ],
-          "text": "etanercept"
+          "text": "methotrexate"
         },
         "subject": {
           "reference": "Patient/3f19fc1a-efe7-972b-86d3-4baa8691506c"
         },
         "effectivePeriod": {
-          "start": "2024-08-07",
-          "end": "2025-01-09"
+          "start": "2025-01-12",
+          "end": "2025-08-10"
         },
         "reasonCode": [
           {
@@ -131999,7 +131999,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "873746b0-69bc-4bb2-9c33-18f67d39350a",
+        "id": "d6ff7074-1baf-4de9-bd31-2e474499b9f4",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

@@ -1070615,7 +1070615,7 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "d27ffcd9-86e3-45d0-8558-757d11155204",
+        "id": "71f73279-0f4c-48c6-a040-6e25df747ebd",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/09d87ae5-1d46-1626-896d-2575eb78d93f"
@@ -1070625,13 +1070625,42 @@
             "display": "UnitedHealthcare"
           }
         ],
-        "subscriberId": "710907461"
+        "subscriberId": "265409570"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "945ecf1d-32c8-4581-aa6b-d4ac33579f36",
+        "id": "4e0d5c33-4205-43bd-958b-f6283f95ca37",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "114194",
+              "display": "hydroxychloroquine"
+            }
+          ],
+          "text": "hydroxychloroquine"
+        },
+        "subject": {
+          "reference": "Patient/09d87ae5-1d46-1626-896d-2575eb78d93f"
+        },
+        "effectivePeriod": {
+          "start": "2025-09-08",
+          "end": "2026-04-06"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "682da6e1-35f6-4f9d-aa5d-ba9e934e1fee",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -1070647,66 +1070676,8 @@
           "reference": "Patient/09d87ae5-1d46-1626-896d-2575eb78d93f"
         },
         "effectivePeriod": {
-          "start": "2024-06-28",
-          "end": "2024-11-21"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "93ab04df-37f9-428e-b195-2d37551ff51e",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "105585",
-              "display": "methotrexate"
-            }
-          ],
-          "text": "methotrexate"
-        },
-        "subject": {
-          "reference": "Patient/09d87ae5-1d46-1626-896d-2575eb78d93f"
-        },
-        "effectivePeriod": {
-          "start": "2025-03-14",
-          "end": "2025-11-12"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "96809b78-348f-499f-822b-50e7817f6296",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "105585",
-              "display": "methotrexate"
-            }
-          ],
-          "text": "methotrexate"
-        },
-        "subject": {
-          "reference": "Patient/09d87ae5-1d46-1626-896d-2575eb78d93f"
-        },
-        "effectivePeriod": {
-          "start": "2024-10-17",
-          "end": "2025-09-30"
+          "start": "2024-08-20",
+          "end": "2025-02-02"
         },
         "reasonCode": [
           {
@@ -1070718,18 +1070689,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "de8b6d52-4044-4f24-a6ae-0b777a6deb09",
+        "id": "e72baf62-7de0-43b3-b74d-47a7bd0ea80d",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "614391",
-              "display": "Simponi Aria (golimumab)"
+              "code": "358258",
+              "display": "Orencia (abatacept)"
             }
           ],
-          "text": "Simponi Aria (golimumab)"
+          "text": "Orencia (abatacept)"
         },
         "subject": {
           "reference": "Patient/09d87ae5-1d46-1626-896d-2575eb78d93f"

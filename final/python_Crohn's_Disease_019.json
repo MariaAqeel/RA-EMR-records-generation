@@ -1,0 +1,339 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "00a15b3e-c18e-44dd-a19d-11b73fcb28db",
+        "name": [
+          {
+            "use": "official",
+            "family": "Walker",
+            "given": [
+              "Brett"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "2004-06-02",
+        "address": [
+          {
+            "line": [
+              "8398 Scott Knoll Apt. 392"
+            ],
+            "city": "South Phyllis",
+            "state": "FM",
+            "postalCode": "07628",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "42f42804-46ea-4450-a7f6-9fcdf55932c0",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "34000006",
+              "display": "Crohn's Disease"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "K50.90",
+              "display": "Crohn's Disease"
+            }
+          ],
+          "text": "Crohn's Disease"
+        },
+        "subject": {
+          "reference": "Patient/00a15b3e-c18e-44dd-a19d-11b73fcb28db"
+        },
+        "onsetDateTime": "2025-04-25"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "4a8e0ebb-9abf-4d9d-9502-100935c2c767",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/00a15b3e-c18e-44dd-a19d-11b73fcb28db"
+        },
+        "payor": [
+          {
+            "display": "Aetna"
+          }
+        ],
+        "subscriberId": "488887181"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "c1f0d1fd-b46d-4c3d-9257-2d7e170a24d4",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/00a15b3e-c18e-44dd-a19d-11b73fcb28db"
+        },
+        "effectiveDateTime": "2026-09-16",
+        "valueQuantity": {
+          "value": 41.8,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "5fe4b77f-ddc5-40d7-846c-7053edfe2c4d",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/00a15b3e-c18e-44dd-a19d-11b73fcb28db"
+        },
+        "effectiveDateTime": "2026-09-26",
+        "valueQuantity": {
+          "value": 39.8,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "21118b7d-c43b-4244-a04c-2a012aceedae",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/00a15b3e-c18e-44dd-a19d-11b73fcb28db"
+        },
+        "effectiveDateTime": "2026-08-16",
+        "valueQuantity": {
+          "value": 28.9,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "1505d44a-47c1-492b-b6aa-f9cbb37a8863",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/00a15b3e-c18e-44dd-a19d-11b73fcb28db"
+        },
+        "effectiveDateTime": "2026-10-25",
+        "valueQuantity": {
+          "value": 38.6,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "0bcb082b-b241-4c36-8282-b9424f4ec11e",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "105585",
+              "display": "methotrexate"
+            }
+          ],
+          "text": "methotrexate"
+        },
+        "subject": {
+          "reference": "Patient/00a15b3e-c18e-44dd-a19d-11b73fcb28db"
+        },
+        "effectivePeriod": {
+          "start": "2024-11-18",
+          "end": "2025-04-19"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "fb3fd9d7-2f67-420e-b5fa-5b9738d50010",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "105585",
+              "display": "methotrexate"
+            }
+          ],
+          "text": "methotrexate"
+        },
+        "subject": {
+          "reference": "Patient/00a15b3e-c18e-44dd-a19d-11b73fcb28db"
+        },
+        "effectivePeriod": {
+          "start": "2024-11-21",
+          "end": "2025-05-21"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "160aae7b-6d44-46be-aa2a-f2d876088568",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "373747",
+              "display": "etanercept"
+            }
+          ],
+          "text": "etanercept"
+        },
+        "subject": {
+          "reference": "Patient/00a15b3e-c18e-44dd-a19d-11b73fcb28db"
+        },
+        "effectivePeriod": {
+          "start": "2025-02-14",
+          "end": "2025-12-21"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "45e7c7f9-713b-4d64-9e06-07049967359d",
+        "status": "draft",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "358258",
+              "display": "Orencia (abatacept)"
+            }
+          ],
+          "text": "Orencia (abatacept)"
+        },
+        "subject": {
+          "reference": "Patient/00a15b3e-c18e-44dd-a19d-11b73fcb28db"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "87a14b35-d7dd-4b5b-abbd-ded5b64745d5",
+        "name": [
+          {
+            "use": "official",
+            "family": "Butler",
+            "given": [
+              "James"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "2006-08-18",
+        "address": [
+          {
+            "line": [
+              "585 Ricky Motorway Apt. 712"
+            ],
+            "city": "Jasmineshire",
+            "state": "WV",
+            "postalCode": "58448",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "112051d6-7013-4148-bfb1-7b34f21c80b3",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "9566007",
+              "display": "Ankylosing Spondylitis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M45.9",
+              "display": "Ankylosing Spondylitis"
+            }
+          ],
+          "text": "Ankylosing Spondylitis"
+        },
+        "subject": {
+          "reference": "Patient/87a14b35-d7dd-4b5b-abbd-ded5b64745d5"
+        },
+        "onsetDateTime": "2021-12-22"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "cdf20da4-c131-4985-8bc7-30168c7fb76a",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/87a14b35-d7dd-4b5b-abbd-ded5b64745d5"
+        },
+        "payor": [
+          {
+            "display": "Blue Shield of California"
+          }
+        ],
+        "subscriberId": "709283561"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "942233f9-0c86-4ab2-ba89-e3f47966ebcf",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/87a14b35-d7dd-4b5b-abbd-ded5b64745d5"
+        },
+        "effectiveDateTime": "2026-09-16",
+        "valueBoolean": false
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "e81deb59-7ff3-4b71-a554-01b09815e7e4",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/87a14b35-d7dd-4b5b-abbd-ded5b64745d5"
+        },
+        "effectiveDateTime": "2026-10-05",
+        "valueBoolean": false
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "61ea7cfb-fe62-4792-836e-3c8c8440e8d2",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/87a14b35-d7dd-4b5b-abbd-ded5b64745d5"
+        },
+        "effectiveDateTime": "2026-10-05",
+        "valueQuantity": {
+          "value": 68.3,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "70446056-42fe-43a0-b9dc-373ad9a9d843",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "105585",
+              "display": "methotrexate"
+            }
+          ],
+          "text": "methotrexate"
+        },
+        "subject": {
+          "reference": "Patient/87a14b35-d7dd-4b5b-abbd-ded5b64745d5"
+        },
+        "effectivePeriod": {
+          "start": "2025-06-20",
+          "end": "2025-10-11"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "78099d2a-0c9d-4f78-94ba-aa8157688644",
+        "status": "draft",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "356248",
+              "display": "Cimzia (certolizumab pegol)"
+            }
+          ],
+          "text": "Cimzia (certolizumab pegol)"
+        },
+        "subject": {
+          "reference": "Patient/87a14b35-d7dd-4b5b-abbd-ded5b64745d5"
+        }
+      }
+    }
+  ]
+}

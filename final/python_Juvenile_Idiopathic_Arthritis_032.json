@@ -1,0 +1,298 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "4a39b211-79bb-408e-8c9c-2c2cc9fee1ba",
+        "name": [
+          {
+            "use": "official",
+            "family": "Taylor",
+            "given": [
+              "Michelle"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2009-11-28",
+        "address": [
+          {
+            "line": [
+              "0204 Deanna Stravenue Apt. 344"
+            ],
+            "city": "Port Leslie",
+            "state": "CT",
+            "postalCode": "64857",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "fdc32eeb-f2d4-4237-8cfd-42800b9f9b10",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "57160005",
+              "display": "Juvenile Idiopathic Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M08.00",
+              "display": "Juvenile Idiopathic Arthritis"
+            }
+          ],
+          "text": "Juvenile Idiopathic Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/4a39b211-79bb-408e-8c9c-2c2cc9fee1ba"
+        },
+        "onsetDateTime": "2023-06-02"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "84e3169a-4a14-4984-b68d-18b5f24cf8a4",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/4a39b211-79bb-408e-8c9c-2c2cc9fee1ba"
+        },
+        "payor": [
+          {
+            "display": "Aetna"
+          }
+        ],
+        "subscriberId": "995448171"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "cfcba764-3079-421c-93a8-b5939a0ddf15",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4a39b211-79bb-408e-8c9c-2c2cc9fee1ba"
+        },
+        "effectiveDateTime": "2026-11-05",
+        "valueBoolean": true
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "cf0177dd-2677-4bf5-a8dd-a4b87014fee1",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4a39b211-79bb-408e-8c9c-2c2cc9fee1ba"
+        },
+        "effectiveDateTime": "2026-11-02",
+        "valueBoolean": false
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "acde12af-41c0-4b19-8d23-c777db170e57",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4a39b211-79bb-408e-8c9c-2c2cc9fee1ba"
+        },
+        "effectiveDateTime": "2026-09-11",
+        "valueBoolean": false
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "95668f70-d78d-4bb5-a09e-89266a37f7b4",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4a39b211-79bb-408e-8c9c-2c2cc9fee1ba"
+        },
+        "effectiveDateTime": "2026-10-15",
+        "valueQuantity": {
+          "value": 50.9,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "d072452c-6889-4455-8e71-ae822fcc397e",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "373747",
+              "display": "etanercept"
+            }
+          ],
+          "text": "etanercept"
+        },
+        "subject": {
+          "reference": "Patient/4a39b211-79bb-408e-8c9c-2c2cc9fee1ba"
+        },
+        "effectivePeriod": {
+          "start": "2024-12-31",
+          "end": "2025-05-26"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "262a9323-886a-4cd2-b79c-ef13fd5d87ed",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "373747",
+              "display": "etanercept"
+            }
+          ],
+          "text": "etanercept"
+        },
+        "subject": {
+          "reference": "Patient/4a39b211-79bb-408e-8c9c-2c2cc9fee1ba"
+        },
+        "effectivePeriod": {
+          "start": "2025-01-26",
+          "end": "2025-05-16"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "b0db3c0e-b28e-4302-98aa-a671110c05fb",
+        "status": "draft",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "358258",
+              "display": "Orencia (abatacept)"
+            }
+          ],
+          "text": "Orencia (abatacept)"
+        },
+        "subject": {
+          "reference": "Patient/4a39b211-79bb-408e-8c9c-2c2cc9fee1ba"
+        }
+      }
+    }
+  ]
+}

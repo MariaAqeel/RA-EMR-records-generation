@@ -1,0 +1,161 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "543d68f7-2c5e-4d3a-90ea-22e0f24fc2c8",
+        "name": [
+          {
+            "use": "official",
+            "family": "Lee",
+            "given": [
+              "Tiffany"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2016-01-21",
+        "address": [
+          {
+            "line": [
+              "6326 Landry Isle"
+            ],
+            "city": "Andersonfort",
+            "state": "KS",
+            "postalCode": "75976",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "e911ae0a-f24c-41ff-9ce4-da1ea09e7bb2",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "57160005",
+              "display": "Juvenile Idiopathic Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M08.00",
+              "display": "Juvenile Idiopathic Arthritis"
+            }
+          ],
+          "text": "Juvenile Idiopathic Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/543d68f7-2c5e-4d3a-90ea-22e0f24fc2c8"
+        },
+        "onsetDateTime": "2026-04-22"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "c01eed05-1f9f-483f-b132-7567a658b10e",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/543d68f7-2c5e-4d3a-90ea-22e0f24fc2c8"
+        },
+        "payor": [
+          {
+            "display": "Blue Shield of California"
+          }
+        ],
+        "subscriberId": "482987773"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "a2a6f3d7-32af-4e63-80d8-61fc6a870ad8",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/543d68f7-2c5e-4d3a-90ea-22e0f24fc2c8"
+        },
+        "effectiveDateTime": "2026-09-07",
+        "valueQuantity": {
+          "value": 24.2,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d76f4b3f-5ef1-4af9-a0a6-5d12158585fa",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/543d68f7-2c5e-4d3a-90ea-22e0f24fc2c8"
+        },
+        "effectiveDateTime": "2026-09-09",
+        "valueQuantity": {
+          "value": 26.1,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    }
+  ]
+}

@@ -182207,23 +182207,23 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "05a6e1b8-93ea-441f-92dd-86bc1259a6f2",
+        "id": "4fa50d42-6bd1-456f-813f-b7aa1311ed06",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/69b268fc-a3a9-c227-1f34-82278080d1ca"
         },
         "payor": [
           {
-            "display": "Cigna"
+            "display": "UnitedHealthcare"
           }
         ],
-        "subscriberId": "135044917"
+        "subscriberId": "949473476"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "81475087-7b2a-4c7f-aafe-aeb9a367c35c",
+        "id": "c2ebcb27-a22a-4ba3-bc18-eeb5493c62b8",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -182239,8 +182239,37 @@
           "reference": "Patient/69b268fc-a3a9-c227-1f34-82278080d1ca"
         },
         "effectivePeriod": {
-          "start": "2024-11-13",
-          "end": "2025-04-13"
+          "start": "2025-10-26",
+          "end": "2026-06-07"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "ab461897-ab21-4e65-a7b8-24cec9d3c66b",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "327362",
+              "display": "adalimumab"
+            }
+          ],
+          "text": "adalimumab"
+        },
+        "subject": {
+          "reference": "Patient/69b268fc-a3a9-c227-1f34-82278080d1ca"
+        },
+        "effectivePeriod": {
+          "start": "2025-04-09",
+          "end": "2025-10-02"
         },
         "reasonCode": [
           {
@@ -182252,18 +182281,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "15887575-5b31-4c03-bfda-7f497b75109f",
+        "id": "a3d205b8-f91d-437e-8611-185d31a86c37",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "358258",
-              "display": "Orencia (abatacept)"
+              "code": "614391",
+              "display": "Simponi Aria (golimumab)"
             }
           ],
-          "text": "Orencia (abatacept)"
+          "text": "Simponi Aria (golimumab)"
         },
         "subject": {
           "reference": "Patient/69b268fc-a3a9-c227-1f34-82278080d1ca"

@@ -1,0 +1,192 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "ece5495f-e4a5-4ea1-8b70-d4122220267d",
+        "name": [
+          {
+            "use": "official",
+            "family": "Jimenez",
+            "given": [
+              "John"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1975-12-24",
+        "address": [
+          {
+            "line": [
+              "28183 Singleton Island Apt. 322"
+            ],
+            "city": "New Christinafort",
+            "state": "CA",
+            "postalCode": "63078",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "58df4f62-c943-490d-81d6-05cf0878d83a",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "9631008",
+              "display": "Psoriatic Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M07.60",
+              "display": "Psoriatic Arthritis"
+            }
+          ],
+          "text": "Psoriatic Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/ece5495f-e4a5-4ea1-8b70-d4122220267d"
+        },
+        "onsetDateTime": "2024-08-22"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "77bfb5fd-0a8a-45b9-90da-2a8280f03179",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/ece5495f-e4a5-4ea1-8b70-d4122220267d"
+        },
+        "payor": [
+          {
+            "display": "UnitedHealthcare"
+          }
+        ],
+        "subscriberId": "187305435"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "996e0638-6790-42a8-be24-2440de26e59b",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/ece5495f-e4a5-4ea1-8b70-d4122220267d"
+        },
+        "effectiveDateTime": "2026-08-23",
+        "valueQuantity": {
+          "value": 156.0,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "8da60584-ab5a-4e75-a0dd-575277d9d681",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/ece5495f-e4a5-4ea1-8b70-d4122220267d"
+        },
+        "effectiveDateTime": "2026-10-16",
+        "valueQuantity": {
+          "value": 147.6,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "8e59c397-42e6-4b22-be84-5e304d4a9089",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/ece5495f-e4a5-4ea1-8b70-d4122220267d"
+        },
+        "effectiveDateTime": "2026-09-24",
+        "valueBoolean": true
+      }
+    }
+  ]
+}

@@ -1666671,23 +1666671,23 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "0c415eb5-e754-4667-9bc8-bc4a56c7c70e",
+        "id": "e49f2802-bec1-417f-b9cc-db9740f83eaa",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/7789c100-f2e3-188a-83a3-3c7001a04296"
         },
         "payor": [
           {
-            "display": "UnitedHealthcare"
+            "display": "Aetna"
           }
         ],
-        "subscriberId": "644899690"
+        "subscriberId": "651748789"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "929d392b-8441-4077-824b-eef3971f0d93",
+        "id": "20aa1e57-4d0a-466e-bb79-0a25cd4bab18",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -1666703,66 +1666703,8 @@
           "reference": "Patient/7789c100-f2e3-188a-83a3-3c7001a04296"
         },
         "effectivePeriod": {
-          "start": "2025-10-25",
-          "end": "2026-05-30"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "1ed71907-2695-48a9-9a67-fcb65f5fcbda",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327362",
-              "display": "adalimumab"
-            }
-          ],
-          "text": "adalimumab"
-        },
-        "subject": {
-          "reference": "Patient/7789c100-f2e3-188a-83a3-3c7001a04296"
-        },
-        "effectivePeriod": {
-          "start": "2025-03-19",
-          "end": "2025-12-18"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "4ec9dd22-21cc-4077-b01c-b4c20633b653",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "105585",
-              "display": "methotrexate"
-            }
-          ],
-          "text": "methotrexate"
-        },
-        "subject": {
-          "reference": "Patient/7789c100-f2e3-188a-83a3-3c7001a04296"
-        },
-        "effectivePeriod": {
-          "start": "2025-08-03",
-          "end": "2026-07-16"
+          "start": "2024-11-19",
+          "end": "2025-04-05"
         },
         "reasonCode": [
           {
@@ -1666774,18 +1666716,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "802f36e8-7dc9-4a7e-9373-90e97ebbf8cb",
+        "id": "0cf63373-8c4a-4f12-b4fd-fbbef08143b1",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "358258",
-              "display": "Orencia (abatacept)"
+              "code": "356248",
+              "display": "Cimzia (certolizumab pegol)"
             }
           ],
-          "text": "Orencia (abatacept)"
+          "text": "Cimzia (certolizumab pegol)"
         },
         "subject": {
           "reference": "Patient/7789c100-f2e3-188a-83a3-3c7001a04296"

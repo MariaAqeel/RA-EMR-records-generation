@@ -1,0 +1,271 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "badf7e1d-2734-4fc0-9c0f-b166dcc4eeaf",
+        "name": [
+          {
+            "use": "official",
+            "family": "Aguirre",
+            "given": [
+              "William"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1990-08-11",
+        "address": [
+          {
+            "line": [
+              "947 Heather Canyon Apt. 916"
+            ],
+            "city": "North Michaelhaven",
+            "state": "DC",
+            "postalCode": "47800",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "b4dddc45-8e11-471a-9022-cf0210c834c0",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "64766004",
+              "display": "Ulcerative Colitis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "K51.90",
+              "display": "Ulcerative Colitis"
+            }
+          ],
+          "text": "Ulcerative Colitis"
+        },
+        "subject": {
+          "reference": "Patient/badf7e1d-2734-4fc0-9c0f-b166dcc4eeaf"
+        },
+        "onsetDateTime": "2022-12-08"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "994071c5-36b7-4ebf-a339-5c65aafa5252",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/badf7e1d-2734-4fc0-9c0f-b166dcc4eeaf"
+        },
+        "payor": [
+          {
+            "display": "Humana"
+          }
+        ],
+        "subscriberId": "429094692"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "7a715cdb-e435-4d25-bf7a-08a5c3640709",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/badf7e1d-2734-4fc0-9c0f-b166dcc4eeaf"
+        },
+        "effectiveDateTime": "2026-08-23",
+        "valueQuantity": {
+          "value": 123.0,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "8a555edf-b889-4826-a7f5-e6fb3b874614",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/badf7e1d-2734-4fc0-9c0f-b166dcc4eeaf"
+        },
+        "effectiveDateTime": "2026-09-05",
+        "valueBoolean": true
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0f3fcf61-c738-466f-ad90-7b520a8af1e3",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/badf7e1d-2734-4fc0-9c0f-b166dcc4eeaf"
+        },
+        "effectiveDateTime": "2026-10-16",
+        "valueQuantity": {
+          "value": 42.8,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "3a556932-d017-44ed-8f9f-3280611ff136",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "373747",
+              "display": "etanercept"
+            }
+          ],
+          "text": "etanercept"
+        },
+        "subject": {
+          "reference": "Patient/badf7e1d-2734-4fc0-9c0f-b166dcc4eeaf"
+        },
+        "effectivePeriod": {
+          "start": "2025-09-02",
+          "end": "2026-04-30"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "0d0760db-b70d-41d7-bf97-336358a50fa7",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "373747",
+              "display": "etanercept"
+            }
+          ],
+          "text": "etanercept"
+        },
+        "subject": {
+          "reference": "Patient/badf7e1d-2734-4fc0-9c0f-b166dcc4eeaf"
+        },
+        "effectivePeriod": {
+          "start": "2024-11-20",
+          "end": "2025-04-11"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "e87f3ae6-869b-4910-a9ad-72db4e9266ce",
+        "status": "draft",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "358258",
+              "display": "Orencia (abatacept)"
+            }
+          ],
+          "text": "Orencia (abatacept)"
+        },
+        "subject": {
+          "reference": "Patient/badf7e1d-2734-4fc0-9c0f-b166dcc4eeaf"
+        }
+      }
+    }
+  ]
+}

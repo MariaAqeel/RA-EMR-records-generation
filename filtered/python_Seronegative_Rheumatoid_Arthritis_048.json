@@ -1,0 +1,227 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "26d3b42c-74e1-4f53-aeca-6aaed2e0faa2",
+        "name": [
+          {
+            "use": "official",
+            "family": "Williams",
+            "given": [
+              "Megan"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1980-07-22",
+        "address": [
+          {
+            "line": [
+              "9765 Kelly Mill Apt. 442"
+            ],
+            "city": "Joshuafurt",
+            "state": "MI",
+            "postalCode": "42367",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "8892e5c8-fbf7-4314-b825-700324a461f2",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "201791006",
+              "display": "Seronegative Rheumatoid Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M06.09",
+              "display": "Seronegative Rheumatoid Arthritis"
+            }
+          ],
+          "text": "Seronegative Rheumatoid Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/26d3b42c-74e1-4f53-aeca-6aaed2e0faa2"
+        },
+        "onsetDateTime": "2023-07-27"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "d0a12f60-3447-4b41-a5f7-b44087e353cf",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/26d3b42c-74e1-4f53-aeca-6aaed2e0faa2"
+        },
+        "payor": [
+          {
+            "display": "Blue Shield of California"
+          }
+        ],
+        "subscriberId": "480353454"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "c05868af-ce4d-4514-8535-fa2b89f88601",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/26d3b42c-74e1-4f53-aeca-6aaed2e0faa2"
+        },
+        "effectiveDateTime": "2026-09-20",
+        "valueQuantity": {
+          "value": 54.8,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "552f7b10-a261-47d4-b286-704d7b1bcda4",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/26d3b42c-74e1-4f53-aeca-6aaed2e0faa2"
+        },
+        "effectiveDateTime": "2026-11-11",
+        "valueBoolean": false
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "b25947a0-4bc5-4651-b9c2-c7b73758f3d1",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/26d3b42c-74e1-4f53-aeca-6aaed2e0faa2"
+        },
+        "effectiveDateTime": "2026-09-02",
+        "valueQuantity": {
+          "value": 177.3,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "b37b7831-df24-4181-a750-ac3b318465ba",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/26d3b42c-74e1-4f53-aeca-6aaed2e0faa2"
+        },
+        "effectiveDateTime": "2026-10-22",
+        "valueQuantity": {
+          "value": 23.3,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    }
+  ]
+}

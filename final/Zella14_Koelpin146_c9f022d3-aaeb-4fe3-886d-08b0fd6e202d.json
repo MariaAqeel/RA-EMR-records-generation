@@ -209180,40 +209180,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "6975854b-13eb-459b-b69b-492a02c9e7cb",
+        "id": "64b7f4a6-d614-4d13-bd41-a1bb76b85804",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/c9f022d3-aaeb-4fe3-886d-08b0fd6e202d"
         },
         "payor": [
           {
-            "display": "Humana"
+            "display": "Aetna"
           }
         ],
-        "subscriberId": "547213135"
+        "subscriberId": "952159581"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "13483f74-3421-40a3-abf8-baddbb15c5cd",
+        "id": "9963cd5b-7c03-4c10-9ba6-bbb8ccd56312",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "105585",
-              "display": "methotrexate"
+              "code": "327362",
+              "display": "adalimumab"
             }
           ],
-          "text": "methotrexate"
+          "text": "adalimumab"
         },
         "subject": {
           "reference": "Patient/c9f022d3-aaeb-4fe3-886d-08b0fd6e202d"
         },
         "effectivePeriod": {
-          "start": "2024-11-03",
-          "end": "2025-10-18"
+          "start": "2025-07-31",
+          "end": "2026-03-20"
         },
         "reasonCode": [
           {
@@ -209225,24 +209225,53 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "d7e3f612-2de1-41a5-a264-1a9fa057565a",
+        "id": "11fdc540-4ed6-451c-a7a1-c72df6cf05f1",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "105585",
-              "display": "methotrexate"
+              "code": "327361",
+              "display": "leflunomide"
             }
           ],
-          "text": "methotrexate"
+          "text": "leflunomide"
         },
         "subject": {
           "reference": "Patient/c9f022d3-aaeb-4fe3-886d-08b0fd6e202d"
         },
         "effectivePeriod": {
-          "start": "2025-03-06",
-          "end": "2025-11-21"
+          "start": "2025-08-07",
+          "end": "2026-01-13"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "1f41c5da-9b88-43c6-adfb-26d1efccb8ff",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "327361",
+              "display": "leflunomide"
+            }
+          ],
+          "text": "leflunomide"
+        },
+        "subject": {
+          "reference": "Patient/c9f022d3-aaeb-4fe3-886d-08b0fd6e202d"
+        },
+        "effectivePeriod": {
+          "start": "2024-07-03",
+          "end": "2025-04-23"
         },
         "reasonCode": [
           {
@@ -209254,7 +209283,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "b930b902-eb1f-4772-b07d-b9b1fbc08e5f",
+        "id": "71d3e1da-9b46-4b2c-a738-6b3b888c6837",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

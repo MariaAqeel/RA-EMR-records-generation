@@ -1,0 +1,192 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "af589ec7-d9a5-4d17-9e7e-d7891664848e",
+        "name": [
+          {
+            "use": "official",
+            "family": "Gibbs",
+            "given": [
+              "Cynthia"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1997-05-28",
+        "address": [
+          {
+            "line": [
+              "599 Devin Overpass Suite 518"
+            ],
+            "city": "Travisfurt",
+            "state": "OR",
+            "postalCode": "89517",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "76847479-a5b5-4ae7-a0ae-4787718e28cf",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "34000006",
+              "display": "Crohn's Disease"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "K50.90",
+              "display": "Crohn's Disease"
+            }
+          ],
+          "text": "Crohn's Disease"
+        },
+        "subject": {
+          "reference": "Patient/af589ec7-d9a5-4d17-9e7e-d7891664848e"
+        },
+        "onsetDateTime": "2025-02-19"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "6dd44ae6-f9db-4585-898a-b3613899c25e",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/af589ec7-d9a5-4d17-9e7e-d7891664848e"
+        },
+        "payor": [
+          {
+            "display": "Blue Shield of California"
+          }
+        ],
+        "subscriberId": "655920965"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "c564dbf4-0b57-49e6-9a0a-e9b67c442b44",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/af589ec7-d9a5-4d17-9e7e-d7891664848e"
+        },
+        "effectiveDateTime": "2026-10-04",
+        "valueQuantity": {
+          "value": 74.3,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d7fddb10-005b-49a9-b8f3-5ffa1083ed53",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/af589ec7-d9a5-4d17-9e7e-d7891664848e"
+        },
+        "effectiveDateTime": "2026-09-12",
+        "valueBoolean": true
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6f9f2688-23f8-4736-80e0-9816c30447ee",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/af589ec7-d9a5-4d17-9e7e-d7891664848e"
+        },
+        "effectiveDateTime": "2026-10-28",
+        "valueQuantity": {
+          "value": 8.6,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    }
+  ]
+}

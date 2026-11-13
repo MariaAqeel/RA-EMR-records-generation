@@ -95710,23 +95710,23 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "d22d8608-1501-422a-a0b8-5894048823a9",
+        "id": "e0e5b11f-d953-4a6d-88e0-1bec10a344ba",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/dd89593a-8161-2c17-c0d9-974f9f3b0339"
         },
         "payor": [
           {
-            "display": "Humana"
+            "display": "Aetna"
           }
         ],
-        "subscriberId": "671695363"
+        "subscriberId": "592582266"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "672df139-e5da-45e8-9152-bc157da325e6",
+        "id": "28964e13-4ee0-49ac-8cd6-a1ed9cb9fe34",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -95742,8 +95742,8 @@
           "reference": "Patient/dd89593a-8161-2c17-c0d9-974f9f3b0339"
         },
         "effectivePeriod": {
-          "start": "2025-01-28",
-          "end": "2025-06-29"
+          "start": "2025-07-09",
+          "end": "2026-03-07"
         },
         "reasonCode": [
           {
@@ -95755,7 +95755,36 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "a011a7dd-fbe4-42a3-86ea-7a820b8c604b",
+        "id": "5fd50b3a-a8d1-4a74-bce4-4e63cdb8f07f",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "373747",
+              "display": "etanercept"
+            }
+          ],
+          "text": "etanercept"
+        },
+        "subject": {
+          "reference": "Patient/dd89593a-8161-2c17-c0d9-974f9f3b0339"
+        },
+        "effectivePeriod": {
+          "start": "2025-05-10",
+          "end": "2025-12-25"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "60e9913e-7a83-46d0-a6fe-173ce079353c",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -95771,37 +95800,8 @@
           "reference": "Patient/dd89593a-8161-2c17-c0d9-974f9f3b0339"
         },
         "effectivePeriod": {
-          "start": "2025-05-09",
-          "end": "2025-10-14"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "05f3d729-e49d-45d0-9be0-4b4f01277b65",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327362",
-              "display": "adalimumab"
-            }
-          ],
-          "text": "adalimumab"
-        },
-        "subject": {
-          "reference": "Patient/dd89593a-8161-2c17-c0d9-974f9f3b0339"
-        },
-        "effectivePeriod": {
-          "start": "2025-04-24",
-          "end": "2025-09-16"
+          "start": "2025-07-10",
+          "end": "2026-03-17"
         },
         "reasonCode": [
           {
@@ -95813,18 +95813,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "e66ca0ae-c56f-4e06-ad1a-f96af37b5834",
+        "id": "50a99e27-895f-4396-b569-5d0bd96f68a1",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "356248",
-              "display": "Cimzia (certolizumab pegol)"
+              "code": "358258",
+              "display": "Orencia (abatacept)"
             }
           ],
-          "text": "Cimzia (certolizumab pegol)"
+          "text": "Orencia (abatacept)"
         },
         "subject": {
           "reference": "Patient/dd89593a-8161-2c17-c0d9-974f9f3b0339"

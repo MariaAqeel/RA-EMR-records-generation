@@ -1,0 +1,300 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "2c0f0d62-d663-46e2-9e15-ee29c7647178",
+        "name": [
+          {
+            "use": "official",
+            "family": "Tucker",
+            "given": [
+              "Max"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1988-09-12",
+        "address": [
+          {
+            "line": [
+              "445 Ronald Junctions"
+            ],
+            "city": "Bellfort",
+            "state": "VT",
+            "postalCode": "99518",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "e5be88a6-e4b9-497b-a2d4-df0d73b86b99",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "64766004",
+              "display": "Ulcerative Colitis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "K51.90",
+              "display": "Ulcerative Colitis"
+            }
+          ],
+          "text": "Ulcerative Colitis"
+        },
+        "subject": {
+          "reference": "Patient/2c0f0d62-d663-46e2-9e15-ee29c7647178"
+        },
+        "onsetDateTime": "2023-02-25"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "d4a6465c-79c2-4a16-92a9-9b515bdca679",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/2c0f0d62-d663-46e2-9e15-ee29c7647178"
+        },
+        "payor": [
+          {
+            "display": "Blue Shield of California"
+          }
+        ],
+        "subscriberId": "662597408"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "176659c8-eba2-41ec-92b4-bf418287da7b",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2c0f0d62-d663-46e2-9e15-ee29c7647178"
+        },
+        "effectiveDateTime": "2026-09-10",
+        "valueQuantity": {
+          "value": 38.6,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "89703cf8-4bb7-4408-a0af-124bbae9d43b",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2c0f0d62-d663-46e2-9e15-ee29c7647178"
+        },
+        "effectiveDateTime": "2026-09-25",
+        "valueBoolean": false
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "86590ce3-2511-4a0f-ae52-2b9f2ff924af",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2c0f0d62-d663-46e2-9e15-ee29c7647178"
+        },
+        "effectiveDateTime": "2026-09-24",
+        "valueQuantity": {
+          "value": 50.3,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "899fc9e1-ec9d-49ac-bd83-2da2e564edfb",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "327361",
+              "display": "leflunomide"
+            }
+          ],
+          "text": "leflunomide"
+        },
+        "subject": {
+          "reference": "Patient/2c0f0d62-d663-46e2-9e15-ee29c7647178"
+        },
+        "effectivePeriod": {
+          "start": "2024-12-10",
+          "end": "2025-12-10"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "4ae0b0d5-3384-4dd6-8745-3ac0d5148bc3",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "105585",
+              "display": "methotrexate"
+            }
+          ],
+          "text": "methotrexate"
+        },
+        "subject": {
+          "reference": "Patient/2c0f0d62-d663-46e2-9e15-ee29c7647178"
+        },
+        "effectivePeriod": {
+          "start": "2024-10-18",
+          "end": "2025-05-08"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "d8805001-bb79-4c37-9bc6-19d998f00d48",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "327361",
+              "display": "leflunomide"
+            }
+          ],
+          "text": "leflunomide"
+        },
+        "subject": {
+          "reference": "Patient/2c0f0d62-d663-46e2-9e15-ee29c7647178"
+        },
+        "effectivePeriod": {
+          "start": "2025-03-02",
+          "end": "2025-06-17"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "38c776bf-5bcc-45bf-8725-7e4f531b8a28",
+        "status": "draft",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "614391",
+              "display": "Simponi Aria (golimumab)"
+            }
+          ],
+          "text": "Simponi Aria (golimumab)"
+        },
+        "subject": {
+          "reference": "Patient/2c0f0d62-d663-46e2-9e15-ee29c7647178"
+        }
+      }
+    }
+  ]
+}

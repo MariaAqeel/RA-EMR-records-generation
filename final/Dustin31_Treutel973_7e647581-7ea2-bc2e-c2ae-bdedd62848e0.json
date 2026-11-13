@@ -67009,7 +67009,7 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "258b22e0-92b3-49cb-bb19-ee8049c573ee",
+        "id": "a070a7f7-6927-477b-999a-29ea22725ceb",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/7e647581-7ea2-bc2e-c2ae-bdedd62848e0"
@@ -67019,30 +67019,88 @@
             "display": "UnitedHealthcare"
           }
         ],
-        "subscriberId": "400372824"
+        "subscriberId": "781929227"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "0a105c26-0e50-4757-98bd-6fec8409f3f2",
+        "id": "adbfa7c0-b08b-4c05-b1a7-38ec4b049532",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "114194",
-              "display": "hydroxychloroquine"
+              "code": "327361",
+              "display": "leflunomide"
             }
           ],
-          "text": "hydroxychloroquine"
+          "text": "leflunomide"
         },
         "subject": {
           "reference": "Patient/7e647581-7ea2-bc2e-c2ae-bdedd62848e0"
         },
         "effectivePeriod": {
-          "start": "2025-06-12",
-          "end": "2025-11-18"
+          "start": "2024-06-15",
+          "end": "2025-02-07"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "cbf054a9-9bc3-4fa0-800b-a3bf178169cf",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "105585",
+              "display": "methotrexate"
+            }
+          ],
+          "text": "methotrexate"
+        },
+        "subject": {
+          "reference": "Patient/7e647581-7ea2-bc2e-c2ae-bdedd62848e0"
+        },
+        "effectivePeriod": {
+          "start": "2025-02-24",
+          "end": "2025-08-06"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "e7f72ece-47b2-48fd-98ec-458bf520aacf",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "327361",
+              "display": "leflunomide"
+            }
+          ],
+          "text": "leflunomide"
+        },
+        "subject": {
+          "reference": "Patient/7e647581-7ea2-bc2e-c2ae-bdedd62848e0"
+        },
+        "effectivePeriod": {
+          "start": "2024-09-28",
+          "end": "2025-01-06"
         },
         "reasonCode": [
           {
@@ -67054,7 +67112,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "9fef8dea-6ca3-481f-90dd-44b2a2fb474a",
+        "id": "14b53c88-eba8-435c-accb-a0f39e144206",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

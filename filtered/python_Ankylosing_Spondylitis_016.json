@@ -1,0 +1,227 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "c1ce071e-9e9e-45ea-accb-da8905aca632",
+        "name": [
+          {
+            "use": "official",
+            "family": "Ruiz",
+            "given": [
+              "Brad"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1998-07-22",
+        "address": [
+          {
+            "line": [
+              "11798 William Stravenue"
+            ],
+            "city": "East Robertville",
+            "state": "CT",
+            "postalCode": "69071",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "713f8a02-641c-48b3-8c48-27cde9428d96",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "9566007",
+              "display": "Ankylosing Spondylitis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M45.9",
+              "display": "Ankylosing Spondylitis"
+            }
+          ],
+          "text": "Ankylosing Spondylitis"
+        },
+        "subject": {
+          "reference": "Patient/c1ce071e-9e9e-45ea-accb-da8905aca632"
+        },
+        "onsetDateTime": "2022-04-10"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "3cbf1916-0190-460e-87cc-7ef092ed72ac",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/c1ce071e-9e9e-45ea-accb-da8905aca632"
+        },
+        "payor": [
+          {
+            "display": "Blue Shield of California"
+          }
+        ],
+        "subscriberId": "721371396"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "af0e2111-0633-4f34-b794-d096dd9f06d2",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/c1ce071e-9e9e-45ea-accb-da8905aca632"
+        },
+        "effectiveDateTime": "2026-08-29",
+        "valueQuantity": {
+          "value": 37.5,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "10a4afab-2014-47b4-95e2-95b8cfb6f0b5",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/c1ce071e-9e9e-45ea-accb-da8905aca632"
+        },
+        "effectiveDateTime": "2026-08-23",
+        "valueQuantity": {
+          "value": 58.7,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "8cb960f0-3377-4ddc-8103-c7fb75085c63",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/c1ce071e-9e9e-45ea-accb-da8905aca632"
+        },
+        "effectiveDateTime": "2026-09-10",
+        "valueBoolean": false
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "bc08adf2-5502-44e0-8d9f-9ec0e8f08d15",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/c1ce071e-9e9e-45ea-accb-da8905aca632"
+        },
+        "effectiveDateTime": "2026-09-02",
+        "valueQuantity": {
+          "value": 29.2,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    }
+  ]
+}

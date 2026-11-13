@@ -1,0 +1,196 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "302f4da1-bb06-4377-9ad4-7e1c25a41625",
+        "name": [
+          {
+            "use": "official",
+            "family": "Ross",
+            "given": [
+              "Samantha"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1992-09-30",
+        "address": [
+          {
+            "line": [
+              "722 Cochran Camp"
+            ],
+            "city": "Jacobfurt",
+            "state": "PR",
+            "postalCode": "32557",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "f16ff6ed-d06e-4b1b-a4bb-b5c644c70d06",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "64766004",
+              "display": "Ulcerative Colitis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "K51.90",
+              "display": "Ulcerative Colitis"
+            }
+          ],
+          "text": "Ulcerative Colitis"
+        },
+        "subject": {
+          "reference": "Patient/302f4da1-bb06-4377-9ad4-7e1c25a41625"
+        },
+        "onsetDateTime": "2025-01-15"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "4b310c96-82e7-4b43-b6a1-f85881c56821",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/302f4da1-bb06-4377-9ad4-7e1c25a41625"
+        },
+        "payor": [
+          {
+            "display": "Blue Shield of California"
+          }
+        ],
+        "subscriberId": "720776510"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "c782334f-7358-4c84-899a-a401e650168c",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/302f4da1-bb06-4377-9ad4-7e1c25a41625"
+        },
+        "effectiveDateTime": "2026-10-26",
+        "valueQuantity": {
+          "value": 72.5,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "438e1ff1-8473-466e-a91f-842a635ea99d",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/302f4da1-bb06-4377-9ad4-7e1c25a41625"
+        },
+        "effectiveDateTime": "2026-11-10",
+        "valueQuantity": {
+          "value": 143.6,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "643e4ac6-a437-4722-a1be-3dc0d7059b7f",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/302f4da1-bb06-4377-9ad4-7e1c25a41625"
+        },
+        "effectiveDateTime": "2026-10-02",
+        "valueQuantity": {
+          "value": 46.6,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    }
+  ]
+}

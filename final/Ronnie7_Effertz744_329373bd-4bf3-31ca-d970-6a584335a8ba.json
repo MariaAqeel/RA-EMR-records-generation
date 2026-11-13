@@ -345731,7 +345731,7 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "8d24b65f-e935-4637-a033-d63e1f3ea3d7",
+        "id": "57b431b3-bc6c-4a64-8226-b2f7b01e3b6f",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/329373bd-4bf3-31ca-d970-6a584335a8ba"
@@ -345741,71 +345741,13 @@
             "display": "Cigna"
           }
         ],
-        "subscriberId": "651456101"
+        "subscriberId": "920252689"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "0393063b-ecbd-439b-b18a-2e2ef8a65a17",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "114194",
-              "display": "hydroxychloroquine"
-            }
-          ],
-          "text": "hydroxychloroquine"
-        },
-        "subject": {
-          "reference": "Patient/329373bd-4bf3-31ca-d970-6a584335a8ba"
-        },
-        "effectivePeriod": {
-          "start": "2025-11-04",
-          "end": "2026-04-19"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "591df5b9-5b0a-4efb-b133-6d6fa4fb06a3",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327361",
-              "display": "leflunomide"
-            }
-          ],
-          "text": "leflunomide"
-        },
-        "subject": {
-          "reference": "Patient/329373bd-4bf3-31ca-d970-6a584335a8ba"
-        },
-        "effectivePeriod": {
-          "start": "2024-10-11",
-          "end": "2025-08-30"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "ab0a73b1-30a9-4891-9e33-adfc06776541",
+        "id": "b4764b87-8f1b-49e7-9e92-90e70c1faabd",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -345821,8 +345763,37 @@
           "reference": "Patient/329373bd-4bf3-31ca-d970-6a584335a8ba"
         },
         "effectivePeriod": {
-          "start": "2025-04-22",
-          "end": "2026-01-01"
+          "start": "2024-11-20",
+          "end": "2025-09-04"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "a8aabeea-416b-4267-a214-a5283478d763",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "373747",
+              "display": "etanercept"
+            }
+          ],
+          "text": "etanercept"
+        },
+        "subject": {
+          "reference": "Patient/329373bd-4bf3-31ca-d970-6a584335a8ba"
+        },
+        "effectivePeriod": {
+          "start": "2025-08-10",
+          "end": "2026-03-06"
         },
         "reasonCode": [
           {
@@ -345834,7 +345805,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "d72ea965-2428-4be2-8f09-ca98f60c7646",
+        "id": "632c549b-e969-4c38-a02a-681bd8d5236d",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

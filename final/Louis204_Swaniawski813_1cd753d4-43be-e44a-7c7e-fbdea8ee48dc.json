@@ -1001682,7 +1001682,7 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "f71af347-ca0a-454d-b310-33909fe10138",
+        "id": "e36807c7-5c6b-4fd4-a5d9-9870fd73fd67",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/1cd753d4-43be-e44a-7c7e-fbdea8ee48dc"
@@ -1001692,30 +1001692,30 @@
             "display": "Blue Shield of California"
           }
         ],
-        "subscriberId": "792103390"
+        "subscriberId": "157965323"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "83f3a1ad-c3a8-432e-afe5-b850e2ffa720",
+        "id": "b47cb788-f884-42de-908b-67382ab24049",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "114194",
-              "display": "hydroxychloroquine"
+              "code": "327362",
+              "display": "adalimumab"
             }
           ],
-          "text": "hydroxychloroquine"
+          "text": "adalimumab"
         },
         "subject": {
           "reference": "Patient/1cd753d4-43be-e44a-7c7e-fbdea8ee48dc"
         },
         "effectivePeriod": {
-          "start": "2025-10-16",
-          "end": "2026-10-13"
+          "start": "2025-11-11",
+          "end": "2026-11-07"
         },
         "reasonCode": [
           {
@@ -1001727,18 +1001727,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "3b7cf335-c0e7-41a3-bf37-9e4891303a15",
+        "id": "2dd1ec06-51cc-4d29-b3aa-e155b2436ba1",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "358258",
-              "display": "Orencia (abatacept)"
+              "code": "614391",
+              "display": "Simponi Aria (golimumab)"
             }
           ],
-          "text": "Orencia (abatacept)"
+          "text": "Simponi Aria (golimumab)"
         },
         "subject": {
           "reference": "Patient/1cd753d4-43be-e44a-7c7e-fbdea8ee48dc"

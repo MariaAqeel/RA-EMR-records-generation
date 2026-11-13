@@ -104571,40 +104571,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "790d7526-3f5f-413c-afac-8fa77fbe2acc",
+        "id": "2ca26fe9-249e-4ad1-a618-77c6827ec023",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/8b47246d-f182-029c-533f-1e0e217d84d8"
         },
         "payor": [
           {
-            "display": "Humana"
+            "display": "Cigna"
           }
         ],
-        "subscriberId": "774804054"
+        "subscriberId": "376081094"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "b4d30ef9-931e-4e4b-a3b7-1364278cf7a5",
+        "id": "6121dc46-60c3-4163-9650-4d193043e2d3",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327362",
-              "display": "adalimumab"
+              "code": "114194",
+              "display": "hydroxychloroquine"
             }
           ],
-          "text": "adalimumab"
+          "text": "hydroxychloroquine"
         },
         "subject": {
           "reference": "Patient/8b47246d-f182-029c-533f-1e0e217d84d8"
         },
         "effectivePeriod": {
-          "start": "2024-08-25",
-          "end": "2025-01-29"
+          "start": "2025-02-13",
+          "end": "2025-09-09"
         },
         "reasonCode": [
           {
@@ -104616,24 +104616,24 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "d9445027-65d9-4481-8d43-62bac3d20522",
+        "id": "f62a212f-16ce-4e20-85cb-a880c9f6a3c2",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327361",
-              "display": "leflunomide"
+              "code": "373747",
+              "display": "etanercept"
             }
           ],
-          "text": "leflunomide"
+          "text": "etanercept"
         },
         "subject": {
           "reference": "Patient/8b47246d-f182-029c-533f-1e0e217d84d8"
         },
         "effectivePeriod": {
-          "start": "2024-07-25",
-          "end": "2025-04-24"
+          "start": "2025-07-20",
+          "end": "2026-03-07"
         },
         "reasonCode": [
           {
@@ -104645,18 +104645,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "77a994d2-1b1f-4848-b66a-ecf515720fed",
+        "id": "ff63dcba-a3d0-486b-9041-cbdb58796b98",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "614391",
-              "display": "Simponi Aria (golimumab)"
+              "code": "358258",
+              "display": "Orencia (abatacept)"
             }
           ],
-          "text": "Simponi Aria (golimumab)"
+          "text": "Orencia (abatacept)"
         },
         "subject": {
           "reference": "Patient/8b47246d-f182-029c-533f-1e0e217d84d8"

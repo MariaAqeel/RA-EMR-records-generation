@@ -128203,40 +128203,69 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "b4281d4c-445e-439d-845c-5877712cb0e2",
+        "id": "13e9c99c-8c6b-4ee2-8e6d-cc87af8b5a3e",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/8bba6e1c-ebc8-0c76-77c5-67ac618dd211"
         },
         "payor": [
           {
-            "display": "UnitedHealthcare"
+            "display": "Blue Shield of California"
           }
         ],
-        "subscriberId": "326433331"
+        "subscriberId": "661776483"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "86646f7d-ec7b-4ce7-bd7a-40e836b35805",
+        "id": "46f36d37-e005-46cb-8386-eca2e560971e",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "373747",
-              "display": "etanercept"
+              "code": "327362",
+              "display": "adalimumab"
             }
           ],
-          "text": "etanercept"
+          "text": "adalimumab"
         },
         "subject": {
           "reference": "Patient/8bba6e1c-ebc8-0c76-77c5-67ac618dd211"
         },
         "effectivePeriod": {
-          "start": "2024-06-17",
-          "end": "2025-03-28"
+          "start": "2024-12-23",
+          "end": "2025-07-28"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "81713272-884c-4095-85f3-40d1c64682aa",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "114194",
+              "display": "hydroxychloroquine"
+            }
+          ],
+          "text": "hydroxychloroquine"
+        },
+        "subject": {
+          "reference": "Patient/8bba6e1c-ebc8-0c76-77c5-67ac618dd211"
+        },
+        "effectivePeriod": {
+          "start": "2025-05-22",
+          "end": "2025-12-16"
         },
         "reasonCode": [
           {
@@ -128248,7 +128277,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "4564280a-2287-4de0-b1b6-d13ea70c221a",
+        "id": "59d8e8c3-a8d7-411a-b208-760c8da3a3cf",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

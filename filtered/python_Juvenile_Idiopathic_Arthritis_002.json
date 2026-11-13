@@ -1,0 +1,231 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "886c6bd3-86b6-4ea4-a63b-ab2318a7f24a",
+        "name": [
+          {
+            "use": "official",
+            "family": "White",
+            "given": [
+              "Karen"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2015-02-09",
+        "address": [
+          {
+            "line": [
+              "645 Lopez Cliffs Apt. 838"
+            ],
+            "city": "Port Amberton",
+            "state": "VT",
+            "postalCode": "58184",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "3ab17774-dd7b-4ed2-bddc-dc185df0f90f",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "57160005",
+              "display": "Juvenile Idiopathic Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M08.00",
+              "display": "Juvenile Idiopathic Arthritis"
+            }
+          ],
+          "text": "Juvenile Idiopathic Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/886c6bd3-86b6-4ea4-a63b-ab2318a7f24a"
+        },
+        "onsetDateTime": "2024-10-23"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "d7687179-38a4-48e7-89cc-33ad060b4cfd",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/886c6bd3-86b6-4ea4-a63b-ab2318a7f24a"
+        },
+        "payor": [
+          {
+            "display": "Blue Shield of California"
+          }
+        ],
+        "subscriberId": "160744211"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4d0766a1-e7d3-429c-802e-b24f238822fa",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/886c6bd3-86b6-4ea4-a63b-ab2318a7f24a"
+        },
+        "effectiveDateTime": "2026-09-12",
+        "valueQuantity": {
+          "value": 24.2,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d6316a73-799e-42c0-a617-0b386ce5c326",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/886c6bd3-86b6-4ea4-a63b-ab2318a7f24a"
+        },
+        "effectiveDateTime": "2026-10-20",
+        "valueQuantity": {
+          "value": 168.3,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "dc10aefa-6977-4c11-9702-6d383781fe5e",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/886c6bd3-86b6-4ea4-a63b-ab2318a7f24a"
+        },
+        "effectiveDateTime": "2026-09-17",
+        "valueQuantity": {
+          "value": 30.9,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "cb1442a6-e589-415c-9d01-9dc2ccfffe91",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/886c6bd3-86b6-4ea4-a63b-ab2318a7f24a"
+        },
+        "effectiveDateTime": "2026-09-26",
+        "valueQuantity": {
+          "value": 32.0,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    }
+  ]
+}

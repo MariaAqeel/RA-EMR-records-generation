@@ -1,0 +1,192 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "d87bf82a-7ce9-4862-a555-6ac221e78e80",
+        "name": [
+          {
+            "use": "official",
+            "family": "Allen",
+            "given": [
+              "Alicia"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1991-12-18",
+        "address": [
+          {
+            "line": [
+              "8837 Jason Falls"
+            ],
+            "city": "Thomasville",
+            "state": "VT",
+            "postalCode": "23556",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "8b63d175-1713-459b-84db-45a92f0a92bd",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "64766004",
+              "display": "Ulcerative Colitis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "K51.90",
+              "display": "Ulcerative Colitis"
+            }
+          ],
+          "text": "Ulcerative Colitis"
+        },
+        "subject": {
+          "reference": "Patient/d87bf82a-7ce9-4862-a555-6ac221e78e80"
+        },
+        "onsetDateTime": "2022-02-25"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "13e4fe6b-d967-45c5-9754-4d5f4ec30a59",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/d87bf82a-7ce9-4862-a555-6ac221e78e80"
+        },
+        "payor": [
+          {
+            "display": "Blue Shield of California"
+          }
+        ],
+        "subscriberId": "130445981"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "703a6623-37e3-44ad-b0c5-1cc25dbbe72f",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/d87bf82a-7ce9-4862-a555-6ac221e78e80"
+        },
+        "effectiveDateTime": "2026-11-03",
+        "valueQuantity": {
+          "value": 63.9,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "e8361303-6bce-4f82-be2b-5a26f2f7aed6",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/d87bf82a-7ce9-4862-a555-6ac221e78e80"
+        },
+        "effectiveDateTime": "2026-10-09",
+        "valueBoolean": true
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f1d09411-ed70-4f23-82ea-31341a63babf",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/d87bf82a-7ce9-4862-a555-6ac221e78e80"
+        },
+        "effectiveDateTime": "2026-09-03",
+        "valueQuantity": {
+          "value": 20.9,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    }
+  ]
+}

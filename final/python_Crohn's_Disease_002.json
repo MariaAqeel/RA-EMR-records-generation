@@ -1,0 +1,331 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "39af5efb-8567-4233-b4f8-8f9694a783fb",
+        "name": [
+          {
+            "use": "official",
+            "family": "Wagner",
+            "given": [
+              "Mary"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2003-09-26",
+        "address": [
+          {
+            "line": [
+              "9255 Avery Corner"
+            ],
+            "city": "Billstad",
+            "state": "WY",
+            "postalCode": "07920",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "927cbfce-4b6a-40b7-98f5-1baf600e5276",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "34000006",
+              "display": "Crohn's Disease"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "K50.90",
+              "display": "Crohn's Disease"
+            }
+          ],
+          "text": "Crohn's Disease"
+        },
+        "subject": {
+          "reference": "Patient/39af5efb-8567-4233-b4f8-8f9694a783fb"
+        },
+        "onsetDateTime": "2025-06-17"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "f47d6fd6-178c-4fe7-8e01-045638df4359",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/39af5efb-8567-4233-b4f8-8f9694a783fb"
+        },
+        "payor": [
+          {
+            "display": "UnitedHealthcare"
+          }
+        ],
+        "subscriberId": "354555697"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "cffeb850-77d0-46d4-95a6-ca74c99f7424",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/39af5efb-8567-4233-b4f8-8f9694a783fb"
+        },
+        "effectiveDateTime": "2026-10-13",
+        "valueQuantity": {
+          "value": 6.6,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ce1ea941-d6a4-4449-9f28-0402b9139f3c",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/39af5efb-8567-4233-b4f8-8f9694a783fb"
+        },
+        "effectiveDateTime": "2026-08-22",
+        "valueBoolean": true
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "51b32897-0552-4333-b20e-bc406b75fae3",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/39af5efb-8567-4233-b4f8-8f9694a783fb"
+        },
+        "effectiveDateTime": "2026-10-15",
+        "valueBoolean": true
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "bfe12370-6a15-4ddf-b211-77786062e2a3",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/39af5efb-8567-4233-b4f8-8f9694a783fb"
+        },
+        "effectiveDateTime": "2026-09-17",
+        "valueQuantity": {
+          "value": 29.8,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "18118955-9c03-4f5c-9566-6c9a5c88240b",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "373747",
+              "display": "etanercept"
+            }
+          ],
+          "text": "etanercept"
+        },
+        "subject": {
+          "reference": "Patient/39af5efb-8567-4233-b4f8-8f9694a783fb"
+        },
+        "effectivePeriod": {
+          "start": "2024-07-22",
+          "end": "2025-07-13"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "ae21004d-1eab-431c-a5d1-a23d9a19ae08",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "327361",
+              "display": "leflunomide"
+            }
+          ],
+          "text": "leflunomide"
+        },
+        "subject": {
+          "reference": "Patient/39af5efb-8567-4233-b4f8-8f9694a783fb"
+        },
+        "effectivePeriod": {
+          "start": "2025-02-26",
+          "end": "2025-08-18"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "d16d18ac-d079-425b-9403-9e228cef6df2",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "327361",
+              "display": "leflunomide"
+            }
+          ],
+          "text": "leflunomide"
+        },
+        "subject": {
+          "reference": "Patient/39af5efb-8567-4233-b4f8-8f9694a783fb"
+        },
+        "effectivePeriod": {
+          "start": "2024-10-14",
+          "end": "2025-07-14"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "ff66bc6e-e83a-4a8a-b2a1-f126ce6efa2b",
+        "status": "draft",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "356248",
+              "display": "Cimzia (certolizumab pegol)"
+            }
+          ],
+          "text": "Cimzia (certolizumab pegol)"
+        },
+        "subject": {
+          "reference": "Patient/39af5efb-8567-4233-b4f8-8f9694a783fb"
+        }
+      }
+    }
+  ]
+}

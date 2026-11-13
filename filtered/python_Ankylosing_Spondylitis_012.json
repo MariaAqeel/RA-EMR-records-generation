@@ -1,0 +1,161 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "9cb0aa73-fc42-4439-9f3f-05f9e0122f69",
+        "name": [
+          {
+            "use": "official",
+            "family": "Branch",
+            "given": [
+              "Jeffrey"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1988-03-22",
+        "address": [
+          {
+            "line": [
+              "93686 Ferguson Course Apt. 747"
+            ],
+            "city": "Port Danny",
+            "state": "WY",
+            "postalCode": "36313",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "59ea63a2-3b2a-425d-823a-f439293cbb94",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "9566007",
+              "display": "Ankylosing Spondylitis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M45.9",
+              "display": "Ankylosing Spondylitis"
+            }
+          ],
+          "text": "Ankylosing Spondylitis"
+        },
+        "subject": {
+          "reference": "Patient/9cb0aa73-fc42-4439-9f3f-05f9e0122f69"
+        },
+        "onsetDateTime": "2024-12-05"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "12467286-7683-4769-9efd-d7d65098b76d",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/9cb0aa73-fc42-4439-9f3f-05f9e0122f69"
+        },
+        "payor": [
+          {
+            "display": "Humana"
+          }
+        ],
+        "subscriberId": "564545935"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "1ece2006-8b19-425d-bebc-c86bf304bdd8",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/9cb0aa73-fc42-4439-9f3f-05f9e0122f69"
+        },
+        "effectiveDateTime": "2026-11-01",
+        "valueQuantity": {
+          "value": 29.8,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "45548e04-f8a9-4952-bd78-f006250115d0",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/9cb0aa73-fc42-4439-9f3f-05f9e0122f69"
+        },
+        "effectiveDateTime": "2026-10-06",
+        "valueQuantity": {
+          "value": 39.6,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    }
+  ]
+}

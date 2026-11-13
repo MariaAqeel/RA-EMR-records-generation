@@ -1261733,23 +1261733,52 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "c249d8c7-020c-441f-8265-e4011406bfc6",
+        "id": "0166caac-136a-46ff-a066-069961fd5599",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/392ccd54-1c06-56f3-70ae-55089815bade"
         },
         "payor": [
           {
-            "display": "Humana"
+            "display": "Aetna"
           }
         ],
-        "subscriberId": "326986315"
+        "subscriberId": "354876863"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "65576cbd-fa3a-48e6-9eac-3a7df188e761",
+        "id": "0abe6b96-6892-4fc1-a5d8-c804681d4ca7",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "114194",
+              "display": "hydroxychloroquine"
+            }
+          ],
+          "text": "hydroxychloroquine"
+        },
+        "subject": {
+          "reference": "Patient/392ccd54-1c06-56f3-70ae-55089815bade"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-02",
+          "end": "2026-08-17"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "8bf010e9-0618-4b2b-be42-6b6519c71e31",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -1261765,8 +1261794,8 @@
           "reference": "Patient/392ccd54-1c06-56f3-70ae-55089815bade"
         },
         "effectivePeriod": {
-          "start": "2024-08-29",
-          "end": "2025-06-28"
+          "start": "2025-04-22",
+          "end": "2025-09-14"
         },
         "reasonCode": [
           {
@@ -1261778,24 +1261807,24 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "7f08e8d9-1bff-4d78-831d-6d0decd92177",
+        "id": "26bd21bb-1026-4711-8854-c13c84da8d87",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327362",
-              "display": "adalimumab"
+              "code": "105585",
+              "display": "methotrexate"
             }
           ],
-          "text": "adalimumab"
+          "text": "methotrexate"
         },
         "subject": {
           "reference": "Patient/392ccd54-1c06-56f3-70ae-55089815bade"
         },
         "effectivePeriod": {
-          "start": "2025-01-22",
-          "end": "2025-08-22"
+          "start": "2025-08-31",
+          "end": "2026-08-24"
         },
         "reasonCode": [
           {
@@ -1261807,18 +1261836,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "7bb85307-055c-4d1b-88e0-21c34d11b089",
+        "id": "d7396508-d5c1-453e-a0b6-4428a5cbe897",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "614391",
-              "display": "Simponi Aria (golimumab)"
+              "code": "356248",
+              "display": "Cimzia (certolizumab pegol)"
             }
           ],
-          "text": "Simponi Aria (golimumab)"
+          "text": "Cimzia (certolizumab pegol)"
         },
         "subject": {
           "reference": "Patient/392ccd54-1c06-56f3-70ae-55089815bade"

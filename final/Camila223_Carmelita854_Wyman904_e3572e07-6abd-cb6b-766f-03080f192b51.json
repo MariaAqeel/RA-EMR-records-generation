@@ -449164,7 +449164,7 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "c2d42bf7-eadc-48bc-ae22-43fd15cfccc0",
+        "id": "605acbbb-55de-4d83-be95-65fe6127630d",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/e3572e07-6abd-cb6b-766f-03080f192b51"
@@ -449174,30 +449174,30 @@
             "display": "Cigna"
           }
         ],
-        "subscriberId": "812540315"
+        "subscriberId": "674015807"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "f9faa73a-c215-487b-ba4c-5a2f5b484e13",
+        "id": "6662e879-303e-4512-8622-2d052a811d99",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "373747",
-              "display": "etanercept"
+              "code": "114194",
+              "display": "hydroxychloroquine"
             }
           ],
-          "text": "etanercept"
+          "text": "hydroxychloroquine"
         },
         "subject": {
           "reference": "Patient/e3572e07-6abd-cb6b-766f-03080f192b51"
         },
         "effectivePeriod": {
-          "start": "2025-06-02",
-          "end": "2026-01-22"
+          "start": "2024-07-30",
+          "end": "2025-01-12"
         },
         "reasonCode": [
           {
@@ -449209,36 +449209,7 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "492d6e5c-9e58-45c8-94a7-08505c542190",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327362",
-              "display": "adalimumab"
-            }
-          ],
-          "text": "adalimumab"
-        },
-        "subject": {
-          "reference": "Patient/e3572e07-6abd-cb6b-766f-03080f192b51"
-        },
-        "effectivePeriod": {
-          "start": "2025-11-03",
-          "end": "2026-09-14"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "793b53af-8e47-4917-8f68-63cd53783ed3",
+        "id": "0b294132-01da-4c81-876d-33de1c6fd968",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -449254,8 +449225,8 @@
           "reference": "Patient/e3572e07-6abd-cb6b-766f-03080f192b51"
         },
         "effectivePeriod": {
-          "start": "2025-04-27",
-          "end": "2025-12-26"
+          "start": "2025-10-07",
+          "end": "2026-06-26"
         },
         "reasonCode": [
           {
@@ -449267,18 +449238,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "932bf315-3b62-4eba-9d66-dd2adf41f1e4",
+        "id": "3d20e619-69a6-4223-9bb3-d900160d240e",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "356248",
-              "display": "Cimzia (certolizumab pegol)"
+              "code": "358258",
+              "display": "Orencia (abatacept)"
             }
           ],
-          "text": "Cimzia (certolizumab pegol)"
+          "text": "Orencia (abatacept)"
         },
         "subject": {
           "reference": "Patient/e3572e07-6abd-cb6b-766f-03080f192b51"

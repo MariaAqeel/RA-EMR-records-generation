@@ -50160,40 +50160,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "b9d2cf03-d2c7-4b10-9f7c-d4a6109aed0e",
+        "id": "a53b1831-e641-4c96-a802-8dafa6f5bf56",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/e70eeca8-e41c-e815-4e84-8016d2a847d7"
         },
         "payor": [
           {
-            "display": "Humana"
+            "display": "Cigna"
           }
         ],
-        "subscriberId": "363688202"
+        "subscriberId": "710067519"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "2cf71a82-e126-47a7-a9a0-b30dca48d685",
+        "id": "cbf2f389-757a-4864-93fc-f5244345311a",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "373747",
-              "display": "etanercept"
+              "code": "327362",
+              "display": "adalimumab"
             }
           ],
-          "text": "etanercept"
+          "text": "adalimumab"
         },
         "subject": {
           "reference": "Patient/e70eeca8-e41c-e815-4e84-8016d2a847d7"
         },
         "effectivePeriod": {
-          "start": "2025-05-29",
-          "end": "2025-11-10"
+          "start": "2024-07-08",
+          "end": "2025-04-20"
         },
         "reasonCode": [
           {
@@ -50205,24 +50205,24 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "6e336a54-eadc-4450-9f49-e5f420c14f75",
+        "id": "a6c09f8c-a582-4f2b-9300-b5622022e8c9",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "105585",
-              "display": "methotrexate"
+              "code": "327362",
+              "display": "adalimumab"
             }
           ],
-          "text": "methotrexate"
+          "text": "adalimumab"
         },
         "subject": {
           "reference": "Patient/e70eeca8-e41c-e815-4e84-8016d2a847d7"
         },
         "effectivePeriod": {
-          "start": "2025-06-01",
-          "end": "2026-01-17"
+          "start": "2024-12-12",
+          "end": "2025-03-21"
         },
         "reasonCode": [
           {
@@ -50234,18 +50234,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "a5fb0e0d-3b14-4837-81b1-5cd1ef1a46a2",
+        "id": "f3ce5646-7fbd-4cf3-b560-3f36809ab52b",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "356248",
-              "display": "Cimzia (certolizumab pegol)"
+              "code": "614391",
+              "display": "Simponi Aria (golimumab)"
             }
           ],
-          "text": "Cimzia (certolizumab pegol)"
+          "text": "Simponi Aria (golimumab)"
         },
         "subject": {
           "reference": "Patient/e70eeca8-e41c-e815-4e84-8016d2a847d7"

@@ -1,0 +1,161 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "8a53ae47-dff9-4567-b445-d1338286b046",
+        "name": [
+          {
+            "use": "official",
+            "family": "Knight",
+            "given": [
+              "Patricia"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1980-09-21",
+        "address": [
+          {
+            "line": [
+              "9790 Kristin Forest"
+            ],
+            "city": "Lake Timothy",
+            "state": "PA",
+            "postalCode": "79321",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "f263ef05-c5cb-43f7-bd24-64204292b9e2",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "64766004",
+              "display": "Ulcerative Colitis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "K51.90",
+              "display": "Ulcerative Colitis"
+            }
+          ],
+          "text": "Ulcerative Colitis"
+        },
+        "subject": {
+          "reference": "Patient/8a53ae47-dff9-4567-b445-d1338286b046"
+        },
+        "onsetDateTime": "2022-04-19"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "a34fd1e4-bdb4-417e-8287-644174a2a09b",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/8a53ae47-dff9-4567-b445-d1338286b046"
+        },
+        "payor": [
+          {
+            "display": "UnitedHealthcare"
+          }
+        ],
+        "subscriberId": "383962193"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f3770797-b673-4ee2-93a9-b038f4df6827",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/8a53ae47-dff9-4567-b445-d1338286b046"
+        },
+        "effectiveDateTime": "2026-08-19",
+        "valueQuantity": {
+          "value": 31.6,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "222eae48-ecaf-417a-9d49-326bf9b747ea",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/8a53ae47-dff9-4567-b445-d1338286b046"
+        },
+        "effectiveDateTime": "2026-09-03",
+        "valueQuantity": {
+          "value": 30.6,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    }
+  ]
+}

@@ -170548,52 +170548,23 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "957deeab-6d17-4ee7-889e-13ee5e07f873",
+        "id": "a18c3738-286e-4dd3-be5a-bc00d175d9e4",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/cdbb7fe8-6111-ca2a-9230-0847c8a434d9"
         },
         "payor": [
           {
-            "display": "Cigna"
+            "display": "Blue Shield of California"
           }
         ],
-        "subscriberId": "791947334"
+        "subscriberId": "278620985"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "13909350-6f0d-4f97-bc8e-4dba0be69764",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "105585",
-              "display": "methotrexate"
-            }
-          ],
-          "text": "methotrexate"
-        },
-        "subject": {
-          "reference": "Patient/cdbb7fe8-6111-ca2a-9230-0847c8a434d9"
-        },
-        "effectivePeriod": {
-          "start": "2025-05-04",
-          "end": "2026-04-18"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "c094729f-9190-481e-a3c6-64c5672c8c09",
+        "id": "95e91eb6-1e3d-4498-a041-f2974e7637b1",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -170609,8 +170580,8 @@
           "reference": "Patient/cdbb7fe8-6111-ca2a-9230-0847c8a434d9"
         },
         "effectivePeriod": {
-          "start": "2024-12-09",
-          "end": "2025-05-22"
+          "start": "2025-01-30",
+          "end": "2025-11-22"
         },
         "reasonCode": [
           {
@@ -170622,24 +170593,24 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "3765af11-cf56-4f37-becd-b8fc73f3ccba",
+        "id": "cc8b239c-7603-4872-9a0b-71572a68980e",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327361",
-              "display": "leflunomide"
+              "code": "373747",
+              "display": "etanercept"
             }
           ],
-          "text": "leflunomide"
+          "text": "etanercept"
         },
         "subject": {
           "reference": "Patient/cdbb7fe8-6111-ca2a-9230-0847c8a434d9"
         },
         "effectivePeriod": {
-          "start": "2025-04-21",
-          "end": "2026-01-26"
+          "start": "2024-07-17",
+          "end": "2025-07-14"
         },
         "reasonCode": [
           {
@@ -170651,18 +170622,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "31e746ff-d7ae-4f3b-84df-d13f18dcd91b",
+        "id": "d4bb0d88-04a6-4feb-aea0-350023fac813",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "614391",
-              "display": "Simponi Aria (golimumab)"
+              "code": "358258",
+              "display": "Orencia (abatacept)"
             }
           ],
-          "text": "Simponi Aria (golimumab)"
+          "text": "Orencia (abatacept)"
         },
         "subject": {
           "reference": "Patient/cdbb7fe8-6111-ca2a-9230-0847c8a434d9"

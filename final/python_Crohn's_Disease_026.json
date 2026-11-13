@@ -1,0 +1,246 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "4b22b626-f621-452e-92db-cfe4dea44c1b",
+        "name": [
+          {
+            "use": "official",
+            "family": "Anderson",
+            "given": [
+              "Nicole"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1983-02-07",
+        "address": [
+          {
+            "line": [
+              "10206 Graham Knoll Apt. 097"
+            ],
+            "city": "Mitchellbury",
+            "state": "SD",
+            "postalCode": "91473",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "46bf94e1-b837-48bf-9978-475a343c33a9",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "34000006",
+              "display": "Crohn's Disease"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "K50.90",
+              "display": "Crohn's Disease"
+            }
+          ],
+          "text": "Crohn's Disease"
+        },
+        "subject": {
+          "reference": "Patient/4b22b626-f621-452e-92db-cfe4dea44c1b"
+        },
+        "onsetDateTime": "2022-04-05"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "1762babd-a5ae-441e-87c2-1062a5a6a761",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/4b22b626-f621-452e-92db-cfe4dea44c1b"
+        },
+        "payor": [
+          {
+            "display": "Blue Shield of California"
+          }
+        ],
+        "subscriberId": "150808832"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "85de98b1-6f1b-4083-9e2d-6821d97885e5",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4b22b626-f621-452e-92db-cfe4dea44c1b"
+        },
+        "effectiveDateTime": "2026-10-28",
+        "valueQuantity": {
+          "value": 33.4,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "801aa2a9-12a5-4e0e-8eec-e8f9a7d1e968",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4b22b626-f621-452e-92db-cfe4dea44c1b"
+        },
+        "effectiveDateTime": "2026-10-15",
+        "valueQuantity": {
+          "value": 34.7,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "e6c49563-8494-4274-830c-a95db9e31763",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4b22b626-f621-452e-92db-cfe4dea44c1b"
+        },
+        "effectiveDateTime": "2026-09-28",
+        "valueQuantity": {
+          "value": 161.5,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "9c1b491f-a817-4644-aca2-50efc2a05282",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "373747",
+              "display": "etanercept"
+            }
+          ],
+          "text": "etanercept"
+        },
+        "subject": {
+          "reference": "Patient/4b22b626-f621-452e-92db-cfe4dea44c1b"
+        },
+        "effectivePeriod": {
+          "start": "2025-03-04",
+          "end": "2025-11-22"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "c2cc69d8-a7b9-47b9-9306-6b933c07024a",
+        "status": "draft",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "358258",
+              "display": "Orencia (abatacept)"
+            }
+          ],
+          "text": "Orencia (abatacept)"
+        },
+        "subject": {
+          "reference": "Patient/4b22b626-f621-452e-92db-cfe4dea44c1b"
+        }
+      }
+    }
+  ]
+}

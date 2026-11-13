@@ -1,0 +1,153 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "dd30b7d2-cc23-4c17-9b74-fceb625b836a",
+        "name": [
+          {
+            "use": "official",
+            "family": "West",
+            "given": [
+              "Patrick"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "2000-04-25",
+        "address": [
+          {
+            "line": [
+              "31229 Kristen Mall"
+            ],
+            "city": "South Jeffrey",
+            "state": "NY",
+            "postalCode": "97190",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "d0d5295c-b561-4a1f-84d2-1d776ec3a34e",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "9566007",
+              "display": "Ankylosing Spondylitis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M45.9",
+              "display": "Ankylosing Spondylitis"
+            }
+          ],
+          "text": "Ankylosing Spondylitis"
+        },
+        "subject": {
+          "reference": "Patient/dd30b7d2-cc23-4c17-9b74-fceb625b836a"
+        },
+        "onsetDateTime": "2024-12-03"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "04836c5e-188d-4699-9b94-7e2602a31b3d",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/dd30b7d2-cc23-4c17-9b74-fceb625b836a"
+        },
+        "payor": [
+          {
+            "display": "Humana"
+          }
+        ],
+        "subscriberId": "578391317"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "619db722-710f-448e-b950-c2d0a9a7a57a",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/dd30b7d2-cc23-4c17-9b74-fceb625b836a"
+        },
+        "effectiveDateTime": "2026-11-11",
+        "valueBoolean": true
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "fab40b4b-31cf-4297-b0c6-4e8607642030",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/dd30b7d2-cc23-4c17-9b74-fceb625b836a"
+        },
+        "effectiveDateTime": "2026-08-18",
+        "valueBoolean": true
+      }
+    }
+  ]
+}

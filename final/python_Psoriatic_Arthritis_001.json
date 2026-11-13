@@ -1,0 +1,277 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "be47650c-523a-4aaa-aea9-d4b93ea9342a",
+        "name": [
+          {
+            "use": "official",
+            "family": "Williamson",
+            "given": [
+              "Kelly"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1990-08-01",
+        "address": [
+          {
+            "line": [
+              "312 Stewart Views"
+            ],
+            "city": "North Barbaraberg",
+            "state": "CO",
+            "postalCode": "31036",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "1645a2e9-9fb5-4b92-84da-bd9543d6ffab",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "9631008",
+              "display": "Psoriatic Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M07.60",
+              "display": "Psoriatic Arthritis"
+            }
+          ],
+          "text": "Psoriatic Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/be47650c-523a-4aaa-aea9-d4b93ea9342a"
+        },
+        "onsetDateTime": "2024-12-01"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "ef94497e-1e59-4f3b-aef0-bd297ccecf26",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/be47650c-523a-4aaa-aea9-d4b93ea9342a"
+        },
+        "payor": [
+          {
+            "display": "Humana"
+          }
+        ],
+        "subscriberId": "375454244"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "15d1efd5-f960-4256-af00-957210fadd5a",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/be47650c-523a-4aaa-aea9-d4b93ea9342a"
+        },
+        "effectiveDateTime": "2026-10-03",
+        "valueBoolean": false
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "cc43ba85-d6fc-4855-936b-7df8653c532b",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/be47650c-523a-4aaa-aea9-d4b93ea9342a"
+        },
+        "effectiveDateTime": "2026-09-30",
+        "valueQuantity": {
+          "value": 27.5,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "2d4b0c75-4e39-4be9-9016-36475d43bd2f",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/be47650c-523a-4aaa-aea9-d4b93ea9342a"
+        },
+        "effectiveDateTime": "2026-10-20",
+        "valueQuantity": {
+          "value": 35.8,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "8bc546d8-b0ff-4056-9a02-ba3ce7d2e5b6",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/be47650c-523a-4aaa-aea9-d4b93ea9342a"
+        },
+        "effectiveDateTime": "2026-11-10",
+        "valueQuantity": {
+          "value": 113.2,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "62722c51-c1a4-40ea-a320-774078f5b648",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "327362",
+              "display": "adalimumab"
+            }
+          ],
+          "text": "adalimumab"
+        },
+        "subject": {
+          "reference": "Patient/be47650c-523a-4aaa-aea9-d4b93ea9342a"
+        },
+        "effectivePeriod": {
+          "start": "2024-07-21",
+          "end": "2024-12-22"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "dabc6daf-afe6-4f5c-aa78-e2297786d0fa",
+        "status": "draft",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "358258",
+              "display": "Orencia (abatacept)"
+            }
+          ],
+          "text": "Orencia (abatacept)"
+        },
+        "subject": {
+          "reference": "Patient/be47650c-523a-4aaa-aea9-d4b93ea9342a"
+        }
+      }
+    }
+  ]
+}

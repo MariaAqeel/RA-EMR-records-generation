@@ -1,0 +1,271 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "90a1cffb-d145-4e92-a0b4-b470992efd4a",
+        "name": [
+          {
+            "use": "official",
+            "family": "Brown",
+            "given": [
+              "Lauren"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2017-10-09",
+        "address": [
+          {
+            "line": [
+              "811 Page Views Suite 023"
+            ],
+            "city": "West Erin",
+            "state": "PR",
+            "postalCode": "61074",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "e89c9815-ac6a-49c0-97cb-82a76d32c20e",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "57160005",
+              "display": "Juvenile Idiopathic Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M08.00",
+              "display": "Juvenile Idiopathic Arthritis"
+            }
+          ],
+          "text": "Juvenile Idiopathic Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/90a1cffb-d145-4e92-a0b4-b470992efd4a"
+        },
+        "onsetDateTime": "2024-10-18"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "d68ef36d-f570-4e0b-b6eb-0c5f78a25b5f",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/90a1cffb-d145-4e92-a0b4-b470992efd4a"
+        },
+        "payor": [
+          {
+            "display": "Humana"
+          }
+        ],
+        "subscriberId": "742998208"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "deee9f87-7262-4779-abbd-5db9c124deea",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/90a1cffb-d145-4e92-a0b4-b470992efd4a"
+        },
+        "effectiveDateTime": "2026-10-27",
+        "valueBoolean": true
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "81614697-2ef0-47de-9474-62a45b8e5fba",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/90a1cffb-d145-4e92-a0b4-b470992efd4a"
+        },
+        "effectiveDateTime": "2026-11-02",
+        "valueQuantity": {
+          "value": 20.1,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f297d438-13b2-4edf-97fa-3af290dec258",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/90a1cffb-d145-4e92-a0b4-b470992efd4a"
+        },
+        "effectiveDateTime": "2026-10-15",
+        "valueQuantity": {
+          "value": 34.1,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "d8e22279-24d7-462b-9a0e-b56f22f14b15",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "327362",
+              "display": "adalimumab"
+            }
+          ],
+          "text": "adalimumab"
+        },
+        "subject": {
+          "reference": "Patient/90a1cffb-d145-4e92-a0b4-b470992efd4a"
+        },
+        "effectivePeriod": {
+          "start": "2025-07-15",
+          "end": "2026-02-19"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "41a1afc3-3352-4027-93c2-9d2dea3c0c1c",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "327361",
+              "display": "leflunomide"
+            }
+          ],
+          "text": "leflunomide"
+        },
+        "subject": {
+          "reference": "Patient/90a1cffb-d145-4e92-a0b4-b470992efd4a"
+        },
+        "effectivePeriod": {
+          "start": "2025-04-20",
+          "end": "2025-09-01"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "fcac154b-bac1-497e-852f-e3b6db923e98",
+        "status": "draft",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "614391",
+              "display": "Simponi Aria (golimumab)"
+            }
+          ],
+          "text": "Simponi Aria (golimumab)"
+        },
+        "subject": {
+          "reference": "Patient/90a1cffb-d145-4e92-a0b4-b470992efd4a"
+        }
+      }
+    }
+  ]
+}

@@ -100837,40 +100837,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "00532a6c-8f09-4cc0-9383-11958c719bfc",
+        "id": "db295540-eb0f-43e7-8276-4af7d87311ce",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/00f38783-6a07-5e07-f406-2a0817173807"
         },
         "payor": [
           {
-            "display": "Aetna"
+            "display": "UnitedHealthcare"
           }
         ],
-        "subscriberId": "205588733"
+        "subscriberId": "572285427"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "f4b53a17-65ce-4590-acb2-1603454963c5",
+        "id": "026feef7-00b5-42bd-937e-39731e9551df",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "373747",
-              "display": "etanercept"
+              "code": "105585",
+              "display": "methotrexate"
             }
           ],
-          "text": "etanercept"
+          "text": "methotrexate"
         },
         "subject": {
           "reference": "Patient/00f38783-6a07-5e07-f406-2a0817173807"
         },
         "effectivePeriod": {
-          "start": "2025-06-18",
-          "end": "2025-10-11"
+          "start": "2025-04-21",
+          "end": "2025-12-18"
         },
         "reasonCode": [
           {
@@ -100882,7 +100882,7 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "e73ac0a1-a69d-4284-9ec0-5e2065a920c7",
+        "id": "1c9bd84c-397d-452b-8014-a9248d0140e4",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -100898,8 +100898,8 @@
           "reference": "Patient/00f38783-6a07-5e07-f406-2a0817173807"
         },
         "effectivePeriod": {
-          "start": "2024-11-16",
-          "end": "2025-06-23"
+          "start": "2024-08-01",
+          "end": "2025-05-09"
         },
         "reasonCode": [
           {
@@ -100911,24 +100911,24 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "a631c7ff-2a08-4084-b956-5d2812b9dcf0",
+        "id": "327902a7-fd09-457e-916e-00b52017b221",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "114194",
-              "display": "hydroxychloroquine"
+              "code": "327361",
+              "display": "leflunomide"
             }
           ],
-          "text": "hydroxychloroquine"
+          "text": "leflunomide"
         },
         "subject": {
           "reference": "Patient/00f38783-6a07-5e07-f406-2a0817173807"
         },
         "effectivePeriod": {
-          "start": "2025-02-21",
-          "end": "2025-12-14"
+          "start": "2024-08-08",
+          "end": "2025-04-18"
         },
         "reasonCode": [
           {
@@ -100940,7 +100940,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "c8ff17f0-c854-4529-8ab6-a6ab2a2cb16c",
+        "id": "38dc892d-7a9c-4b2b-9224-63cd9341b81c",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

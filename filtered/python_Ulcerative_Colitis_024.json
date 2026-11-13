@@ -1,0 +1,188 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "310591ad-f0b3-4caf-b461-09d90035e18f",
+        "name": [
+          {
+            "use": "official",
+            "family": "Oconnor",
+            "given": [
+              "Krista"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1988-06-01",
+        "address": [
+          {
+            "line": [
+              "923 Juan Square Suite 936"
+            ],
+            "city": "Nicholsside",
+            "state": "GU",
+            "postalCode": "80418",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "a904bdea-6ffe-45dc-a610-437ee1b38bef",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "64766004",
+              "display": "Ulcerative Colitis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "K51.90",
+              "display": "Ulcerative Colitis"
+            }
+          ],
+          "text": "Ulcerative Colitis"
+        },
+        "subject": {
+          "reference": "Patient/310591ad-f0b3-4caf-b461-09d90035e18f"
+        },
+        "onsetDateTime": "2022-09-19"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "285c35f0-66da-4442-bf89-ab5af0a09444",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/310591ad-f0b3-4caf-b461-09d90035e18f"
+        },
+        "payor": [
+          {
+            "display": "Aetna"
+          }
+        ],
+        "subscriberId": "957194468"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ab81a1b6-f239-4fe1-a9b6-740776768fcb",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/310591ad-f0b3-4caf-b461-09d90035e18f"
+        },
+        "effectiveDateTime": "2026-10-27",
+        "valueQuantity": {
+          "value": 24.8,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "bba43ffe-5844-413c-a155-e6fadaabb67a",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/310591ad-f0b3-4caf-b461-09d90035e18f"
+        },
+        "effectiveDateTime": "2026-11-06",
+        "valueBoolean": true
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "147ea524-a4cf-4ba2-b7c6-885508d4de6d",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/310591ad-f0b3-4caf-b461-09d90035e18f"
+        },
+        "effectiveDateTime": "2026-08-25",
+        "valueBoolean": false
+      }
+    }
+  ]
+}

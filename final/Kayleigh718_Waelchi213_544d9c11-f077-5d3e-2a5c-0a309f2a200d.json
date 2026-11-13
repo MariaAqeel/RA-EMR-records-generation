@@ -170548,7 +170548,7 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "02b636c1-19d4-4f3a-9d72-52575bc71c46",
+        "id": "d6b1af1e-860b-4e01-811a-ba1ce4558cf4",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/544d9c11-f077-5d3e-2a5c-0a309f2a200d"
@@ -170558,13 +170558,13 @@
             "display": "Blue Shield of California"
           }
         ],
-        "subscriberId": "860462634"
+        "subscriberId": "705585090"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "9581bb2d-eb94-4d8d-aeb3-13b3909c80cd",
+        "id": "04922991-6ace-4f07-88d9-86b9d5875510",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -170580,8 +170580,66 @@
           "reference": "Patient/544d9c11-f077-5d3e-2a5c-0a309f2a200d"
         },
         "effectivePeriod": {
-          "start": "2025-08-20",
-          "end": "2026-01-04"
+          "start": "2024-09-24",
+          "end": "2025-08-01"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "1c92cce1-a9d7-4318-b192-08cb2bdd6029",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "327361",
+              "display": "leflunomide"
+            }
+          ],
+          "text": "leflunomide"
+        },
+        "subject": {
+          "reference": "Patient/544d9c11-f077-5d3e-2a5c-0a309f2a200d"
+        },
+        "effectivePeriod": {
+          "start": "2024-10-07",
+          "end": "2025-05-01"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "7c9c1e79-f6ea-4901-a0c7-f88539f21c4e",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "373747",
+              "display": "etanercept"
+            }
+          ],
+          "text": "etanercept"
+        },
+        "subject": {
+          "reference": "Patient/544d9c11-f077-5d3e-2a5c-0a309f2a200d"
+        },
+        "effectivePeriod": {
+          "start": "2024-07-01",
+          "end": "2025-06-10"
         },
         "reasonCode": [
           {
@@ -170593,7 +170651,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "52353f1e-a3d3-4669-8cce-b62856bc26b3",
+        "id": "90119695-036d-4491-9c61-e44ab74b1675",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

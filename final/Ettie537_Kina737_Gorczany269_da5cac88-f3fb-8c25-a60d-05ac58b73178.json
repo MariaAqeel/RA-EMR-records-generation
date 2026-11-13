@@ -1510025,23 +1510025,23 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "6c73d664-d690-44bb-8db0-b620fd0df8d0",
+        "id": "c5a14eb4-a3cd-4643-b4a1-4d83a51ba6c0",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/da5cac88-f3fb-8c25-a60d-05ac58b73178"
         },
         "payor": [
           {
-            "display": "Blue Shield of California"
+            "display": "Aetna"
           }
         ],
-        "subscriberId": "827527143"
+        "subscriberId": "184622754"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "5ee44a16-7e05-455f-bd12-c56459ec6eca",
+        "id": "784dd1a1-6fee-40a9-8d88-3df1c829381c",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -1510057,8 +1510057,8 @@
           "reference": "Patient/da5cac88-f3fb-8c25-a60d-05ac58b73178"
         },
         "effectivePeriod": {
-          "start": "2025-04-29",
-          "end": "2026-01-14"
+          "start": "2025-03-29",
+          "end": "2025-07-10"
         },
         "reasonCode": [
           {
@@ -1510070,24 +1510070,24 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "9a82117c-f6bb-4912-8235-3509ddcbf86d",
+        "id": "c942ee61-0262-400b-860c-d707746b496f",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "105585",
-              "display": "methotrexate"
+              "code": "114194",
+              "display": "hydroxychloroquine"
             }
           ],
-          "text": "methotrexate"
+          "text": "hydroxychloroquine"
         },
         "subject": {
           "reference": "Patient/da5cac88-f3fb-8c25-a60d-05ac58b73178"
         },
         "effectivePeriod": {
-          "start": "2024-09-24",
-          "end": "2025-03-03"
+          "start": "2025-01-14",
+          "end": "2025-12-26"
         },
         "reasonCode": [
           {
@@ -1510099,18 +1510099,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "2b048d7c-68cf-4148-8db5-28c04c77acf4",
+        "id": "4e0e7d0c-1914-4b5a-999f-02eb16491ae1",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "358258",
-              "display": "Orencia (abatacept)"
+              "code": "614391",
+              "display": "Simponi Aria (golimumab)"
             }
           ],
-          "text": "Orencia (abatacept)"
+          "text": "Simponi Aria (golimumab)"
         },
         "subject": {
           "reference": "Patient/da5cac88-f3fb-8c25-a60d-05ac58b73178"

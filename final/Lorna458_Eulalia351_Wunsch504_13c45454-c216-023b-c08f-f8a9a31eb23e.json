@@ -165459,40 +165459,98 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "1391a42b-7576-4b4a-a081-8476a681c299",
+        "id": "7290ff4a-8b3a-4538-8057-86846e282031",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/13c45454-c216-023b-c08f-f8a9a31eb23e"
         },
         "payor": [
           {
-            "display": "Humana"
+            "display": "Cigna"
           }
         ],
-        "subscriberId": "984005738"
+        "subscriberId": "279217592"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "dfa45341-9d28-41da-8328-57f04fb954df",
+        "id": "72f69073-a684-4479-8623-2f614cedc519",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327361",
-              "display": "leflunomide"
+              "code": "327362",
+              "display": "adalimumab"
             }
           ],
-          "text": "leflunomide"
+          "text": "adalimumab"
         },
         "subject": {
           "reference": "Patient/13c45454-c216-023b-c08f-f8a9a31eb23e"
         },
         "effectivePeriod": {
-          "start": "2025-05-25",
-          "end": "2026-05-25"
+          "start": "2025-09-20",
+          "end": "2026-05-14"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "d925eb0c-f55c-4620-8abb-a038bc003117",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "114194",
+              "display": "hydroxychloroquine"
+            }
+          ],
+          "text": "hydroxychloroquine"
+        },
+        "subject": {
+          "reference": "Patient/13c45454-c216-023b-c08f-f8a9a31eb23e"
+        },
+        "effectivePeriod": {
+          "start": "2024-07-18",
+          "end": "2024-11-05"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "3cc8aed1-2d03-4c78-a2c8-7eb870aa9c98",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "114194",
+              "display": "hydroxychloroquine"
+            }
+          ],
+          "text": "hydroxychloroquine"
+        },
+        "subject": {
+          "reference": "Patient/13c45454-c216-023b-c08f-f8a9a31eb23e"
+        },
+        "effectivePeriod": {
+          "start": "2024-11-24",
+          "end": "2025-09-13"
         },
         "reasonCode": [
           {
@@ -165504,7 +165562,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "fc957662-f6e8-49db-aaa7-2af1c5efa599",
+        "id": "091bbdd6-cb22-4bbd-ac2d-3f4ad4037f0a",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

@@ -1,0 +1,227 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "2c403ce4-6e46-453d-8bf5-d5b4cb8fc4e0",
+        "name": [
+          {
+            "use": "official",
+            "family": "Kidd",
+            "given": [
+              "Brian"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1985-01-31",
+        "address": [
+          {
+            "line": [
+              "5864 Cook Rapids Apt. 099"
+            ],
+            "city": "South Mitchell",
+            "state": "OR",
+            "postalCode": "49234",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "2dea1f50-a408-4351-b26a-6f96895aed85",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "64766004",
+              "display": "Ulcerative Colitis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "K51.90",
+              "display": "Ulcerative Colitis"
+            }
+          ],
+          "text": "Ulcerative Colitis"
+        },
+        "subject": {
+          "reference": "Patient/2c403ce4-6e46-453d-8bf5-d5b4cb8fc4e0"
+        },
+        "onsetDateTime": "2023-11-12"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "3a9e7248-4620-4673-a130-92d57bf7ef11",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/2c403ce4-6e46-453d-8bf5-d5b4cb8fc4e0"
+        },
+        "payor": [
+          {
+            "display": "UnitedHealthcare"
+          }
+        ],
+        "subscriberId": "767299565"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "957dcd5f-25fd-4920-9fc8-193adaf5d9f3",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2c403ce4-6e46-453d-8bf5-d5b4cb8fc4e0"
+        },
+        "effectiveDateTime": "2026-10-16",
+        "valueBoolean": false
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "af8cc306-7da7-4fb6-8c36-eed4993598a5",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2c403ce4-6e46-453d-8bf5-d5b4cb8fc4e0"
+        },
+        "effectiveDateTime": "2026-09-14",
+        "valueQuantity": {
+          "value": 53.4,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "c59b907b-ab06-435b-9843-a49442cb09b3",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2c403ce4-6e46-453d-8bf5-d5b4cb8fc4e0"
+        },
+        "effectiveDateTime": "2026-10-23",
+        "valueQuantity": {
+          "value": 53.1,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "fd611f20-e98c-4c7b-8470-fa3f17e89d38",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2c403ce4-6e46-453d-8bf5-d5b4cb8fc4e0"
+        },
+        "effectiveDateTime": "2026-10-09",
+        "valueQuantity": {
+          "value": 14.0,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    }
+  ]
+}

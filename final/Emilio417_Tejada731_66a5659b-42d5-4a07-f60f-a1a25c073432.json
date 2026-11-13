@@ -2354520,23 +2354520,23 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "93e7d0be-6074-4cd7-9f25-408d2d2da6ab",
+        "id": "a7c836df-da16-4482-afdb-ec055a425d25",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/66a5659b-42d5-4a07-f60f-a1a25c073432"
         },
         "payor": [
           {
-            "display": "UnitedHealthcare"
+            "display": "Humana"
           }
         ],
-        "subscriberId": "956416697"
+        "subscriberId": "952019014"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "7304df54-d2f4-4b12-9d4f-e73bf716fc02",
+        "id": "21fe954e-6aec-4d7f-9e6b-bfa409f671e0",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -2354552,8 +2354552,66 @@
           "reference": "Patient/66a5659b-42d5-4a07-f60f-a1a25c073432"
         },
         "effectivePeriod": {
-          "start": "2025-10-03",
-          "end": "2026-05-05"
+          "start": "2024-10-25",
+          "end": "2025-09-11"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "c70c6362-473c-4933-9627-43cf7d169086",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "327361",
+              "display": "leflunomide"
+            }
+          ],
+          "text": "leflunomide"
+        },
+        "subject": {
+          "reference": "Patient/66a5659b-42d5-4a07-f60f-a1a25c073432"
+        },
+        "effectivePeriod": {
+          "start": "2025-04-27",
+          "end": "2025-11-26"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "763fcf7b-3697-4ce3-a1af-b84a70f64ead",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "327361",
+              "display": "leflunomide"
+            }
+          ],
+          "text": "leflunomide"
+        },
+        "subject": {
+          "reference": "Patient/66a5659b-42d5-4a07-f60f-a1a25c073432"
+        },
+        "effectivePeriod": {
+          "start": "2025-04-13",
+          "end": "2026-03-18"
         },
         "reasonCode": [
           {
@@ -2354565,18 +2354623,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "30cb8102-55d1-4e20-82b1-79375f3b3e47",
+        "id": "843d2439-69a7-4e11-9110-09fa25983f41",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "614391",
-              "display": "Simponi Aria (golimumab)"
+              "code": "356248",
+              "display": "Cimzia (certolizumab pegol)"
             }
           ],
-          "text": "Simponi Aria (golimumab)"
+          "text": "Cimzia (certolizumab pegol)"
         },
         "subject": {
           "reference": "Patient/66a5659b-42d5-4a07-f60f-a1a25c073432"

@@ -1740976,40 +1740976,69 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "3612e8b9-2bdf-4c03-a23b-12f66abd7975",
+        "id": "afaa400f-8e0a-45d2-8046-9b3a146da745",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/c78f801a-edeb-ce13-a0bb-dc3469728ab7"
         },
         "payor": [
           {
-            "display": "UnitedHealthcare"
+            "display": "Cigna"
           }
         ],
-        "subscriberId": "190161056"
+        "subscriberId": "251610231"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "4553216b-f166-4536-bce8-6468015170e8",
+        "id": "c762fd8a-95fa-4a5d-ae32-c8b058110887",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327362",
-              "display": "adalimumab"
+              "code": "373747",
+              "display": "etanercept"
             }
           ],
-          "text": "adalimumab"
+          "text": "etanercept"
         },
         "subject": {
           "reference": "Patient/c78f801a-edeb-ce13-a0bb-dc3469728ab7"
         },
         "effectivePeriod": {
-          "start": "2024-06-11",
-          "end": "2025-05-27"
+          "start": "2024-09-09",
+          "end": "2025-05-15"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "f6e41aa6-4570-4ed3-b4da-336949b236a3",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "114194",
+              "display": "hydroxychloroquine"
+            }
+          ],
+          "text": "hydroxychloroquine"
+        },
+        "subject": {
+          "reference": "Patient/c78f801a-edeb-ce13-a0bb-dc3469728ab7"
+        },
+        "effectivePeriod": {
+          "start": "2025-09-26",
+          "end": "2026-03-23"
         },
         "reasonCode": [
           {
@@ -1741021,18 +1741050,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "4de796c7-34d0-405a-8552-8c1e428b464d",
+        "id": "fe704e19-7a6e-4dcb-80a2-15c484024bcc",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "614391",
-              "display": "Simponi Aria (golimumab)"
+              "code": "356248",
+              "display": "Cimzia (certolizumab pegol)"
             }
           ],
-          "text": "Simponi Aria (golimumab)"
+          "text": "Cimzia (certolizumab pegol)"
         },
         "subject": {
           "reference": "Patient/c78f801a-edeb-ce13-a0bb-dc3469728ab7"

@@ -98351,40 +98351,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "a269bb87-a5bb-4ba8-98dd-6406ae00484f",
+        "id": "472ca74f-1469-421e-9ace-346688418e88",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/cb333a83-8c14-ce76-51d8-40c3ae71b9e0"
         },
         "payor": [
           {
-            "display": "UnitedHealthcare"
+            "display": "Blue Shield of California"
           }
         ],
-        "subscriberId": "165336210"
+        "subscriberId": "378076902"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "6479e2f7-0250-47b5-9c83-cab102950f9d",
+        "id": "82b5395a-32ce-48f7-a8bc-54b057c0a1a1",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "114194",
-              "display": "hydroxychloroquine"
+              "code": "327362",
+              "display": "adalimumab"
             }
           ],
-          "text": "hydroxychloroquine"
+          "text": "adalimumab"
         },
         "subject": {
           "reference": "Patient/cb333a83-8c14-ce76-51d8-40c3ae71b9e0"
         },
         "effectivePeriod": {
-          "start": "2025-09-22",
-          "end": "2026-07-15"
+          "start": "2025-07-25",
+          "end": "2025-12-01"
         },
         "reasonCode": [
           {
@@ -98396,7 +98396,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "ad1beeaf-1820-43fb-8300-b37b31070c5d",
+        "id": "c435df4b-8fd5-408c-9610-3506d2d5b9ae",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

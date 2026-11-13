@@ -1,0 +1,153 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "a674d221-e8c4-402f-80d9-19917a92d9e3",
+        "name": [
+          {
+            "use": "official",
+            "family": "Moore",
+            "given": [
+              "Kristine"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1974-12-11",
+        "address": [
+          {
+            "line": [
+              "047 Tara Hollow Apt. 583"
+            ],
+            "city": "Garcialand",
+            "state": "NV",
+            "postalCode": "61250",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "04de95e1-4cec-4011-ac6c-e889b925d8f1",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "9631008",
+              "display": "Psoriatic Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M07.60",
+              "display": "Psoriatic Arthritis"
+            }
+          ],
+          "text": "Psoriatic Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/a674d221-e8c4-402f-80d9-19917a92d9e3"
+        },
+        "onsetDateTime": "2023-12-18"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "60bcd26f-aaad-42af-9e4b-847d47400225",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/a674d221-e8c4-402f-80d9-19917a92d9e3"
+        },
+        "payor": [
+          {
+            "display": "Humana"
+          }
+        ],
+        "subscriberId": "615508179"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "2674046a-5f29-4ee2-9bf1-46e3dcb6c347",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/a674d221-e8c4-402f-80d9-19917a92d9e3"
+        },
+        "effectiveDateTime": "2026-10-29",
+        "valueBoolean": false
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "1c66ad3e-8683-4c22-821b-0ef5f8b4a525",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/a674d221-e8c4-402f-80d9-19917a92d9e3"
+        },
+        "effectiveDateTime": "2026-10-26",
+        "valueBoolean": true
+      }
+    }
+  ]
+}

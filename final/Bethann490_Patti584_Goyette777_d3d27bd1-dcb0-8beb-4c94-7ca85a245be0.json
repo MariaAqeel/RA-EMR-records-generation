@@ -404903,40 +404903,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "755528ba-9d68-4c5a-a2c8-02b9cdf6f5c7",
+        "id": "3361d024-29d9-4aed-96a2-b8045bb1c17b",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/d3d27bd1-dcb0-8beb-4c94-7ca85a245be0"
         },
         "payor": [
           {
-            "display": "Cigna"
+            "display": "Blue Shield of California"
           }
         ],
-        "subscriberId": "767987475"
+        "subscriberId": "145559091"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "727f9a28-66f4-4a1e-8994-39beaa243d5b",
+        "id": "b3574b83-3b2c-4ceb-9b51-e4993d9c3a43",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "373747",
-              "display": "etanercept"
+              "code": "105585",
+              "display": "methotrexate"
             }
           ],
-          "text": "etanercept"
+          "text": "methotrexate"
         },
         "subject": {
           "reference": "Patient/d3d27bd1-dcb0-8beb-4c94-7ca85a245be0"
         },
         "effectivePeriod": {
-          "start": "2025-07-29",
-          "end": "2025-11-24"
+          "start": "2025-09-24",
+          "end": "2026-09-04"
         },
         "reasonCode": [
           {
@@ -404948,24 +404948,24 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "cd54d6db-03de-4110-9846-07fdec54a119",
+        "id": "8c6fbed7-80d6-4f45-88ab-0ba1325244be",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "114194",
-              "display": "hydroxychloroquine"
+              "code": "327362",
+              "display": "adalimumab"
             }
           ],
-          "text": "hydroxychloroquine"
+          "text": "adalimumab"
         },
         "subject": {
           "reference": "Patient/d3d27bd1-dcb0-8beb-4c94-7ca85a245be0"
         },
         "effectivePeriod": {
-          "start": "2025-08-25",
-          "end": "2026-07-20"
+          "start": "2025-09-08",
+          "end": "2026-06-20"
         },
         "reasonCode": [
           {
@@ -404977,24 +404977,24 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "05619ad9-08b4-4f84-9e6c-62da766a596c",
+        "id": "b3dc2d72-537f-466f-a845-1c0dc8e01636",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "373747",
-              "display": "etanercept"
+              "code": "327361",
+              "display": "leflunomide"
             }
           ],
-          "text": "etanercept"
+          "text": "leflunomide"
         },
         "subject": {
           "reference": "Patient/d3d27bd1-dcb0-8beb-4c94-7ca85a245be0"
         },
         "effectivePeriod": {
-          "start": "2025-03-22",
-          "end": "2026-01-31"
+          "start": "2025-02-04",
+          "end": "2025-07-29"
         },
         "reasonCode": [
           {
@@ -405006,18 +405006,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "18fc2c5f-415e-46b4-98c7-514654d9d9c8",
+        "id": "7410ea5a-8b59-4641-86ad-350982256393",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "358258",
-              "display": "Orencia (abatacept)"
+              "code": "356248",
+              "display": "Cimzia (certolizumab pegol)"
             }
           ],
-          "text": "Orencia (abatacept)"
+          "text": "Cimzia (certolizumab pegol)"
         },
         "subject": {
           "reference": "Patient/d3d27bd1-dcb0-8beb-4c94-7ca85a245be0"

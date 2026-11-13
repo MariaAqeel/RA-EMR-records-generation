@@ -183240,40 +183240,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "23591c83-3338-44af-89dd-1021155ee7a8",
+        "id": "69f7bb32-eda1-4605-b489-06130d9be02f",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/fdce81a0-2d75-c263-ec16-74bd9b6a8a8e"
         },
         "payor": [
           {
-            "display": "Blue Shield of California"
+            "display": "Cigna"
           }
         ],
-        "subscriberId": "895948549"
+        "subscriberId": "738595358"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "b23daf64-e565-4636-8d20-67a230b056dd",
+        "id": "5f472e0c-aafb-4efe-b469-f65eb51581ff",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "105585",
-              "display": "methotrexate"
+              "code": "373747",
+              "display": "etanercept"
             }
           ],
-          "text": "methotrexate"
+          "text": "etanercept"
         },
         "subject": {
           "reference": "Patient/fdce81a0-2d75-c263-ec16-74bd9b6a8a8e"
         },
         "effectivePeriod": {
-          "start": "2025-07-12",
-          "end": "2026-03-06"
+          "start": "2024-12-30",
+          "end": "2025-05-08"
         },
         "reasonCode": [
           {
@@ -183285,24 +183285,24 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "44dc6886-964a-472b-aa13-22b3782b5439",
+        "id": "ca8a619f-b8ce-4f33-b52e-88096c2029c2",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "105585",
-              "display": "methotrexate"
+              "code": "327361",
+              "display": "leflunomide"
             }
           ],
-          "text": "methotrexate"
+          "text": "leflunomide"
         },
         "subject": {
           "reference": "Patient/fdce81a0-2d75-c263-ec16-74bd9b6a8a8e"
         },
         "effectivePeriod": {
-          "start": "2024-08-05",
-          "end": "2025-05-26"
+          "start": "2025-08-01",
+          "end": "2026-01-14"
         },
         "reasonCode": [
           {
@@ -183314,18 +183314,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "b4a51992-b672-4ba5-997e-8e793fd2bb3d",
+        "id": "8c26f59b-c284-46c3-86f9-8dd836a4fd31",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "356248",
-              "display": "Cimzia (certolizumab pegol)"
+              "code": "614391",
+              "display": "Simponi Aria (golimumab)"
             }
           ],
-          "text": "Cimzia (certolizumab pegol)"
+          "text": "Simponi Aria (golimumab)"
         },
         "subject": {
           "reference": "Patient/fdce81a0-2d75-c263-ec16-74bd9b6a8a8e"

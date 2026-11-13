@@ -1,0 +1,265 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "712800f2-2a58-4a44-b4c7-9920156a2979",
+        "name": [
+          {
+            "use": "official",
+            "family": "Beasley",
+            "given": [
+              "Anita"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1957-10-27",
+        "address": [
+          {
+            "line": [
+              "1002 Mary Island Apt. 378"
+            ],
+            "city": "South Vanessamouth",
+            "state": "NY",
+            "postalCode": "69722",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "9a15d611-2c94-4dbf-a9ba-9d29d33c7474",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "201791006",
+              "display": "Seronegative Rheumatoid Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M06.09",
+              "display": "Seronegative Rheumatoid Arthritis"
+            }
+          ],
+          "text": "Seronegative Rheumatoid Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/712800f2-2a58-4a44-b4c7-9920156a2979"
+        },
+        "onsetDateTime": "2023-01-05"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "388c07d7-453d-417c-899d-bc9d02a5cb76",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/712800f2-2a58-4a44-b4c7-9920156a2979"
+        },
+        "payor": [
+          {
+            "display": "UnitedHealthcare"
+          }
+        ],
+        "subscriberId": "798999734"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "aff99a4c-622f-44bd-8a20-5e5eea68b0c1",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/712800f2-2a58-4a44-b4c7-9920156a2979"
+        },
+        "effectiveDateTime": "2026-09-14",
+        "valueQuantity": {
+          "value": 12.7,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "2a4e80a7-7229-429c-91e2-d9a28a020d16",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/712800f2-2a58-4a44-b4c7-9920156a2979"
+        },
+        "effectiveDateTime": "2026-09-07",
+        "valueBoolean": true
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "c5bf615c-c847-4e11-a804-3c84d2ca08b4",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "114194",
+              "display": "hydroxychloroquine"
+            }
+          ],
+          "text": "hydroxychloroquine"
+        },
+        "subject": {
+          "reference": "Patient/712800f2-2a58-4a44-b4c7-9920156a2979"
+        },
+        "effectivePeriod": {
+          "start": "2024-10-04",
+          "end": "2025-09-18"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "0a6b5dca-4fc9-48a8-b1f0-237616ab4b4b",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "114194",
+              "display": "hydroxychloroquine"
+            }
+          ],
+          "text": "hydroxychloroquine"
+        },
+        "subject": {
+          "reference": "Patient/712800f2-2a58-4a44-b4c7-9920156a2979"
+        },
+        "effectivePeriod": {
+          "start": "2025-04-14",
+          "end": "2026-01-12"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "96a7134a-53e3-4ca6-9abf-4df36948cb71",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "373747",
+              "display": "etanercept"
+            }
+          ],
+          "text": "etanercept"
+        },
+        "subject": {
+          "reference": "Patient/712800f2-2a58-4a44-b4c7-9920156a2979"
+        },
+        "effectivePeriod": {
+          "start": "2025-09-14",
+          "end": "2026-02-04"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "7a7131e6-fb4e-4fdc-a2bf-d6a621815e3f",
+        "status": "draft",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "614391",
+              "display": "Simponi Aria (golimumab)"
+            }
+          ],
+          "text": "Simponi Aria (golimumab)"
+        },
+        "subject": {
+          "reference": "Patient/712800f2-2a58-4a44-b4c7-9920156a2979"
+        }
+      }
+    }
+  ]
+}

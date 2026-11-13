@@ -146868,23 +146868,52 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "c1d1ac4f-e64c-4865-a0f8-382d0f7345c6",
+        "id": "f863161e-7b74-4e9c-aaff-4fb16b2fd4ce",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/40dbce73-a846-be86-e70e-b22ef4d18424"
         },
         "payor": [
           {
-            "display": "Cigna"
+            "display": "Humana"
           }
         ],
-        "subscriberId": "105240929"
+        "subscriberId": "930406195"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "93b979d6-944e-4070-9d09-1e74559cce40",
+        "id": "bf96618a-e385-4dd5-8331-5946b89f452e",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "114194",
+              "display": "hydroxychloroquine"
+            }
+          ],
+          "text": "hydroxychloroquine"
+        },
+        "subject": {
+          "reference": "Patient/40dbce73-a846-be86-e70e-b22ef4d18424"
+        },
+        "effectivePeriod": {
+          "start": "2024-09-21",
+          "end": "2025-01-20"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "d830ccef-863f-4582-b918-5e592c5abb52",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -146900,66 +146929,8 @@
           "reference": "Patient/40dbce73-a846-be86-e70e-b22ef4d18424"
         },
         "effectivePeriod": {
-          "start": "2025-05-20",
-          "end": "2026-03-21"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "f5c5d1e6-7628-4d00-806a-df0aa8d7bb59",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327362",
-              "display": "adalimumab"
-            }
-          ],
-          "text": "adalimumab"
-        },
-        "subject": {
-          "reference": "Patient/40dbce73-a846-be86-e70e-b22ef4d18424"
-        },
-        "effectivePeriod": {
-          "start": "2025-08-20",
-          "end": "2026-02-09"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "cb7e5b33-4bc4-4daa-9190-7dff1768471a",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327361",
-              "display": "leflunomide"
-            }
-          ],
-          "text": "leflunomide"
-        },
-        "subject": {
-          "reference": "Patient/40dbce73-a846-be86-e70e-b22ef4d18424"
-        },
-        "effectivePeriod": {
-          "start": "2025-08-25",
-          "end": "2026-05-09"
+          "start": "2025-05-07",
+          "end": "2025-12-18"
         },
         "reasonCode": [
           {
@@ -146971,7 +146942,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "1e3164f9-97ae-47ff-a12b-7ab1424de0de",
+        "id": "f53b7031-21c4-44f4-bc5c-2654c0b3ad7d",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

@@ -128619,40 +128619,98 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "e747480b-6189-436b-a876-b48609233010",
+        "id": "6e60711b-30d6-44b1-903b-480bac55ff6d",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/cf988c79-3bc7-533e-b465-b35b7db8bcbb"
         },
         "payor": [
           {
-            "display": "Aetna"
+            "display": "Humana"
           }
         ],
-        "subscriberId": "264629165"
+        "subscriberId": "394287523"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "d41e9826-d24c-47c2-9560-bd496db29550",
+        "id": "cf7b7775-564b-4585-93ee-ab86750dbd34",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "373747",
-              "display": "etanercept"
+              "code": "327362",
+              "display": "adalimumab"
             }
           ],
-          "text": "etanercept"
+          "text": "adalimumab"
         },
         "subject": {
           "reference": "Patient/cf988c79-3bc7-533e-b465-b35b7db8bcbb"
         },
         "effectivePeriod": {
-          "start": "2025-01-24",
-          "end": "2025-11-10"
+          "start": "2024-09-03",
+          "end": "2025-05-07"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "d2c833b5-41c2-475a-9133-540607aea20e",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "327362",
+              "display": "adalimumab"
+            }
+          ],
+          "text": "adalimumab"
+        },
+        "subject": {
+          "reference": "Patient/cf988c79-3bc7-533e-b465-b35b7db8bcbb"
+        },
+        "effectivePeriod": {
+          "start": "2024-10-07",
+          "end": "2025-07-04"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "56e30e46-e2bd-4780-9dbc-3432aca9f341",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "105585",
+              "display": "methotrexate"
+            }
+          ],
+          "text": "methotrexate"
+        },
+        "subject": {
+          "reference": "Patient/cf988c79-3bc7-533e-b465-b35b7db8bcbb"
+        },
+        "effectivePeriod": {
+          "start": "2025-01-19",
+          "end": "2025-07-18"
         },
         "reasonCode": [
           {
@@ -128664,7 +128722,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "8e2bad51-2a46-4cad-ad78-c774a4efd971",
+        "id": "17f9e4e4-55bb-433d-a3f5-6bea8df0b233",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

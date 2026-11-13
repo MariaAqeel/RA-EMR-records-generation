@@ -1,0 +1,306 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "9347a490-517a-41d4-b3c4-1bd4c8fe6afd",
+        "name": [
+          {
+            "use": "official",
+            "family": "Martin",
+            "given": [
+              "Michael"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1984-01-05",
+        "address": [
+          {
+            "line": [
+              "6330 Andrea Fork"
+            ],
+            "city": "Ballardshire",
+            "state": "WV",
+            "postalCode": "68492",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "e4a69e92-5059-4307-87fe-fe42b1b05153",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "64766004",
+              "display": "Ulcerative Colitis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "K51.90",
+              "display": "Ulcerative Colitis"
+            }
+          ],
+          "text": "Ulcerative Colitis"
+        },
+        "subject": {
+          "reference": "Patient/9347a490-517a-41d4-b3c4-1bd4c8fe6afd"
+        },
+        "onsetDateTime": "2023-07-07"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "417c9cfb-5501-48eb-bdb7-0a37c45c4951",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/9347a490-517a-41d4-b3c4-1bd4c8fe6afd"
+        },
+        "payor": [
+          {
+            "display": "Blue Shield of California"
+          }
+        ],
+        "subscriberId": "441814120"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "5a3bd1aa-5918-49df-abf7-e49a4f8d654a",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/9347a490-517a-41d4-b3c4-1bd4c8fe6afd"
+        },
+        "effectiveDateTime": "2026-09-23",
+        "valueQuantity": {
+          "value": 6.7,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "2ba52e7d-159e-41b5-a634-8eb6d1f5fa04",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/9347a490-517a-41d4-b3c4-1bd4c8fe6afd"
+        },
+        "effectiveDateTime": "2026-08-29",
+        "valueQuantity": {
+          "value": 156.0,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "67cfa90d-aed5-4430-beff-745656f7a575",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/9347a490-517a-41d4-b3c4-1bd4c8fe6afd"
+        },
+        "effectiveDateTime": "2026-09-01",
+        "valueQuantity": {
+          "value": 28.2,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "802ff572-87c1-403e-b110-85de3a79ed49",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/9347a490-517a-41d4-b3c4-1bd4c8fe6afd"
+        },
+        "effectiveDateTime": "2026-10-18",
+        "valueBoolean": true
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "4bc80bb0-d2a4-4f99-a3b4-cb5c84340ebc",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "114194",
+              "display": "hydroxychloroquine"
+            }
+          ],
+          "text": "hydroxychloroquine"
+        },
+        "subject": {
+          "reference": "Patient/9347a490-517a-41d4-b3c4-1bd4c8fe6afd"
+        },
+        "effectivePeriod": {
+          "start": "2024-10-14",
+          "end": "2025-04-18"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "800342a0-ad75-464a-9b41-220d74086cfd",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "114194",
+              "display": "hydroxychloroquine"
+            }
+          ],
+          "text": "hydroxychloroquine"
+        },
+        "subject": {
+          "reference": "Patient/9347a490-517a-41d4-b3c4-1bd4c8fe6afd"
+        },
+        "effectivePeriod": {
+          "start": "2024-08-27",
+          "end": "2025-07-01"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "8174a457-8a53-4023-b279-f8cd37834623",
+        "status": "draft",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "356248",
+              "display": "Cimzia (certolizumab pegol)"
+            }
+          ],
+          "text": "Cimzia (certolizumab pegol)"
+        },
+        "subject": {
+          "reference": "Patient/9347a490-517a-41d4-b3c4-1bd4c8fe6afd"
+        }
+      }
+    }
+  ]
+}

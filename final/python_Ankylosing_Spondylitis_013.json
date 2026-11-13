@@ -1,0 +1,236 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "1e2bde14-2764-4cff-8410-487bc5e6bbdc",
+        "name": [
+          {
+            "use": "official",
+            "family": "Clark",
+            "given": [
+              "Justin"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1988-09-01",
+        "address": [
+          {
+            "line": [
+              "398 King Cape"
+            ],
+            "city": "Vanessamouth",
+            "state": "RI",
+            "postalCode": "48902",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "b667184f-4676-494a-a857-d44543d56532",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "9566007",
+              "display": "Ankylosing Spondylitis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M45.9",
+              "display": "Ankylosing Spondylitis"
+            }
+          ],
+          "text": "Ankylosing Spondylitis"
+        },
+        "subject": {
+          "reference": "Patient/1e2bde14-2764-4cff-8410-487bc5e6bbdc"
+        },
+        "onsetDateTime": "2026-01-13"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "4894572f-e93f-4347-b8df-a703b15cdaa4",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/1e2bde14-2764-4cff-8410-487bc5e6bbdc"
+        },
+        "payor": [
+          {
+            "display": "Blue Shield of California"
+          }
+        ],
+        "subscriberId": "585753637"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "fe7a2bf7-91ac-4933-b95d-0c8858f1aeae",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/1e2bde14-2764-4cff-8410-487bc5e6bbdc"
+        },
+        "effectiveDateTime": "2026-09-26",
+        "valueBoolean": true
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "5ba3e336-6878-486d-a895-a9d6f9d54f43",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/1e2bde14-2764-4cff-8410-487bc5e6bbdc"
+        },
+        "effectiveDateTime": "2026-10-18",
+        "valueQuantity": {
+          "value": 33.5,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "e3a98e49-152a-4b7f-baf5-23aefa5c572b",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "327362",
+              "display": "adalimumab"
+            }
+          ],
+          "text": "adalimumab"
+        },
+        "subject": {
+          "reference": "Patient/1e2bde14-2764-4cff-8410-487bc5e6bbdc"
+        },
+        "effectivePeriod": {
+          "start": "2024-10-24",
+          "end": "2025-05-09"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "fc30146e-df15-4cb6-8cb9-4a45b0982147",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "373747",
+              "display": "etanercept"
+            }
+          ],
+          "text": "etanercept"
+        },
+        "subject": {
+          "reference": "Patient/1e2bde14-2764-4cff-8410-487bc5e6bbdc"
+        },
+        "effectivePeriod": {
+          "start": "2025-03-23",
+          "end": "2025-08-02"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "76bf0311-d6c8-478e-a1c6-ea7e296b3960",
+        "status": "draft",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "356248",
+              "display": "Cimzia (certolizumab pegol)"
+            }
+          ],
+          "text": "Cimzia (certolizumab pegol)"
+        },
+        "subject": {
+          "reference": "Patient/1e2bde14-2764-4cff-8410-487bc5e6bbdc"
+        }
+      }
+    }
+  ]
+}

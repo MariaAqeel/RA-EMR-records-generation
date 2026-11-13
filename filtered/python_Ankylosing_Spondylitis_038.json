@@ -1,0 +1,157 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "f07112c2-b6ac-456b-83f8-4a33daaaf360",
+        "name": [
+          {
+            "use": "official",
+            "family": "Willis",
+            "given": [
+              "Andrew"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1992-02-25",
+        "address": [
+          {
+            "line": [
+              "46210 Rowland Centers Suite 444"
+            ],
+            "city": "Austinview",
+            "state": "HI",
+            "postalCode": "15018",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "be224a76-7653-440f-bf58-a88e2fcbed5c",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "9566007",
+              "display": "Ankylosing Spondylitis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M45.9",
+              "display": "Ankylosing Spondylitis"
+            }
+          ],
+          "text": "Ankylosing Spondylitis"
+        },
+        "subject": {
+          "reference": "Patient/f07112c2-b6ac-456b-83f8-4a33daaaf360"
+        },
+        "onsetDateTime": "2025-09-23"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "e64a76e8-93f2-4f43-b35a-1a3bb653f1d3",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/f07112c2-b6ac-456b-83f8-4a33daaaf360"
+        },
+        "payor": [
+          {
+            "display": "Blue Shield of California"
+          }
+        ],
+        "subscriberId": "776338082"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "20a4af51-16cc-42fd-bf52-7d884488b6e0",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/f07112c2-b6ac-456b-83f8-4a33daaaf360"
+        },
+        "effectiveDateTime": "2026-08-25",
+        "valueQuantity": {
+          "value": 71.0,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "c1c7a151-3996-4cb4-a49c-c02cec3e7ee9",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/f07112c2-b6ac-456b-83f8-4a33daaaf360"
+        },
+        "effectiveDateTime": "2026-10-21",
+        "valueBoolean": true
+      }
+    }
+  ]
+}

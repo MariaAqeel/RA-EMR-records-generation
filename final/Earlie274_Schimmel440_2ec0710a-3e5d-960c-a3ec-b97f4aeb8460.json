@@ -169598,40 +169598,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "69b0d3f2-0dc9-4760-b257-30f076fee439",
+        "id": "fa3a188b-468d-45b7-9492-4df61eba5c94",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/2ec0710a-3e5d-960c-a3ec-b97f4aeb8460"
         },
         "payor": [
           {
-            "display": "Aetna"
+            "display": "Cigna"
           }
         ],
-        "subscriberId": "777977231"
+        "subscriberId": "670496074"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "ab409568-9686-48ed-be0d-85122b16ee10",
+        "id": "068b2c5e-5076-473e-a385-7c8bc895b2a5",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "114194",
-              "display": "hydroxychloroquine"
+              "code": "327361",
+              "display": "leflunomide"
             }
           ],
-          "text": "hydroxychloroquine"
+          "text": "leflunomide"
         },
         "subject": {
           "reference": "Patient/2ec0710a-3e5d-960c-a3ec-b97f4aeb8460"
         },
         "effectivePeriod": {
-          "start": "2025-04-17",
-          "end": "2025-08-24"
+          "start": "2024-09-24",
+          "end": "2025-08-19"
         },
         "reasonCode": [
           {
@@ -169643,24 +169643,24 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "f3faea2a-642b-40c9-9755-fd290b53574f",
+        "id": "2162860e-9785-4e36-903a-f68a9f317e59",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "114194",
-              "display": "hydroxychloroquine"
+              "code": "327362",
+              "display": "adalimumab"
             }
           ],
-          "text": "hydroxychloroquine"
+          "text": "adalimumab"
         },
         "subject": {
           "reference": "Patient/2ec0710a-3e5d-960c-a3ec-b97f4aeb8460"
         },
         "effectivePeriod": {
-          "start": "2024-06-10",
-          "end": "2024-10-30"
+          "start": "2024-08-06",
+          "end": "2024-11-21"
         },
         "reasonCode": [
           {
@@ -169672,24 +169672,24 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "ac12fc3b-dfda-40d5-a77e-b5d8d5863130",
+        "id": "4b00e58c-235d-4438-98c2-e36ff75bb73b",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "105585",
-              "display": "methotrexate"
+              "code": "373747",
+              "display": "etanercept"
             }
           ],
-          "text": "methotrexate"
+          "text": "etanercept"
         },
         "subject": {
           "reference": "Patient/2ec0710a-3e5d-960c-a3ec-b97f4aeb8460"
         },
         "effectivePeriod": {
-          "start": "2024-12-15",
-          "end": "2025-11-04"
+          "start": "2024-12-22",
+          "end": "2025-08-18"
         },
         "reasonCode": [
           {
@@ -169701,7 +169701,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "16745fd4-d1f6-4d2c-837b-bc0de1ad587f",
+        "id": "99517889-de99-4a74-822d-e06ac0ac0920",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

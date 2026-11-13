@@ -1,0 +1,203 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "48296b4c-e1cf-4370-8747-9b3d7e1d27ab",
+        "name": [
+          {
+            "use": "official",
+            "family": "Goodwin",
+            "given": [
+              "Heidi"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2014-10-17",
+        "address": [
+          {
+            "line": [
+              "36019 Wright Plain Suite 788"
+            ],
+            "city": "Lake Kayla",
+            "state": "IL",
+            "postalCode": "85328",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "9274cd8f-d0ed-4fd6-b2a3-78a314abe7a6",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "57160005",
+              "display": "Juvenile Idiopathic Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M08.00",
+              "display": "Juvenile Idiopathic Arthritis"
+            }
+          ],
+          "text": "Juvenile Idiopathic Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/48296b4c-e1cf-4370-8747-9b3d7e1d27ab"
+        },
+        "onsetDateTime": "2022-10-09"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "30558c35-6915-4ca2-b2f9-b6e1d0a7a7fa",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/48296b4c-e1cf-4370-8747-9b3d7e1d27ab"
+        },
+        "payor": [
+          {
+            "display": "UnitedHealthcare"
+          }
+        ],
+        "subscriberId": "639572743"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "e5fbb299-1008-434f-98d8-08e7898e6605",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/48296b4c-e1cf-4370-8747-9b3d7e1d27ab"
+        },
+        "effectiveDateTime": "2026-08-21",
+        "valueBoolean": false
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "e2fb54f9-8836-4a6b-8f6e-008afcb7bb55",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/48296b4c-e1cf-4370-8747-9b3d7e1d27ab"
+        },
+        "effectiveDateTime": "2026-09-07",
+        "valueBoolean": true
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "4753abe7-fff2-4428-8d12-4af8843f2c0b",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "327362",
+              "display": "adalimumab"
+            }
+          ],
+          "text": "adalimumab"
+        },
+        "subject": {
+          "reference": "Patient/48296b4c-e1cf-4370-8747-9b3d7e1d27ab"
+        },
+        "effectivePeriod": {
+          "start": "2024-11-06",
+          "end": "2025-06-08"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "6e2fa815-aad0-4b25-9790-ad4e169311ed",
+        "status": "draft",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "356248",
+              "display": "Cimzia (certolizumab pegol)"
+            }
+          ],
+          "text": "Cimzia (certolizumab pegol)"
+        },
+        "subject": {
+          "reference": "Patient/48296b4c-e1cf-4370-8747-9b3d7e1d27ab"
+        }
+      }
+    }
+  ]
+}

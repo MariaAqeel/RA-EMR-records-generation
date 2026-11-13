@@ -1628431,69 +1628431,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "1a54c986-1464-406e-975b-228d823c08ea",
+        "id": "a8329108-fa09-47aa-8f7b-94b74fb9ce40",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/551b9b53-40f8-8737-7c4e-03b2176d5692"
         },
         "payor": [
           {
-            "display": "Blue Shield of California"
+            "display": "Humana"
           }
         ],
-        "subscriberId": "562967596"
+        "subscriberId": "249765687"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "eb3016ea-a492-477c-b564-242adf51cac1",
+        "id": "40f986a9-d73b-4f12-b3a8-a872bedff942",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "373747",
-              "display": "etanercept"
+              "code": "327362",
+              "display": "adalimumab"
             }
           ],
-          "text": "etanercept"
+          "text": "adalimumab"
         },
         "subject": {
           "reference": "Patient/551b9b53-40f8-8737-7c4e-03b2176d5692"
         },
         "effectivePeriod": {
-          "start": "2024-09-09",
-          "end": "2025-06-10"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "29e2fd6b-d4a5-4743-9df6-f47c68610132",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "105585",
-              "display": "methotrexate"
-            }
-          ],
-          "text": "methotrexate"
-        },
-        "subject": {
-          "reference": "Patient/551b9b53-40f8-8737-7c4e-03b2176d5692"
-        },
-        "effectivePeriod": {
-          "start": "2025-04-20",
-          "end": "2026-01-23"
+          "start": "2025-09-25",
+          "end": "2026-02-21"
         },
         "reasonCode": [
           {
@@ -1628505,7 +1628476,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "14bffe1b-56a9-44ca-912b-a7a9281d024c",
+        "id": "3fdd3e35-1a42-4008-9eee-d6e5d9961f36",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

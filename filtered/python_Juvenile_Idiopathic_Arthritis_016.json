@@ -1,0 +1,161 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "9de6a9b4-7710-47e8-9deb-c5abf3a95a44",
+        "name": [
+          {
+            "use": "official",
+            "family": "Morgan",
+            "given": [
+              "Lisa"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2016-07-24",
+        "address": [
+          {
+            "line": [
+              "1534 Moore Rue Suite 267"
+            ],
+            "city": "West Kennethtown",
+            "state": "VT",
+            "postalCode": "00974",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "5cde12f6-0263-4c8b-aabd-7bad67829b1a",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "57160005",
+              "display": "Juvenile Idiopathic Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M08.00",
+              "display": "Juvenile Idiopathic Arthritis"
+            }
+          ],
+          "text": "Juvenile Idiopathic Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/9de6a9b4-7710-47e8-9deb-c5abf3a95a44"
+        },
+        "onsetDateTime": "2022-09-13"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "240e1fbf-5090-4ad4-90b6-00ccbc9f2231",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/9de6a9b4-7710-47e8-9deb-c5abf3a95a44"
+        },
+        "payor": [
+          {
+            "display": "Blue Shield of California"
+          }
+        ],
+        "subscriberId": "623329721"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "57c87ce7-094e-44ca-991a-ee509affa648",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/9de6a9b4-7710-47e8-9deb-c5abf3a95a44"
+        },
+        "effectiveDateTime": "2026-10-17",
+        "valueQuantity": {
+          "value": 43.9,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "32015fdc-cacf-488b-aba5-4d3e53561a61",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/9de6a9b4-7710-47e8-9deb-c5abf3a95a44"
+        },
+        "effectiveDateTime": "2026-11-02",
+        "valueQuantity": {
+          "value": 22.9,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    }
+  ]
+}

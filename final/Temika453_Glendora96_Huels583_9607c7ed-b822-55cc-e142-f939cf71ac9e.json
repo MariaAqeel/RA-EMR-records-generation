@@ -141058,7 +141058,7 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "3b2042ea-c70e-4739-b5a1-1053807841e7",
+        "id": "fb3dc0b9-0acd-4ad4-8674-a44c433d8b67",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/9607c7ed-b822-55cc-e142-f939cf71ac9e"
@@ -141068,13 +141068,13 @@
             "display": "Humana"
           }
         ],
-        "subscriberId": "543011400"
+        "subscriberId": "382100795"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "ea93cfe6-6b75-4a18-a8ce-44c1a082bbc3",
+        "id": "e7eb14bb-c100-4f2a-aa59-59d61bbdb363",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -141090,66 +141090,8 @@
           "reference": "Patient/9607c7ed-b822-55cc-e142-f939cf71ac9e"
         },
         "effectivePeriod": {
-          "start": "2025-05-23",
-          "end": "2025-09-08"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "fac3a7d6-0510-46f4-85a1-2a0e8de7065e",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "105585",
-              "display": "methotrexate"
-            }
-          ],
-          "text": "methotrexate"
-        },
-        "subject": {
-          "reference": "Patient/9607c7ed-b822-55cc-e142-f939cf71ac9e"
-        },
-        "effectivePeriod": {
-          "start": "2025-07-22",
-          "end": "2026-07-21"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "56c26ee2-b109-43bc-80e2-5234b1ca05db",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "373747",
-              "display": "etanercept"
-            }
-          ],
-          "text": "etanercept"
-        },
-        "subject": {
-          "reference": "Patient/9607c7ed-b822-55cc-e142-f939cf71ac9e"
-        },
-        "effectivePeriod": {
-          "start": "2025-01-13",
-          "end": "2025-06-20"
+          "start": "2025-01-19",
+          "end": "2025-12-22"
         },
         "reasonCode": [
           {
@@ -141161,7 +141103,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "02c3922f-ce4f-4189-81ca-46066cce0488",
+        "id": "81ee7bac-2a48-489c-a260-4e5b3826b46e",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

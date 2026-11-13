@@ -79904,23 +79904,23 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "cfb61936-e455-426a-b5cb-cbd084e42be4",
+        "id": "ab3add8e-28af-422b-b187-ebcba99d1c4d",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/85d2290e-d93d-0c97-0be8-0311e1f0aeab"
         },
         "payor": [
           {
-            "display": "Aetna"
+            "display": "Humana"
           }
         ],
-        "subscriberId": "690834194"
+        "subscriberId": "938753510"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "6f4b5852-8eb1-4873-9cb8-b31962707553",
+        "id": "236539bb-3b25-41f3-829d-f230bb32747b",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -79936,8 +79936,66 @@
           "reference": "Patient/85d2290e-d93d-0c97-0be8-0311e1f0aeab"
         },
         "effectivePeriod": {
-          "start": "2025-04-08",
-          "end": "2025-12-30"
+          "start": "2024-10-02",
+          "end": "2025-08-25"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "6d28b224-125d-4b3b-9952-23dc2ce9747f",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "373747",
+              "display": "etanercept"
+            }
+          ],
+          "text": "etanercept"
+        },
+        "subject": {
+          "reference": "Patient/85d2290e-d93d-0c97-0be8-0311e1f0aeab"
+        },
+        "effectivePeriod": {
+          "start": "2024-08-23",
+          "end": "2025-07-16"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "c4e7403d-10eb-4550-a86b-37993dbb3769",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "327362",
+              "display": "adalimumab"
+            }
+          ],
+          "text": "adalimumab"
+        },
+        "subject": {
+          "reference": "Patient/85d2290e-d93d-0c97-0be8-0311e1f0aeab"
+        },
+        "effectivePeriod": {
+          "start": "2025-11-05",
+          "end": "2026-10-28"
         },
         "reasonCode": [
           {
@@ -79949,7 +80007,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "46e73d32-7c7c-453d-8b26-54d75e594f67",
+        "id": "f0aec226-56e4-4b30-8535-bc739e7dfd46",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

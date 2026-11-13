@@ -1,0 +1,223 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "bc25d536-e79d-4e93-a678-5b86f73fee8c",
+        "name": [
+          {
+            "use": "official",
+            "family": "Rich",
+            "given": [
+              "Michael"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1989-11-16",
+        "address": [
+          {
+            "line": [
+              "7722 Lisa Loaf"
+            ],
+            "city": "Baileyton",
+            "state": "NE",
+            "postalCode": "40236",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "ea712553-5652-4621-88dd-fb62d11b2770",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "9566007",
+              "display": "Ankylosing Spondylitis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M45.9",
+              "display": "Ankylosing Spondylitis"
+            }
+          ],
+          "text": "Ankylosing Spondylitis"
+        },
+        "subject": {
+          "reference": "Patient/bc25d536-e79d-4e93-a678-5b86f73fee8c"
+        },
+        "onsetDateTime": "2024-07-17"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "80987adf-0473-4d6b-9680-faefd466d53e",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/bc25d536-e79d-4e93-a678-5b86f73fee8c"
+        },
+        "payor": [
+          {
+            "display": "UnitedHealthcare"
+          }
+        ],
+        "subscriberId": "726526269"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "c391d76f-0439-4111-b88f-263fcc5e4f07",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/bc25d536-e79d-4e93-a678-5b86f73fee8c"
+        },
+        "effectiveDateTime": "2026-08-15",
+        "valueQuantity": {
+          "value": 195.0,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "fa51b71c-b52d-4f74-8796-75b771477558",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/bc25d536-e79d-4e93-a678-5b86f73fee8c"
+        },
+        "effectiveDateTime": "2026-09-18",
+        "valueBoolean": false
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "5eb7641c-70de-4541-95f0-ad3ac68b1e6c",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/bc25d536-e79d-4e93-a678-5b86f73fee8c"
+        },
+        "effectiveDateTime": "2026-11-04",
+        "valueQuantity": {
+          "value": 40.7,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "148e2761-e4ca-4ce7-b0e4-acc6e0cb68db",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/bc25d536-e79d-4e93-a678-5b86f73fee8c"
+        },
+        "effectiveDateTime": "2026-09-04",
+        "valueBoolean": true
+      }
+    }
+  ]
+}

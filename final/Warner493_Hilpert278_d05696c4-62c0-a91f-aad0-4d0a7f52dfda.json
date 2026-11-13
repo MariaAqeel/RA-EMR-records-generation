@@ -2058701,40 +2058701,69 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "37fa1690-ab09-4515-a885-fda7ec13317d",
+        "id": "f738aeac-255f-439c-816d-08ff4e211241",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/d05696c4-62c0-a91f-aad0-4d0a7f52dfda"
         },
         "payor": [
           {
-            "display": "Humana"
+            "display": "Aetna"
           }
         ],
-        "subscriberId": "995981774"
+        "subscriberId": "479694232"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "46005045-b3b1-402e-af18-3decd78b65bf",
+        "id": "cac2b906-58ce-4a99-aa0e-196c65472ed6",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "114194",
-              "display": "hydroxychloroquine"
+              "code": "327361",
+              "display": "leflunomide"
             }
           ],
-          "text": "hydroxychloroquine"
+          "text": "leflunomide"
         },
         "subject": {
           "reference": "Patient/d05696c4-62c0-a91f-aad0-4d0a7f52dfda"
         },
         "effectivePeriod": {
-          "start": "2024-12-28",
-          "end": "2025-11-20"
+          "start": "2024-12-08",
+          "end": "2025-07-14"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "6a5a2293-070e-460d-9a96-b1ee52209e6b",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "327362",
+              "display": "adalimumab"
+            }
+          ],
+          "text": "adalimumab"
+        },
+        "subject": {
+          "reference": "Patient/d05696c4-62c0-a91f-aad0-4d0a7f52dfda"
+        },
+        "effectivePeriod": {
+          "start": "2025-07-28",
+          "end": "2026-04-25"
         },
         "reasonCode": [
           {
@@ -2058746,7 +2058775,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "e17d0c83-b34c-40ff-b348-5f577212c0f5",
+        "id": "083beb50-2e55-48ed-bdd8-be0d5b84fab7",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

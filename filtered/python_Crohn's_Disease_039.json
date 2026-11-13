@@ -1,0 +1,157 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "681ec6d8-8820-4f20-88a9-248f9ee6f2d1",
+        "name": [
+          {
+            "use": "official",
+            "family": "Ball",
+            "given": [
+              "Kelli"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1979-09-30",
+        "address": [
+          {
+            "line": [
+              "763 Kyle Drive Apt. 285"
+            ],
+            "city": "Davidton",
+            "state": "MH",
+            "postalCode": "84647",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "14cf27ce-5a56-48bd-9642-f681178e7aa7",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "34000006",
+              "display": "Crohn's Disease"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "K50.90",
+              "display": "Crohn's Disease"
+            }
+          ],
+          "text": "Crohn's Disease"
+        },
+        "subject": {
+          "reference": "Patient/681ec6d8-8820-4f20-88a9-248f9ee6f2d1"
+        },
+        "onsetDateTime": "2023-09-16"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "a19eeb01-e5cf-4f9a-8777-bd77b02e86d9",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/681ec6d8-8820-4f20-88a9-248f9ee6f2d1"
+        },
+        "payor": [
+          {
+            "display": "Cigna"
+          }
+        ],
+        "subscriberId": "574238262"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "310aa636-9d36-48b5-8544-d910074d79b9",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/681ec6d8-8820-4f20-88a9-248f9ee6f2d1"
+        },
+        "effectiveDateTime": "2026-11-08",
+        "valueBoolean": false
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "9bb42b97-c69c-487e-83dc-19badc523e72",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/681ec6d8-8820-4f20-88a9-248f9ee6f2d1"
+        },
+        "effectiveDateTime": "2026-08-18",
+        "valueQuantity": {
+          "value": 77.6,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    }
+  ]
+}

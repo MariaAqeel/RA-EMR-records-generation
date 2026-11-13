@@ -81144,40 +81144,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "42889828-e467-49b4-98ee-850bc0b20b70",
+        "id": "226febd2-e3ef-48f2-bdfe-7564b1810839",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/623f387e-2905-aa85-450d-f5a427331ec7"
         },
         "payor": [
           {
-            "display": "Aetna"
+            "display": "Humana"
           }
         ],
-        "subscriberId": "203709447"
+        "subscriberId": "215618313"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "a4327678-d8ab-4325-90e5-839cc2d33ea3",
+        "id": "3469f712-aa73-43a3-b9d2-e0027eed55e3",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "373747",
-              "display": "etanercept"
+              "code": "105585",
+              "display": "methotrexate"
             }
           ],
-          "text": "etanercept"
+          "text": "methotrexate"
         },
         "subject": {
           "reference": "Patient/623f387e-2905-aa85-450d-f5a427331ec7"
         },
         "effectivePeriod": {
-          "start": "2024-12-23",
-          "end": "2025-11-28"
+          "start": "2025-04-21",
+          "end": "2025-12-14"
         },
         "reasonCode": [
           {
@@ -81189,53 +81189,24 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "ff673cae-cfcb-470a-895b-f5f527b7b48a",
+        "id": "d13c5998-ff83-4994-bc1f-d4b3505b8853",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327361",
-              "display": "leflunomide"
+              "code": "114194",
+              "display": "hydroxychloroquine"
             }
           ],
-          "text": "leflunomide"
+          "text": "hydroxychloroquine"
         },
         "subject": {
           "reference": "Patient/623f387e-2905-aa85-450d-f5a427331ec7"
         },
         "effectivePeriod": {
-          "start": "2025-08-25",
-          "end": "2026-01-18"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "8dcb39ac-997a-4a58-9961-4441bad68b1e",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327361",
-              "display": "leflunomide"
-            }
-          ],
-          "text": "leflunomide"
-        },
-        "subject": {
-          "reference": "Patient/623f387e-2905-aa85-450d-f5a427331ec7"
-        },
-        "effectivePeriod": {
-          "start": "2024-10-03",
-          "end": "2025-08-22"
+          "start": "2024-11-07",
+          "end": "2025-09-15"
         },
         "reasonCode": [
           {
@@ -81247,18 +81218,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "3aed49a9-7687-4440-89ff-8e4809957794",
+        "id": "f450a77f-0bb8-464b-9aec-c946b953d14a",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "614391",
-              "display": "Simponi Aria (golimumab)"
+              "code": "358258",
+              "display": "Orencia (abatacept)"
             }
           ],
-          "text": "Simponi Aria (golimumab)"
+          "text": "Orencia (abatacept)"
         },
         "subject": {
           "reference": "Patient/623f387e-2905-aa85-450d-f5a427331ec7"

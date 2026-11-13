@@ -154121,23 +154121,23 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "abd4c2b3-b036-4921-b8e7-534e45c03b87",
+        "id": "6609a561-899d-4f0d-be82-cf5386206dd3",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/60deaabc-5f2d-937d-6112-de37d56baa87"
         },
         "payor": [
           {
-            "display": "Aetna"
+            "display": "Cigna"
           }
         ],
-        "subscriberId": "693582557"
+        "subscriberId": "547299664"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "1d95afbf-08df-4dc7-81e9-2406061408f4",
+        "id": "bf2089cd-2ecc-48ad-a19b-6eb0f9f4f670",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -154153,8 +154153,8 @@
           "reference": "Patient/60deaabc-5f2d-937d-6112-de37d56baa87"
         },
         "effectivePeriod": {
-          "start": "2025-04-14",
-          "end": "2025-09-23"
+          "start": "2024-09-02",
+          "end": "2025-07-29"
         },
         "reasonCode": [
           {
@@ -154166,18 +154166,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "327ef3f0-3b9e-4b59-bf51-af22d63ca38d",
+        "id": "0318d913-af6e-45ba-bce5-3aa884df5723",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "356248",
-              "display": "Cimzia (certolizumab pegol)"
+              "code": "358258",
+              "display": "Orencia (abatacept)"
             }
           ],
-          "text": "Cimzia (certolizumab pegol)"
+          "text": "Orencia (abatacept)"
         },
         "subject": {
           "reference": "Patient/60deaabc-5f2d-937d-6112-de37d56baa87"

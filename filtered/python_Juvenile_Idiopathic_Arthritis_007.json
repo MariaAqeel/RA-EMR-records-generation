@@ -1,0 +1,227 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "32172562-c20b-4c5d-9d24-db8f3278f056",
+        "name": [
+          {
+            "use": "official",
+            "family": "Adams",
+            "given": [
+              "Kimberly"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2016-02-29",
+        "address": [
+          {
+            "line": [
+              "867 Becker Path Apt. 456"
+            ],
+            "city": "Sawyershire",
+            "state": "AS",
+            "postalCode": "79559",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "d2762cbf-6bed-471f-9a8b-d67c8a245170",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "57160005",
+              "display": "Juvenile Idiopathic Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M08.00",
+              "display": "Juvenile Idiopathic Arthritis"
+            }
+          ],
+          "text": "Juvenile Idiopathic Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/32172562-c20b-4c5d-9d24-db8f3278f056"
+        },
+        "onsetDateTime": "2025-08-23"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "28e98ecf-4b04-4625-b62a-58c928385389",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/32172562-c20b-4c5d-9d24-db8f3278f056"
+        },
+        "payor": [
+          {
+            "display": "Cigna"
+          }
+        ],
+        "subscriberId": "717981843"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f4d839be-e201-409a-a9d6-41b1b0423f66",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/32172562-c20b-4c5d-9d24-db8f3278f056"
+        },
+        "effectiveDateTime": "2026-08-19",
+        "valueQuantity": {
+          "value": 33.2,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f5194bae-a3f0-44f5-8380-6c979a7b00ee",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/32172562-c20b-4c5d-9d24-db8f3278f056"
+        },
+        "effectiveDateTime": "2026-10-07",
+        "valueQuantity": {
+          "value": 167.1,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "5a74b9d2-e403-43fc-8917-6406140b416a",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/32172562-c20b-4c5d-9d24-db8f3278f056"
+        },
+        "effectiveDateTime": "2026-09-03",
+        "valueBoolean": true
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "53ad2b1d-bab4-4697-9d93-238416f9f6a3",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/32172562-c20b-4c5d-9d24-db8f3278f056"
+        },
+        "effectiveDateTime": "2026-10-04",
+        "valueQuantity": {
+          "value": 173.3,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    }
+  ]
+}

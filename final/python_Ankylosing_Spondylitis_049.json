@@ -1,0 +1,302 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "08e9436c-4060-4ae6-8e32-86fa894b63aa",
+        "name": [
+          {
+            "use": "official",
+            "family": "Werner",
+            "given": [
+              "Patrick"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "2001-06-27",
+        "address": [
+          {
+            "line": [
+              "024 Kimberly Road"
+            ],
+            "city": "Tracystad",
+            "state": "GU",
+            "postalCode": "21809",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "67bebdfb-a2cf-448a-b4dd-994b25a41cd7",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "9566007",
+              "display": "Ankylosing Spondylitis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M45.9",
+              "display": "Ankylosing Spondylitis"
+            }
+          ],
+          "text": "Ankylosing Spondylitis"
+        },
+        "subject": {
+          "reference": "Patient/08e9436c-4060-4ae6-8e32-86fa894b63aa"
+        },
+        "onsetDateTime": "2022-05-05"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "53751312-fb7d-49c5-9153-3755a3fc5490",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/08e9436c-4060-4ae6-8e32-86fa894b63aa"
+        },
+        "payor": [
+          {
+            "display": "Cigna"
+          }
+        ],
+        "subscriberId": "328113116"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "14e5e0d8-3d8b-451d-bc61-d159c7f49e00",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/08e9436c-4060-4ae6-8e32-86fa894b63aa"
+        },
+        "effectiveDateTime": "2026-10-17",
+        "valueQuantity": {
+          "value": 68.7,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "8726744b-df1c-4baf-b4f9-6604c52a52d4",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/08e9436c-4060-4ae6-8e32-86fa894b63aa"
+        },
+        "effectiveDateTime": "2026-10-28",
+        "valueQuantity": {
+          "value": 22.7,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "a30cbde4-247d-4407-8370-ca140113a4b7",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/08e9436c-4060-4ae6-8e32-86fa894b63aa"
+        },
+        "effectiveDateTime": "2026-11-09",
+        "valueBoolean": false
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "889c40e8-9402-48ee-8454-dc4fd994ad20",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/08e9436c-4060-4ae6-8e32-86fa894b63aa"
+        },
+        "effectiveDateTime": "2026-10-08",
+        "valueBoolean": true
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "34285121-d4d2-467c-b540-4b2a58fd5409",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "105585",
+              "display": "methotrexate"
+            }
+          ],
+          "text": "methotrexate"
+        },
+        "subject": {
+          "reference": "Patient/08e9436c-4060-4ae6-8e32-86fa894b63aa"
+        },
+        "effectivePeriod": {
+          "start": "2025-06-16",
+          "end": "2026-05-26"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "6dd90084-15ad-4c41-93c2-905e9ff9515e",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "105585",
+              "display": "methotrexate"
+            }
+          ],
+          "text": "methotrexate"
+        },
+        "subject": {
+          "reference": "Patient/08e9436c-4060-4ae6-8e32-86fa894b63aa"
+        },
+        "effectivePeriod": {
+          "start": "2025-02-09",
+          "end": "2025-10-31"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "2c009a5b-773f-4996-aff7-75c9a755926f",
+        "status": "draft",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "614391",
+              "display": "Simponi Aria (golimumab)"
+            }
+          ],
+          "text": "Simponi Aria (golimumab)"
+        },
+        "subject": {
+          "reference": "Patient/08e9436c-4060-4ae6-8e32-86fa894b63aa"
+        }
+      }
+    }
+  ]
+}

@@ -449109,23 +449109,23 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "aaaa0c22-69ce-4eac-a91c-fb76bd716090",
+        "id": "97946af7-20fd-4542-a7b2-be4fb1043969",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/eaf75dae-c020-069d-b1cf-8171dbdc9a5c"
         },
         "payor": [
           {
-            "display": "Aetna"
+            "display": "Humana"
           }
         ],
-        "subscriberId": "390804164"
+        "subscriberId": "672685069"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "2c149f92-ffa0-49c3-925e-8c8e6b6f6ad0",
+        "id": "d1215c8f-e286-4250-b990-39abe82d8090",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -449141,8 +449141,37 @@
           "reference": "Patient/eaf75dae-c020-069d-b1cf-8171dbdc9a5c"
         },
         "effectivePeriod": {
-          "start": "2025-06-11",
-          "end": "2025-11-18"
+          "start": "2024-06-12",
+          "end": "2024-09-13"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "69db2f1c-1c78-4a81-8263-7c530fb7310e",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "105585",
+              "display": "methotrexate"
+            }
+          ],
+          "text": "methotrexate"
+        },
+        "subject": {
+          "reference": "Patient/eaf75dae-c020-069d-b1cf-8171dbdc9a5c"
+        },
+        "effectivePeriod": {
+          "start": "2025-09-30",
+          "end": "2026-05-06"
         },
         "reasonCode": [
           {
@@ -449154,18 +449183,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "e552fdbe-3e76-4ad5-aad1-07051468aa5f",
+        "id": "9c168c8a-cdc6-487a-bb42-68606bccf9b6",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "356248",
-              "display": "Cimzia (certolizumab pegol)"
+              "code": "358258",
+              "display": "Orencia (abatacept)"
             }
           ],
-          "text": "Cimzia (certolizumab pegol)"
+          "text": "Orencia (abatacept)"
         },
         "subject": {
           "reference": "Patient/eaf75dae-c020-069d-b1cf-8171dbdc9a5c"

@@ -167725,69 +167725,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "cf87f063-276b-4688-9298-c70d0f71434d",
+        "id": "dc352a6a-5c3e-4896-8275-ea55c259d9fa",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/d93c1046-1f60-eb27-46e2-7de94bac78ad"
         },
         "payor": [
           {
-            "display": "Aetna"
+            "display": "Cigna"
           }
         ],
-        "subscriberId": "349500203"
+        "subscriberId": "205267757"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "41563792-1062-4eb9-a56c-9c6f2ea2ce5e",
+        "id": "9ff9dbe7-a568-480d-8743-6e7a7328c8c0",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "373747",
-              "display": "etanercept"
+              "code": "327361",
+              "display": "leflunomide"
             }
           ],
-          "text": "etanercept"
+          "text": "leflunomide"
         },
         "subject": {
           "reference": "Patient/d93c1046-1f60-eb27-46e2-7de94bac78ad"
         },
         "effectivePeriod": {
-          "start": "2024-12-24",
-          "end": "2025-03-27"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "c5658719-5d65-40ab-b35f-bdfdb7236291",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "373747",
-              "display": "etanercept"
-            }
-          ],
-          "text": "etanercept"
-        },
-        "subject": {
-          "reference": "Patient/d93c1046-1f60-eb27-46e2-7de94bac78ad"
-        },
-        "effectivePeriod": {
-          "start": "2025-09-22",
-          "end": "2026-06-06"
+          "start": "2025-04-10",
+          "end": "2025-11-03"
         },
         "reasonCode": [
           {
@@ -167799,18 +167770,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "8a2b3a53-9ad7-432b-8f2c-c00706f087b9",
+        "id": "e8360e34-c99b-4f37-be95-d7dbf354b76b",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "356248",
-              "display": "Cimzia (certolizumab pegol)"
+              "code": "358258",
+              "display": "Orencia (abatacept)"
             }
           ],
-          "text": "Cimzia (certolizumab pegol)"
+          "text": "Orencia (abatacept)"
         },
         "subject": {
           "reference": "Patient/d93c1046-1f60-eb27-46e2-7de94bac78ad"

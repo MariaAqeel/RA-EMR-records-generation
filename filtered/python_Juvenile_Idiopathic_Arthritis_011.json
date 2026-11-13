@@ -1,0 +1,231 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "fcf67dc7-848a-4355-8583-c96519712463",
+        "name": [
+          {
+            "use": "official",
+            "family": "Whitney",
+            "given": [
+              "Lynn"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2019-08-25",
+        "address": [
+          {
+            "line": [
+              "434 Erin Forge Suite 548"
+            ],
+            "city": "Port Richard",
+            "state": "AK",
+            "postalCode": "77991",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "1b8dee5e-4b6f-47aa-9131-9dbd120cfd10",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "57160005",
+              "display": "Juvenile Idiopathic Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M08.00",
+              "display": "Juvenile Idiopathic Arthritis"
+            }
+          ],
+          "text": "Juvenile Idiopathic Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/fcf67dc7-848a-4355-8583-c96519712463"
+        },
+        "onsetDateTime": "2024-09-06"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "16808be7-375c-48a2-93e6-bfc70afec729",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/fcf67dc7-848a-4355-8583-c96519712463"
+        },
+        "payor": [
+          {
+            "display": "UnitedHealthcare"
+          }
+        ],
+        "subscriberId": "779722226"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "bb85f280-e390-4c89-8f7d-f9450326ea31",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/fcf67dc7-848a-4355-8583-c96519712463"
+        },
+        "effectiveDateTime": "2026-11-06",
+        "valueQuantity": {
+          "value": 28.7,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4a021f24-a05e-4f00-a94e-c87a5974da37",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/fcf67dc7-848a-4355-8583-c96519712463"
+        },
+        "effectiveDateTime": "2026-10-19",
+        "valueQuantity": {
+          "value": 12.7,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "9a2bbc39-9901-4df1-8e99-0b374afbd39b",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/fcf67dc7-848a-4355-8583-c96519712463"
+        },
+        "effectiveDateTime": "2026-11-06",
+        "valueQuantity": {
+          "value": 22.8,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "8f0cfbf1-c26b-4074-b02a-1338822b3599",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/fcf67dc7-848a-4355-8583-c96519712463"
+        },
+        "effectiveDateTime": "2026-08-18",
+        "valueQuantity": {
+          "value": 169.6,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    }
+  ]
+}

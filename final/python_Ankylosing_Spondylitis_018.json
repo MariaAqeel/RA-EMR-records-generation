@@ -1,0 +1,211 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "3c05cb79-b74c-4dfa-a74e-8818a2130fe6",
+        "name": [
+          {
+            "use": "official",
+            "family": "Sanchez",
+            "given": [
+              "Jose"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1986-12-10",
+        "address": [
+          {
+            "line": [
+              "2429 Price Spring Apt. 649"
+            ],
+            "city": "Port Heidifort",
+            "state": "KS",
+            "postalCode": "84911",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "6ad119a4-46af-478d-acac-853919b6bd50",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "9566007",
+              "display": "Ankylosing Spondylitis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M45.9",
+              "display": "Ankylosing Spondylitis"
+            }
+          ],
+          "text": "Ankylosing Spondylitis"
+        },
+        "subject": {
+          "reference": "Patient/3c05cb79-b74c-4dfa-a74e-8818a2130fe6"
+        },
+        "onsetDateTime": "2023-09-07"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "7f3a286a-1058-419f-9587-2ec400d97d76",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/3c05cb79-b74c-4dfa-a74e-8818a2130fe6"
+        },
+        "payor": [
+          {
+            "display": "Cigna"
+          }
+        ],
+        "subscriberId": "510438610"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4a561633-5459-411b-8af4-ee6c41ee4e4f",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/3c05cb79-b74c-4dfa-a74e-8818a2130fe6"
+        },
+        "effectiveDateTime": "2026-10-20",
+        "valueQuantity": {
+          "value": 11.5,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "90f94d31-9a64-4f1b-9598-565dbd54b531",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/3c05cb79-b74c-4dfa-a74e-8818a2130fe6"
+        },
+        "effectiveDateTime": "2026-08-29",
+        "valueQuantity": {
+          "value": 143.7,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "48560313-9957-4828-8ead-ac960f2468f3",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "373747",
+              "display": "etanercept"
+            }
+          ],
+          "text": "etanercept"
+        },
+        "subject": {
+          "reference": "Patient/3c05cb79-b74c-4dfa-a74e-8818a2130fe6"
+        },
+        "effectivePeriod": {
+          "start": "2024-07-12",
+          "end": "2024-10-20"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "c972db0b-abdd-42b5-8263-efcc271d2b01",
+        "status": "draft",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "356248",
+              "display": "Cimzia (certolizumab pegol)"
+            }
+          ],
+          "text": "Cimzia (certolizumab pegol)"
+        },
+        "subject": {
+          "reference": "Patient/3c05cb79-b74c-4dfa-a74e-8818a2130fe6"
+        }
+      }
+    }
+  ]
+}

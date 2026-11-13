@@ -382453,40 +382453,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "ff6e3f0f-27f7-4949-854a-8631914b18e9",
+        "id": "3048d555-6faf-477e-9945-24120831fc12",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/bde6e7e6-a4ef-42e7-ba06-b29a455f0875"
         },
         "payor": [
           {
-            "display": "Blue Shield of California"
+            "display": "UnitedHealthcare"
           }
         ],
-        "subscriberId": "949509370"
+        "subscriberId": "543017829"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "5d98e426-cc48-4a52-a02e-ff1f7d48649c",
+        "id": "500fa968-27bd-4e04-8679-f34735529905",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "114194",
-              "display": "hydroxychloroquine"
+              "code": "373747",
+              "display": "etanercept"
             }
           ],
-          "text": "hydroxychloroquine"
+          "text": "etanercept"
         },
         "subject": {
           "reference": "Patient/bde6e7e6-a4ef-42e7-ba06-b29a455f0875"
         },
         "effectivePeriod": {
-          "start": "2024-12-28",
-          "end": "2025-06-28"
+          "start": "2024-07-18",
+          "end": "2025-04-04"
         },
         "reasonCode": [
           {
@@ -382498,24 +382498,24 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "bb31024a-8bf9-4b4e-ae80-0288610ac3e7",
+        "id": "c09faac2-1a94-40a2-8231-3e99d958b30d",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327362",
-              "display": "adalimumab"
+              "code": "327361",
+              "display": "leflunomide"
             }
           ],
-          "text": "adalimumab"
+          "text": "leflunomide"
         },
         "subject": {
           "reference": "Patient/bde6e7e6-a4ef-42e7-ba06-b29a455f0875"
         },
         "effectivePeriod": {
-          "start": "2024-11-15",
-          "end": "2025-08-26"
+          "start": "2025-06-11",
+          "end": "2025-09-13"
         },
         "reasonCode": [
           {
@@ -382527,18 +382527,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "806a4b4d-84e4-4bf6-bd0b-3f80076dd24a",
+        "id": "58ad6380-f6ea-44c9-bf86-d5111bc05270",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "356248",
-              "display": "Cimzia (certolizumab pegol)"
+              "code": "614391",
+              "display": "Simponi Aria (golimumab)"
             }
           ],
-          "text": "Cimzia (certolizumab pegol)"
+          "text": "Simponi Aria (golimumab)"
         },
         "subject": {
           "reference": "Patient/bde6e7e6-a4ef-42e7-ba06-b29a455f0875"

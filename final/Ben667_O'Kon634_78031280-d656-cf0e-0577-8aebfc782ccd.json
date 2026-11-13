@@ -67681,40 +67681,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "aca579fc-985b-4fe3-aa01-bbc2a06f0714",
+        "id": "8d500d80-d767-4782-823c-263f72d7126c",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/78031280-d656-cf0e-0577-8aebfc782ccd"
         },
         "payor": [
           {
-            "display": "UnitedHealthcare"
+            "display": "Humana"
           }
         ],
-        "subscriberId": "250484966"
+        "subscriberId": "153860643"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "f87dfcbb-795a-4574-a58f-b0987e283226",
+        "id": "b6642607-1dfb-4f07-aebe-a1fdc19312f3",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "105585",
-              "display": "methotrexate"
+              "code": "114194",
+              "display": "hydroxychloroquine"
             }
           ],
-          "text": "methotrexate"
+          "text": "hydroxychloroquine"
         },
         "subject": {
           "reference": "Patient/78031280-d656-cf0e-0577-8aebfc782ccd"
         },
         "effectivePeriod": {
-          "start": "2025-08-01",
-          "end": "2025-11-27"
+          "start": "2025-02-09",
+          "end": "2025-07-31"
         },
         "reasonCode": [
           {
@@ -67726,7 +67726,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "3fcaf400-deb0-4a94-8f77-bd6924695238",
+        "id": "9d21db04-de32-480a-81d9-4a8581faf951",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

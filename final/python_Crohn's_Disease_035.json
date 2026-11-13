@@ -1,0 +1,304 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "1e650699-ac5e-49c3-b16b-87c5ffd5e91d",
+        "name": [
+          {
+            "use": "official",
+            "family": "Fowler",
+            "given": [
+              "Melinda"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1992-02-09",
+        "address": [
+          {
+            "line": [
+              "3591 Ayala Island Apt. 821"
+            ],
+            "city": "Tiffanystad",
+            "state": "PR",
+            "postalCode": "18702",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "f1fb9cae-543b-4bb4-8442-8c5c519f8693",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "34000006",
+              "display": "Crohn's Disease"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "K50.90",
+              "display": "Crohn's Disease"
+            }
+          ],
+          "text": "Crohn's Disease"
+        },
+        "subject": {
+          "reference": "Patient/1e650699-ac5e-49c3-b16b-87c5ffd5e91d"
+        },
+        "onsetDateTime": "2024-08-16"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "f85b80b2-70ad-46ad-b58a-f07829aa8acf",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/1e650699-ac5e-49c3-b16b-87c5ffd5e91d"
+        },
+        "payor": [
+          {
+            "display": "UnitedHealthcare"
+          }
+        ],
+        "subscriberId": "175165940"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "9d4051ad-6d93-4ba1-b431-70e5b4ef39ae",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/1e650699-ac5e-49c3-b16b-87c5ffd5e91d"
+        },
+        "effectiveDateTime": "2026-09-01",
+        "valueQuantity": {
+          "value": 41.4,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "e3c8383a-7528-4e3e-accb-c724105ebb76",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/1e650699-ac5e-49c3-b16b-87c5ffd5e91d"
+        },
+        "effectiveDateTime": "2026-10-28",
+        "valueQuantity": {
+          "value": 129.9,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "98d05b1e-aef9-436f-9531-6b7d43155eb6",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/1e650699-ac5e-49c3-b16b-87c5ffd5e91d"
+        },
+        "effectiveDateTime": "2026-10-27",
+        "valueQuantity": {
+          "value": 43.1,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "eb7789ae-cdc5-455e-9a9e-e6228934c80f",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "114194",
+              "display": "hydroxychloroquine"
+            }
+          ],
+          "text": "hydroxychloroquine"
+        },
+        "subject": {
+          "reference": "Patient/1e650699-ac5e-49c3-b16b-87c5ffd5e91d"
+        },
+        "effectivePeriod": {
+          "start": "2025-07-16",
+          "end": "2025-12-16"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "417c2e81-e564-46d4-97ff-fdc415b6a5b6",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "114194",
+              "display": "hydroxychloroquine"
+            }
+          ],
+          "text": "hydroxychloroquine"
+        },
+        "subject": {
+          "reference": "Patient/1e650699-ac5e-49c3-b16b-87c5ffd5e91d"
+        },
+        "effectivePeriod": {
+          "start": "2025-02-08",
+          "end": "2025-12-29"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "49503e69-425b-4db7-930b-04c3c400e5a7",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "327362",
+              "display": "adalimumab"
+            }
+          ],
+          "text": "adalimumab"
+        },
+        "subject": {
+          "reference": "Patient/1e650699-ac5e-49c3-b16b-87c5ffd5e91d"
+        },
+        "effectivePeriod": {
+          "start": "2024-09-03",
+          "end": "2024-12-06"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "20c57933-6091-498a-915d-50cf6c8755fc",
+        "status": "draft",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "358258",
+              "display": "Orencia (abatacept)"
+            }
+          ],
+          "text": "Orencia (abatacept)"
+        },
+        "subject": {
+          "reference": "Patient/1e650699-ac5e-49c3-b16b-87c5ffd5e91d"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "7ef03b57-7501-480b-adec-29fb9e425b1b",
+        "name": [
+          {
+            "use": "official",
+            "family": "Evans",
+            "given": [
+              "Steven"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1980-07-23",
+        "address": [
+          {
+            "line": [
+              "17431 Shelton Cove Apt. 108"
+            ],
+            "city": "West Timothychester",
+            "state": "NY",
+            "postalCode": "97033",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "2190f283-6134-45b7-86f3-2fd10f623aa1",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "9631008",
+              "display": "Psoriatic Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M07.60",
+              "display": "Psoriatic Arthritis"
+            }
+          ],
+          "text": "Psoriatic Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/7ef03b57-7501-480b-adec-29fb9e425b1b"
+        },
+        "onsetDateTime": "2022-03-04"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "6cf60a3f-e088-4094-85b1-68df35127ec3",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/7ef03b57-7501-480b-adec-29fb9e425b1b"
+        },
+        "payor": [
+          {
+            "display": "UnitedHealthcare"
+          }
+        ],
+        "subscriberId": "214407697"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d4404f02-00f0-47a4-a2dd-115bd8f0e2c3",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/7ef03b57-7501-480b-adec-29fb9e425b1b"
+        },
+        "effectiveDateTime": "2026-11-02",
+        "valueBoolean": false
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "7ff84f51-2661-4dff-b68e-6fe1c1f7702c",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/7ef03b57-7501-480b-adec-29fb9e425b1b"
+        },
+        "effectiveDateTime": "2026-10-25",
+        "valueQuantity": {
+          "value": 61.9,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    }
+  ]
+}

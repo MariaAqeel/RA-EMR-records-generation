@@ -341602,40 +341602,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "4834da70-39c9-4bb5-888f-349a7415cfc1",
+        "id": "9f30317c-5b70-423b-8216-52cf4ccf406d",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/bc7be684-a66a-eb99-da07-7b9f2a94f441"
         },
         "payor": [
           {
-            "display": "Blue Shield of California"
+            "display": "Aetna"
           }
         ],
-        "subscriberId": "527131891"
+        "subscriberId": "280220725"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "8512a7f7-e52b-44ed-aa71-70039c9ad588",
+        "id": "a893982c-cafb-4337-bbac-eb63947db52e",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "105585",
-              "display": "methotrexate"
+              "code": "373747",
+              "display": "etanercept"
             }
           ],
-          "text": "methotrexate"
+          "text": "etanercept"
         },
         "subject": {
           "reference": "Patient/bc7be684-a66a-eb99-da07-7b9f2a94f441"
         },
         "effectivePeriod": {
-          "start": "2024-09-30",
-          "end": "2025-01-12"
+          "start": "2024-06-28",
+          "end": "2024-11-23"
         },
         "reasonCode": [
           {
@@ -341647,24 +341647,24 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "5485a7d0-98ce-4fe5-801a-57bfc9095599",
+        "id": "c016f90b-648e-45d9-a1a9-e05aaa137cc6",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "105585",
-              "display": "methotrexate"
+              "code": "114194",
+              "display": "hydroxychloroquine"
             }
           ],
-          "text": "methotrexate"
+          "text": "hydroxychloroquine"
         },
         "subject": {
           "reference": "Patient/bc7be684-a66a-eb99-da07-7b9f2a94f441"
         },
         "effectivePeriod": {
-          "start": "2024-12-07",
-          "end": "2025-04-18"
+          "start": "2024-09-10",
+          "end": "2025-06-29"
         },
         "reasonCode": [
           {
@@ -341676,18 +341676,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "e15b3faf-397a-48cd-a02a-b30b819801d1",
+        "id": "9ec842fb-a540-4596-8242-94a5072e0c43",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "614391",
-              "display": "Simponi Aria (golimumab)"
+              "code": "356248",
+              "display": "Cimzia (certolizumab pegol)"
             }
           ],
-          "text": "Simponi Aria (golimumab)"
+          "text": "Cimzia (certolizumab pegol)"
         },
         "subject": {
           "reference": "Patient/bc7be684-a66a-eb99-da07-7b9f2a94f441"

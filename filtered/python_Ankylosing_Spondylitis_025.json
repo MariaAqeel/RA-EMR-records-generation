@@ -1,0 +1,196 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "256e902a-217d-4cfb-a5ed-7ddd40ce29eb",
+        "name": [
+          {
+            "use": "official",
+            "family": "Jones",
+            "given": [
+              "Jesse"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1993-07-30",
+        "address": [
+          {
+            "line": [
+              "85737 Hill Greens"
+            ],
+            "city": "Fisherberg",
+            "state": "TX",
+            "postalCode": "74150",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "8f31072a-7758-4948-abe9-47520864e894",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "9566007",
+              "display": "Ankylosing Spondylitis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M45.9",
+              "display": "Ankylosing Spondylitis"
+            }
+          ],
+          "text": "Ankylosing Spondylitis"
+        },
+        "subject": {
+          "reference": "Patient/256e902a-217d-4cfb-a5ed-7ddd40ce29eb"
+        },
+        "onsetDateTime": "2024-12-08"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "c249c5dc-09c9-436a-b90a-2ada386ba35b",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/256e902a-217d-4cfb-a5ed-7ddd40ce29eb"
+        },
+        "payor": [
+          {
+            "display": "Aetna"
+          }
+        ],
+        "subscriberId": "305033614"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "5911408e-1e59-4377-b50f-3a108a6e84ae",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/256e902a-217d-4cfb-a5ed-7ddd40ce29eb"
+        },
+        "effectiveDateTime": "2026-09-27",
+        "valueQuantity": {
+          "value": 112.5,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "7580b474-60f2-47b6-a205-6991e2af3f2e",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/256e902a-217d-4cfb-a5ed-7ddd40ce29eb"
+        },
+        "effectiveDateTime": "2026-10-22",
+        "valueQuantity": {
+          "value": 24.3,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "3938e167-1923-40c3-9ebe-c5afc0652f3d",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/256e902a-217d-4cfb-a5ed-7ddd40ce29eb"
+        },
+        "effectiveDateTime": "2026-10-09",
+        "valueQuantity": {
+          "value": 46.3,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    }
+  ]
+}

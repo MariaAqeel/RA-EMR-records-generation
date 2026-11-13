@@ -158740,23 +158740,23 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "c24085a8-8f0a-4920-aab6-7e6860a657ce",
+        "id": "b389e8c6-7865-4c20-af18-a332178cdce7",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/9e512c86-c826-704d-356b-9d51c51357a3"
         },
         "payor": [
           {
-            "display": "Cigna"
+            "display": "Aetna"
           }
         ],
-        "subscriberId": "611259220"
+        "subscriberId": "601482782"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "30bd63bb-ea45-4113-b5af-0055d589274f",
+        "id": "f9904e05-e0a3-4556-8af6-a5bc55df1a6b",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -158772,8 +158772,8 @@
           "reference": "Patient/9e512c86-c826-704d-356b-9d51c51357a3"
         },
         "effectivePeriod": {
-          "start": "2025-05-17",
-          "end": "2026-01-10"
+          "start": "2025-09-25",
+          "end": "2026-01-14"
         },
         "reasonCode": [
           {
@@ -158785,36 +158785,7 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "6d444464-3d9c-4866-9450-20fcdfbe745c",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327362",
-              "display": "adalimumab"
-            }
-          ],
-          "text": "adalimumab"
-        },
-        "subject": {
-          "reference": "Patient/9e512c86-c826-704d-356b-9d51c51357a3"
-        },
-        "effectivePeriod": {
-          "start": "2025-04-07",
-          "end": "2025-10-06"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "6c37d55e-85e8-4312-8629-f62a8d2a563c",
+        "id": "7cff18bc-20d6-44f5-a172-dd780cf470e9",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -158830,8 +158801,8 @@
           "reference": "Patient/9e512c86-c826-704d-356b-9d51c51357a3"
         },
         "effectivePeriod": {
-          "start": "2025-10-18",
-          "end": "2026-08-02"
+          "start": "2025-08-11",
+          "end": "2026-05-19"
         },
         "reasonCode": [
           {
@@ -158843,18 +158814,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "c0f12a06-4922-4ee7-a0a8-89f014f49536",
+        "id": "58846dbf-5787-4612-be37-5bbcca3c0ccb",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "614391",
-              "display": "Simponi Aria (golimumab)"
+              "code": "356248",
+              "display": "Cimzia (certolizumab pegol)"
             }
           ],
-          "text": "Simponi Aria (golimumab)"
+          "text": "Cimzia (certolizumab pegol)"
         },
         "subject": {
           "reference": "Patient/9e512c86-c826-704d-356b-9d51c51357a3"

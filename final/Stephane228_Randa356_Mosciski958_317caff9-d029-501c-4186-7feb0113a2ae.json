@@ -110779,40 +110779,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "d880c777-abad-4efe-9e68-b5d0d87b54dc",
+        "id": "54125bfa-d19e-4fb3-bf83-e516b58adb25",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/317caff9-d029-501c-4186-7feb0113a2ae"
         },
         "payor": [
           {
-            "display": "Blue Shield of California"
+            "display": "Cigna"
           }
         ],
-        "subscriberId": "328497070"
+        "subscriberId": "451050221"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "8fe4a281-1af9-4c35-82c5-6456a9e23014",
+        "id": "2f533d1f-bdf0-4be1-8317-93373496d10e",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "373747",
-              "display": "etanercept"
+              "code": "105585",
+              "display": "methotrexate"
             }
           ],
-          "text": "etanercept"
+          "text": "methotrexate"
         },
         "subject": {
           "reference": "Patient/317caff9-d029-501c-4186-7feb0113a2ae"
         },
         "effectivePeriod": {
-          "start": "2025-07-27",
-          "end": "2026-04-27"
+          "start": "2025-07-20",
+          "end": "2026-06-24"
         },
         "reasonCode": [
           {
@@ -110824,24 +110824,24 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "70ebe2c4-4238-4f84-afdf-d64d6472ea29",
+        "id": "9849bbbe-7e50-48f2-a179-6cb31d2570fa",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "114194",
-              "display": "hydroxychloroquine"
+              "code": "327361",
+              "display": "leflunomide"
             }
           ],
-          "text": "hydroxychloroquine"
+          "text": "leflunomide"
         },
         "subject": {
           "reference": "Patient/317caff9-d029-501c-4186-7feb0113a2ae"
         },
         "effectivePeriod": {
-          "start": "2025-03-14",
-          "end": "2025-11-23"
+          "start": "2024-09-21",
+          "end": "2025-05-14"
         },
         "reasonCode": [
           {
@@ -110853,7 +110853,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "3941dfd0-cabd-442d-b343-cc7aae208e80",
+        "id": "09fe2301-6b5b-41a6-aae7-77b1c0b8fa7b",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

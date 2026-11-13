@@ -1930434,23 +1930434,23 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "846e7dcc-3bbf-4de0-949b-2fef8a8e49f4",
+        "id": "9c37e31e-7ffe-419e-a3ce-1c136cfb7974",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/43fc15d2-c526-778e-5a8d-2c323f1e03d9"
         },
         "payor": [
           {
-            "display": "Cigna"
+            "display": "UnitedHealthcare"
           }
         ],
-        "subscriberId": "818791184"
+        "subscriberId": "392404797"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "0358bfc8-fa74-4b86-a93b-303502fc76ca",
+        "id": "47140e66-c9bf-4272-ba30-254ae0c6b901",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -1930466,8 +1930466,8 @@
           "reference": "Patient/43fc15d2-c526-778e-5a8d-2c323f1e03d9"
         },
         "effectivePeriod": {
-          "start": "2024-10-14",
-          "end": "2025-01-26"
+          "start": "2025-05-21",
+          "end": "2026-05-11"
         },
         "reasonCode": [
           {
@@ -1930479,24 +1930479,24 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "9bf5fef2-e1ff-4b44-a7e1-b03a01563f9a",
+        "id": "30e623f6-f787-4610-9130-9e948e95102e",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "114194",
-              "display": "hydroxychloroquine"
+              "code": "373747",
+              "display": "etanercept"
             }
           ],
-          "text": "hydroxychloroquine"
+          "text": "etanercept"
         },
         "subject": {
           "reference": "Patient/43fc15d2-c526-778e-5a8d-2c323f1e03d9"
         },
         "effectivePeriod": {
-          "start": "2024-09-30",
-          "end": "2025-07-20"
+          "start": "2024-09-10",
+          "end": "2025-06-06"
         },
         "reasonCode": [
           {
@@ -1930508,7 +1930508,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "e7f756c1-fa27-4d2a-9bec-9afcff47e1b6",
+        "id": "e00ed64a-de2d-480d-99cf-99f3a14c4e50",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

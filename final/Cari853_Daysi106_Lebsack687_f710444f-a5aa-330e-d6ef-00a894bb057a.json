@@ -184412,40 +184412,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "87dbbf8b-35de-4ef7-afca-109ae88acd8c",
+        "id": "fd67db23-9fa2-474a-8085-355ec975472d",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/f710444f-a5aa-330e-d6ef-00a894bb057a"
         },
         "payor": [
           {
-            "display": "Blue Shield of California"
+            "display": "Aetna"
           }
         ],
-        "subscriberId": "313006598"
+        "subscriberId": "730651644"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "9a6c7006-06d2-4e00-9394-1504c5cf0923",
+        "id": "83c7d60a-ed08-40f1-acea-651e266ff61c",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327361",
-              "display": "leflunomide"
+              "code": "114194",
+              "display": "hydroxychloroquine"
             }
           ],
-          "text": "leflunomide"
+          "text": "hydroxychloroquine"
         },
         "subject": {
           "reference": "Patient/f710444f-a5aa-330e-d6ef-00a894bb057a"
         },
         "effectivePeriod": {
-          "start": "2025-10-17",
-          "end": "2026-06-25"
+          "start": "2024-08-28",
+          "end": "2025-05-08"
         },
         "reasonCode": [
           {
@@ -184457,36 +184457,7 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "6be768a0-91d9-4bf0-8750-e2cdb0a31a48",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327361",
-              "display": "leflunomide"
-            }
-          ],
-          "text": "leflunomide"
-        },
-        "subject": {
-          "reference": "Patient/f710444f-a5aa-330e-d6ef-00a894bb057a"
-        },
-        "effectivePeriod": {
-          "start": "2025-10-19",
-          "end": "2026-08-10"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "350b281a-d142-4b76-a96c-947cfe7a3127",
+        "id": "7994313a-cd3e-40fd-957e-d469cc356a92",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -184502,8 +184473,8 @@
           "reference": "Patient/f710444f-a5aa-330e-d6ef-00a894bb057a"
         },
         "effectivePeriod": {
-          "start": "2025-08-25",
-          "end": "2026-02-09"
+          "start": "2025-01-02",
+          "end": "2025-10-26"
         },
         "reasonCode": [
           {
@@ -184515,7 +184486,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "2a811b14-9a99-4614-93e3-a62fbfebf671",
+        "id": "3cde66e3-1157-4038-9604-d79fc63251b8",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

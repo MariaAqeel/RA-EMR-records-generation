@@ -299266,23 +299266,23 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "153500aa-e252-49e4-907f-c70bea09c13c",
+        "id": "509d934a-dece-4462-a5ea-224401b49979",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/fe7925ae-cc2b-69a2-593c-5036a6110435"
         },
         "payor": [
           {
-            "display": "UnitedHealthcare"
+            "display": "Cigna"
           }
         ],
-        "subscriberId": "828642880"
+        "subscriberId": "582970921"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "d9095b39-81bb-4d17-bcfe-a61478491857",
+        "id": "9364f7eb-630f-4535-8d45-691776eadb11",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -299298,8 +299298,8 @@
           "reference": "Patient/fe7925ae-cc2b-69a2-593c-5036a6110435"
         },
         "effectivePeriod": {
-          "start": "2025-04-09",
-          "end": "2026-02-24"
+          "start": "2025-01-13",
+          "end": "2025-10-14"
         },
         "reasonCode": [
           {
@@ -299311,53 +299311,24 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "35f0d798-12f5-42c2-b29a-c499e0ade0b1",
+        "id": "06fa8c4d-24da-4343-9d83-e11a820241f2",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "105585",
-              "display": "methotrexate"
+              "code": "373747",
+              "display": "etanercept"
             }
           ],
-          "text": "methotrexate"
+          "text": "etanercept"
         },
         "subject": {
           "reference": "Patient/fe7925ae-cc2b-69a2-593c-5036a6110435"
         },
         "effectivePeriod": {
-          "start": "2025-02-09",
-          "end": "2025-09-18"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "55a90ddd-0029-4cf9-81fc-db61699acc78",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327361",
-              "display": "leflunomide"
-            }
-          ],
-          "text": "leflunomide"
-        },
-        "subject": {
-          "reference": "Patient/fe7925ae-cc2b-69a2-593c-5036a6110435"
-        },
-        "effectivePeriod": {
-          "start": "2025-06-05",
-          "end": "2025-12-26"
+          "start": "2024-06-26",
+          "end": "2025-05-09"
         },
         "reasonCode": [
           {
@@ -299369,7 +299340,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "6b36c528-6797-43a8-a59d-14916c3b4734",
+        "id": "aa6566bd-a871-40e4-80d0-906d2fec5718",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

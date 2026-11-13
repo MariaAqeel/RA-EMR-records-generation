@@ -232387,40 +232387,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "950e5a38-a4b5-4c41-8f39-249d944c197a",
+        "id": "d2eb37d9-132a-4fdb-be54-876fd4968ba6",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/6a0f4d6b-aa89-5557-39cf-0b04fc5257a9"
         },
         "payor": [
           {
-            "display": "Blue Shield of California"
+            "display": "UnitedHealthcare"
           }
         ],
-        "subscriberId": "411316963"
+        "subscriberId": "215480234"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "7a0a05be-1c29-44ae-a9b8-7a492c8c0777",
+        "id": "36c46975-986e-40f7-a7c5-ee481ebe950d",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327362",
-              "display": "adalimumab"
+              "code": "373747",
+              "display": "etanercept"
             }
           ],
-          "text": "adalimumab"
+          "text": "etanercept"
         },
         "subject": {
           "reference": "Patient/6a0f4d6b-aa89-5557-39cf-0b04fc5257a9"
         },
         "effectivePeriod": {
-          "start": "2025-04-05",
-          "end": "2025-12-23"
+          "start": "2025-04-21",
+          "end": "2025-08-15"
         },
         "reasonCode": [
           {
@@ -232432,18 +232432,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "301d2ec1-d35f-43ea-abc7-9f6fec96cb42",
+        "id": "ff3cf43d-786e-4b16-841e-abfa5ef71d00",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "614391",
-              "display": "Simponi Aria (golimumab)"
+              "code": "358258",
+              "display": "Orencia (abatacept)"
             }
           ],
-          "text": "Simponi Aria (golimumab)"
+          "text": "Orencia (abatacept)"
         },
         "subject": {
           "reference": "Patient/6a0f4d6b-aa89-5557-39cf-0b04fc5257a9"

@@ -1,0 +1,335 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "3f95857c-5b72-49dd-80a9-18119fbe10cc",
+        "name": [
+          {
+            "use": "official",
+            "family": "Cook",
+            "given": [
+              "Chelsea"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2002-12-26",
+        "address": [
+          {
+            "line": [
+              "7852 Willis Fort Apt. 348"
+            ],
+            "city": "Lake Sarahville",
+            "state": "GA",
+            "postalCode": "59896",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "30b8d216-6f5c-4be0-9043-6cad4564e428",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "64766004",
+              "display": "Ulcerative Colitis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "K51.90",
+              "display": "Ulcerative Colitis"
+            }
+          ],
+          "text": "Ulcerative Colitis"
+        },
+        "subject": {
+          "reference": "Patient/3f95857c-5b72-49dd-80a9-18119fbe10cc"
+        },
+        "onsetDateTime": "2024-07-13"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "fdf84fac-96b5-43a7-a3d4-2059174a6327",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/3f95857c-5b72-49dd-80a9-18119fbe10cc"
+        },
+        "payor": [
+          {
+            "display": "Blue Shield of California"
+          }
+        ],
+        "subscriberId": "893988800"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "aae1ad93-f41f-44d2-a718-357642fc9460",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/3f95857c-5b72-49dd-80a9-18119fbe10cc"
+        },
+        "effectiveDateTime": "2026-10-07",
+        "valueQuantity": {
+          "value": 5.5,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "8398b1eb-1b33-450d-93ef-364acb042c5c",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/3f95857c-5b72-49dd-80a9-18119fbe10cc"
+        },
+        "effectiveDateTime": "2026-08-30",
+        "valueBoolean": true
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "a100e970-ee3a-47e0-9ddc-46862d44f81e",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/3f95857c-5b72-49dd-80a9-18119fbe10cc"
+        },
+        "effectiveDateTime": "2026-11-06",
+        "valueQuantity": {
+          "value": 19.1,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6657f1ab-a9a8-435a-9087-33148269989a",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/3f95857c-5b72-49dd-80a9-18119fbe10cc"
+        },
+        "effectiveDateTime": "2026-10-28",
+        "valueQuantity": {
+          "value": 74.6,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "d464c36d-ae34-4eb9-97db-98aea9fa0920",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "105585",
+              "display": "methotrexate"
+            }
+          ],
+          "text": "methotrexate"
+        },
+        "subject": {
+          "reference": "Patient/3f95857c-5b72-49dd-80a9-18119fbe10cc"
+        },
+        "effectivePeriod": {
+          "start": "2024-10-28",
+          "end": "2025-03-30"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "377acb5a-7282-4fb8-bad0-34a190ea2947",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "114194",
+              "display": "hydroxychloroquine"
+            }
+          ],
+          "text": "hydroxychloroquine"
+        },
+        "subject": {
+          "reference": "Patient/3f95857c-5b72-49dd-80a9-18119fbe10cc"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-25",
+          "end": "2026-08-03"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "c6762420-3796-4c1e-a9d0-100d7a499035",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "327362",
+              "display": "adalimumab"
+            }
+          ],
+          "text": "adalimumab"
+        },
+        "subject": {
+          "reference": "Patient/3f95857c-5b72-49dd-80a9-18119fbe10cc"
+        },
+        "effectivePeriod": {
+          "start": "2024-07-19",
+          "end": "2025-05-07"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "05898fb7-f255-4e93-8e86-7fb49383dc1a",
+        "status": "draft",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "356248",
+              "display": "Cimzia (certolizumab pegol)"
+            }
+          ],
+          "text": "Cimzia (certolizumab pegol)"
+        },
+        "subject": {
+          "reference": "Patient/3f95857c-5b72-49dd-80a9-18119fbe10cc"
+        }
+      }
+    }
+  ]
+}

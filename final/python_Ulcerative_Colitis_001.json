@@ -1,0 +1,207 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "1c09d67f-28e7-4641-9ef4-83d402733db5",
+        "name": [
+          {
+            "use": "official",
+            "family": "Hill",
+            "given": [
+              "Sharon"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1998-06-11",
+        "address": [
+          {
+            "line": [
+              "96935 Samantha Station Apt. 767"
+            ],
+            "city": "West Ericborough",
+            "state": "MA",
+            "postalCode": "76627",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "7219f870-e600-41aa-8c11-ad607028f7ef",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "64766004",
+              "display": "Ulcerative Colitis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "K51.90",
+              "display": "Ulcerative Colitis"
+            }
+          ],
+          "text": "Ulcerative Colitis"
+        },
+        "subject": {
+          "reference": "Patient/1c09d67f-28e7-4641-9ef4-83d402733db5"
+        },
+        "onsetDateTime": "2024-06-18"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "b7c62d77-95d5-429a-be57-1796f4ab50bf",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/1c09d67f-28e7-4641-9ef4-83d402733db5"
+        },
+        "payor": [
+          {
+            "display": "UnitedHealthcare"
+          }
+        ],
+        "subscriberId": "957260025"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "b7e17bac-33f9-460d-9954-2859921aca0f",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/1c09d67f-28e7-4641-9ef4-83d402733db5"
+        },
+        "effectiveDateTime": "2026-09-22",
+        "valueBoolean": false
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "bc7a5cfe-bd1b-46bd-a052-d64be56d83ca",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/1c09d67f-28e7-4641-9ef4-83d402733db5"
+        },
+        "effectiveDateTime": "2026-11-02",
+        "valueQuantity": {
+          "value": 89.6,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "8e103108-c455-4536-8b88-ba2d092affdb",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "327361",
+              "display": "leflunomide"
+            }
+          ],
+          "text": "leflunomide"
+        },
+        "subject": {
+          "reference": "Patient/1c09d67f-28e7-4641-9ef4-83d402733db5"
+        },
+        "effectivePeriod": {
+          "start": "2025-06-21",
+          "end": "2025-12-10"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "72c37265-1f65-4b86-a630-9622a398822b",
+        "status": "draft",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "356248",
+              "display": "Cimzia (certolizumab pegol)"
+            }
+          ],
+          "text": "Cimzia (certolizumab pegol)"
+        },
+        "subject": {
+          "reference": "Patient/1c09d67f-28e7-4641-9ef4-83d402733db5"
+        }
+      }
+    }
+  ]
+}

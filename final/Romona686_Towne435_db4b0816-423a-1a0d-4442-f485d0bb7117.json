@@ -167086,23 +167086,81 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "0d41db58-d61c-4c23-abba-18482a7e5d2f",
+        "id": "101e615d-f2f9-497d-a2cf-0b76e43e89c6",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/db4b0816-423a-1a0d-4442-f485d0bb7117"
         },
         "payor": [
           {
-            "display": "Aetna"
+            "display": "Cigna"
           }
         ],
-        "subscriberId": "163820658"
+        "subscriberId": "448796123"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "1b5123d7-1d98-40d3-8179-64ec6639303e",
+        "id": "c3844c07-2ced-43f5-bcdf-a161f5f615e8",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "373747",
+              "display": "etanercept"
+            }
+          ],
+          "text": "etanercept"
+        },
+        "subject": {
+          "reference": "Patient/db4b0816-423a-1a0d-4442-f485d0bb7117"
+        },
+        "effectivePeriod": {
+          "start": "2024-06-06",
+          "end": "2024-11-08"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "ed844f67-af02-4c99-87b2-cb66e9720e62",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "105585",
+              "display": "methotrexate"
+            }
+          ],
+          "text": "methotrexate"
+        },
+        "subject": {
+          "reference": "Patient/db4b0816-423a-1a0d-4442-f485d0bb7117"
+        },
+        "effectivePeriod": {
+          "start": "2025-09-11",
+          "end": "2026-08-21"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "c63e7b8c-e7fc-47c9-b49e-7269add8562f",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -167118,8 +167176,8 @@
           "reference": "Patient/db4b0816-423a-1a0d-4442-f485d0bb7117"
         },
         "effectivePeriod": {
-          "start": "2024-10-18",
-          "end": "2025-08-22"
+          "start": "2025-06-13",
+          "end": "2026-03-14"
         },
         "reasonCode": [
           {
@@ -167131,7 +167189,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "65f81044-1924-40c9-acf1-6f8b9359d5bb",
+        "id": "fc0b4d5d-a182-451c-8b7d-da506b148493",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

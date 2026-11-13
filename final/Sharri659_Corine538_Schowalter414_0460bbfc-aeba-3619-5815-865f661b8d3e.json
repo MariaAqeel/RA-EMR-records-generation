@@ -168270,23 +168270,23 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "799014bc-2bfb-4d9c-8bf5-6a2af3ba427a",
+        "id": "9f5f191e-e565-4287-b763-392df9c3cbe1",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/0460bbfc-aeba-3619-5815-865f661b8d3e"
         },
         "payor": [
           {
-            "display": "Blue Shield of California"
+            "display": "UnitedHealthcare"
           }
         ],
-        "subscriberId": "631061663"
+        "subscriberId": "907416859"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "26a9f7cf-6631-42cd-9626-b64e0de6f678",
+        "id": "358605c4-ea42-4fb5-89cb-a7f650eb8089",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -168302,8 +168302,37 @@
           "reference": "Patient/0460bbfc-aeba-3619-5815-865f661b8d3e"
         },
         "effectivePeriod": {
-          "start": "2024-11-12",
-          "end": "2025-10-18"
+          "start": "2025-08-26",
+          "end": "2026-05-14"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "b1dfe10e-45f1-4c30-ae8d-7a3e28493c60",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "373747",
+              "display": "etanercept"
+            }
+          ],
+          "text": "etanercept"
+        },
+        "subject": {
+          "reference": "Patient/0460bbfc-aeba-3619-5815-865f661b8d3e"
+        },
+        "effectivePeriod": {
+          "start": "2025-07-25",
+          "end": "2026-04-24"
         },
         "reasonCode": [
           {
@@ -168315,18 +168344,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "daced24c-4405-4c55-b95e-3247bae1d2f3",
+        "id": "97726328-a128-43eb-bc93-ce230efe0a59",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "356248",
-              "display": "Cimzia (certolizumab pegol)"
+              "code": "358258",
+              "display": "Orencia (abatacept)"
             }
           ],
-          "text": "Cimzia (certolizumab pegol)"
+          "text": "Orencia (abatacept)"
         },
         "subject": {
           "reference": "Patient/0460bbfc-aeba-3619-5815-865f661b8d3e"

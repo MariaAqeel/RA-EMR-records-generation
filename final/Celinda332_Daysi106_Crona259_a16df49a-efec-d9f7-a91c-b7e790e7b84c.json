@@ -1603223,40 +1603223,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "489db909-8e99-462a-96c7-53a9a8d1cb0a",
+        "id": "62759071-8ed6-4c33-a0a9-2fd92a608455",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/a16df49a-efec-d9f7-a91c-b7e790e7b84c"
         },
         "payor": [
           {
-            "display": "Blue Shield of California"
+            "display": "Cigna"
           }
         ],
-        "subscriberId": "943989615"
+        "subscriberId": "558407561"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "497e11c2-48ea-4b53-a3a9-47a4b5700d2e",
+        "id": "c0fa251d-e226-4fe2-9b61-16c22cdde4f5",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327361",
-              "display": "leflunomide"
+              "code": "373747",
+              "display": "etanercept"
             }
           ],
-          "text": "leflunomide"
+          "text": "etanercept"
         },
         "subject": {
           "reference": "Patient/a16df49a-efec-d9f7-a91c-b7e790e7b84c"
         },
         "effectivePeriod": {
-          "start": "2025-08-09",
-          "end": "2025-12-09"
+          "start": "2025-09-14",
+          "end": "2026-02-06"
         },
         "reasonCode": [
           {
@@ -1603268,7 +1603268,7 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "31b92337-eeb6-423f-b8b3-ad6936f20c12",
+        "id": "2e2f37f2-653c-41c8-a829-cf193f467687",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -1603284,8 +1603284,37 @@
           "reference": "Patient/a16df49a-efec-d9f7-a91c-b7e790e7b84c"
         },
         "effectivePeriod": {
-          "start": "2024-07-05",
-          "end": "2025-06-30"
+          "start": "2025-02-17",
+          "end": "2025-10-04"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "8d297224-41a5-4eed-a81c-074207a559db",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "327362",
+              "display": "adalimumab"
+            }
+          ],
+          "text": "adalimumab"
+        },
+        "subject": {
+          "reference": "Patient/a16df49a-efec-d9f7-a91c-b7e790e7b84c"
+        },
+        "effectivePeriod": {
+          "start": "2025-08-08",
+          "end": "2026-02-24"
         },
         "reasonCode": [
           {
@@ -1603297,18 +1603326,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "e4d91381-2bec-4a47-a909-08dc086dd0df",
+        "id": "2ff46ed7-74ab-4df6-be7e-fd488d110994",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "358258",
-              "display": "Orencia (abatacept)"
+              "code": "614391",
+              "display": "Simponi Aria (golimumab)"
             }
           ],
-          "text": "Orencia (abatacept)"
+          "text": "Simponi Aria (golimumab)"
         },
         "subject": {
           "reference": "Patient/a16df49a-efec-d9f7-a91c-b7e790e7b84c"

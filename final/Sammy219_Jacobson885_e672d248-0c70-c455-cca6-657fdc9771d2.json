@@ -1799204,40 +1799204,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "27a485bc-3ae8-4354-a197-d46638d06f89",
+        "id": "0e486fe6-f4fa-4be2-aa49-ee1efb81aba4",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/e672d248-0c70-c455-cca6-657fdc9771d2"
         },
         "payor": [
           {
-            "display": "Blue Shield of California"
+            "display": "Aetna"
           }
         ],
-        "subscriberId": "582607559"
+        "subscriberId": "583763741"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "35c37b42-a073-4215-b2cb-0552ebca5f76",
+        "id": "718d6865-7032-4011-a21e-34deb3be716b",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327362",
-              "display": "adalimumab"
+              "code": "373747",
+              "display": "etanercept"
             }
           ],
-          "text": "adalimumab"
+          "text": "etanercept"
         },
         "subject": {
           "reference": "Patient/e672d248-0c70-c455-cca6-657fdc9771d2"
         },
         "effectivePeriod": {
-          "start": "2025-08-14",
-          "end": "2026-06-27"
+          "start": "2024-10-07",
+          "end": "2025-04-07"
         },
         "reasonCode": [
           {
@@ -1799249,7 +1799249,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "b9284fec-aab7-4a2b-af09-d1e093371205",
+        "id": "4689f655-ab57-4f29-aef8-75efb965640d",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

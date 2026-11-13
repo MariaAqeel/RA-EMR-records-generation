@@ -152844,40 +152844,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "1aa16f6b-a581-4982-bf9d-ae60776ca97d",
+        "id": "e2d802d4-e4b9-4900-a47b-9967b345fd78",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/6e29b549-2859-e12d-b3b7-78a94d2d6e6d"
         },
         "payor": [
           {
-            "display": "Cigna"
+            "display": "UnitedHealthcare"
           }
         ],
-        "subscriberId": "222232164"
+        "subscriberId": "431462934"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "580a708a-240d-4999-b105-3a1537768964",
+        "id": "d926d3ce-245f-4e77-b526-1cc74166911b",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327362",
-              "display": "adalimumab"
+              "code": "327361",
+              "display": "leflunomide"
             }
           ],
-          "text": "adalimumab"
+          "text": "leflunomide"
         },
         "subject": {
           "reference": "Patient/6e29b549-2859-e12d-b3b7-78a94d2d6e6d"
         },
         "effectivePeriod": {
-          "start": "2025-05-03",
-          "end": "2025-08-21"
+          "start": "2024-10-08",
+          "end": "2025-01-23"
         },
         "reasonCode": [
           {
@@ -152889,7 +152889,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "9bcb765e-6ed7-4311-915f-18f5bee992c6",
+        "id": "7edfdd43-3c17-4286-aba5-da149178ffd6",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

@@ -98460,40 +98460,69 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "869d028c-8a11-406b-be9a-c98b82d14598",
+        "id": "06cb9dbf-684b-49d7-82fd-db1cd819ccf1",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/8296ad57-58ad-7195-4d54-e6829968062a"
         },
         "payor": [
           {
-            "display": "UnitedHealthcare"
+            "display": "Cigna"
           }
         ],
-        "subscriberId": "112825936"
+        "subscriberId": "760470342"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "5a8a220b-5b4a-4fc9-95a8-7dc40732a374",
+        "id": "6664291e-1371-4e0e-81a2-b05a4afedad7",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "373747",
-              "display": "etanercept"
+              "code": "327362",
+              "display": "adalimumab"
             }
           ],
-          "text": "etanercept"
+          "text": "adalimumab"
         },
         "subject": {
           "reference": "Patient/8296ad57-58ad-7195-4d54-e6829968062a"
         },
         "effectivePeriod": {
-          "start": "2025-05-16",
-          "end": "2026-01-05"
+          "start": "2024-09-25",
+          "end": "2025-06-21"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "7d04e4a1-d64f-4057-8fa0-dcc0415a6da5",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "327362",
+              "display": "adalimumab"
+            }
+          ],
+          "text": "adalimumab"
+        },
+        "subject": {
+          "reference": "Patient/8296ad57-58ad-7195-4d54-e6829968062a"
+        },
+        "effectivePeriod": {
+          "start": "2024-06-29",
+          "end": "2025-05-23"
         },
         "reasonCode": [
           {
@@ -98505,7 +98534,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "359d3c16-cddb-477b-9016-434952622e51",
+        "id": "00b5e941-98ad-421a-8cea-53e14312d246",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

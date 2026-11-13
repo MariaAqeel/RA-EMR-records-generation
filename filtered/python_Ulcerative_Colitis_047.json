@@ -1,0 +1,196 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "be5fa95e-19b4-4ea1-af43-c33bb47b331f",
+        "name": [
+          {
+            "use": "official",
+            "family": "Robinson",
+            "given": [
+              "Carolyn"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1984-08-23",
+        "address": [
+          {
+            "line": [
+              "3219 Olsen Greens"
+            ],
+            "city": "Whitemouth",
+            "state": "DE",
+            "postalCode": "82342",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "982b536a-4ca1-49e1-8207-21f19818e6a2",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "64766004",
+              "display": "Ulcerative Colitis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "K51.90",
+              "display": "Ulcerative Colitis"
+            }
+          ],
+          "text": "Ulcerative Colitis"
+        },
+        "subject": {
+          "reference": "Patient/be5fa95e-19b4-4ea1-af43-c33bb47b331f"
+        },
+        "onsetDateTime": "2024-05-18"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "07831eb3-3c75-4474-b882-fcc6343e1cb4",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/be5fa95e-19b4-4ea1-af43-c33bb47b331f"
+        },
+        "payor": [
+          {
+            "display": "Aetna"
+          }
+        ],
+        "subscriberId": "569506503"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "557891f3-9ae9-4e68-99af-8fac92f89970",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/be5fa95e-19b4-4ea1-af43-c33bb47b331f"
+        },
+        "effectiveDateTime": "2026-09-25",
+        "valueQuantity": {
+          "value": 9.0,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "b5222e87-1aa2-4fa0-96b8-b75e248a682a",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/be5fa95e-19b4-4ea1-af43-c33bb47b331f"
+        },
+        "effectiveDateTime": "2026-08-22",
+        "valueQuantity": {
+          "value": 37.3,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f18c8abf-84d6-44c5-8ef4-12da979b6fdd",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/be5fa95e-19b4-4ea1-af43-c33bb47b331f"
+        },
+        "effectiveDateTime": "2026-11-10",
+        "valueQuantity": {
+          "value": 35.1,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    }
+  ]
+}

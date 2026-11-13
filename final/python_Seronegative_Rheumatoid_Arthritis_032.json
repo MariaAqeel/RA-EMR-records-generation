@@ -1,0 +1,242 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "a6a04673-602a-4a6d-92d0-b2521d266500",
+        "name": [
+          {
+            "use": "official",
+            "family": "Hill",
+            "given": [
+              "Emily"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1975-10-12",
+        "address": [
+          {
+            "line": [
+              "544 Taylor Greens Apt. 531"
+            ],
+            "city": "East Dustin",
+            "state": "KS",
+            "postalCode": "35503",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "66f1499c-3874-4f38-ba00-3e60f70ba27e",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "201791006",
+              "display": "Seronegative Rheumatoid Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M06.09",
+              "display": "Seronegative Rheumatoid Arthritis"
+            }
+          ],
+          "text": "Seronegative Rheumatoid Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/a6a04673-602a-4a6d-92d0-b2521d266500"
+        },
+        "onsetDateTime": "2025-09-29"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "59e8c3a3-a06f-4bd9-b0b1-0e3a911cbaf7",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/a6a04673-602a-4a6d-92d0-b2521d266500"
+        },
+        "payor": [
+          {
+            "display": "Aetna"
+          }
+        ],
+        "subscriberId": "389247364"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "7cd65751-43bf-4c29-b3cc-db428a634230",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/a6a04673-602a-4a6d-92d0-b2521d266500"
+        },
+        "effectiveDateTime": "2026-09-05",
+        "valueQuantity": {
+          "value": 12.3,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0e730b8c-44c9-4e8e-a165-6e140ac6c4e5",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/a6a04673-602a-4a6d-92d0-b2521d266500"
+        },
+        "effectiveDateTime": "2026-10-18",
+        "valueBoolean": true
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f3761d0f-26fe-4e2f-96f8-fc536ed7e995",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/a6a04673-602a-4a6d-92d0-b2521d266500"
+        },
+        "effectiveDateTime": "2026-08-15",
+        "valueQuantity": {
+          "value": 10.3,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "4951e11a-1a0c-41e3-b218-998ec452e2e5",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "327361",
+              "display": "leflunomide"
+            }
+          ],
+          "text": "leflunomide"
+        },
+        "subject": {
+          "reference": "Patient/a6a04673-602a-4a6d-92d0-b2521d266500"
+        },
+        "effectivePeriod": {
+          "start": "2025-06-06",
+          "end": "2026-03-21"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "04c2a534-ba25-4ae5-8621-5f59f23a8a3a",
+        "status": "draft",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "358258",
+              "display": "Orencia (abatacept)"
+            }
+          ],
+          "text": "Orencia (abatacept)"
+        },
+        "subject": {
+          "reference": "Patient/a6a04673-602a-4a6d-92d0-b2521d266500"
+        }
+      }
+    }
+  ]
+}

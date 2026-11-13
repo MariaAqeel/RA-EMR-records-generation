@@ -1114275,69 +1114275,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "3fb7b9ed-33c8-451d-9fbd-d618468eb5ad",
+        "id": "9fcc8261-c175-4aec-a158-f54fe59a16b5",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/09e15f46-2f85-6579-e1c5-9abbfce785f5"
         },
         "payor": [
           {
-            "display": "UnitedHealthcare"
+            "display": "Blue Shield of California"
           }
         ],
-        "subscriberId": "166946830"
+        "subscriberId": "235046947"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "1acb0d4b-a97a-48ad-b88d-f4211b6ea0cb",
+        "id": "d3c5f706-3a33-4740-a412-0498630c72cd",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "114194",
-              "display": "hydroxychloroquine"
+              "code": "327361",
+              "display": "leflunomide"
             }
           ],
-          "text": "hydroxychloroquine"
+          "text": "leflunomide"
         },
         "subject": {
           "reference": "Patient/09e15f46-2f85-6579-e1c5-9abbfce785f5"
         },
         "effectivePeriod": {
-          "start": "2025-03-02",
-          "end": "2025-12-01"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "0bb541f1-8981-47cf-8302-a9bbed1031ae",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "114194",
-              "display": "hydroxychloroquine"
-            }
-          ],
-          "text": "hydroxychloroquine"
-        },
-        "subject": {
-          "reference": "Patient/09e15f46-2f85-6579-e1c5-9abbfce785f5"
-        },
-        "effectivePeriod": {
-          "start": "2025-08-18",
-          "end": "2026-01-07"
+          "start": "2024-09-22",
+          "end": "2025-08-02"
         },
         "reasonCode": [
           {
@@ -1114349,18 +1114320,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "38eb9639-8155-4bc5-bf9d-2f72daeafee5",
+        "id": "6ebfa42c-e434-4628-b9b3-82c821607900",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "358258",
-              "display": "Orencia (abatacept)"
+              "code": "614391",
+              "display": "Simponi Aria (golimumab)"
             }
           ],
-          "text": "Orencia (abatacept)"
+          "text": "Simponi Aria (golimumab)"
         },
         "subject": {
           "reference": "Patient/09e15f46-2f85-6579-e1c5-9abbfce785f5"

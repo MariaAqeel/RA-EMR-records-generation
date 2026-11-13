@@ -1,0 +1,157 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "4c8b4e25-f2f5-4e2e-aaa9-cbfa58727364",
+        "name": [
+          {
+            "use": "official",
+            "family": "Andrews",
+            "given": [
+              "Robert"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "2000-08-26",
+        "address": [
+          {
+            "line": [
+              "68173 Robert Mount Suite 371"
+            ],
+            "city": "Port Johntown",
+            "state": "AZ",
+            "postalCode": "20246",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "95c5570b-3364-4c5e-9c0d-ff73b3581678",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "64766004",
+              "display": "Ulcerative Colitis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "K51.90",
+              "display": "Ulcerative Colitis"
+            }
+          ],
+          "text": "Ulcerative Colitis"
+        },
+        "subject": {
+          "reference": "Patient/4c8b4e25-f2f5-4e2e-aaa9-cbfa58727364"
+        },
+        "onsetDateTime": "2024-09-25"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "1992b638-081a-44bb-9e14-866b2ea6bd95",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/4c8b4e25-f2f5-4e2e-aaa9-cbfa58727364"
+        },
+        "payor": [
+          {
+            "display": "Blue Shield of California"
+          }
+        ],
+        "subscriberId": "819112623"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "3662ed4b-feb3-4e83-b0bb-dafbfd6f4343",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4c8b4e25-f2f5-4e2e-aaa9-cbfa58727364"
+        },
+        "effectiveDateTime": "2026-09-29",
+        "valueQuantity": {
+          "value": 43.6,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "7b4b3173-23d1-4944-bccf-ec2a6e42f0fc",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4c8b4e25-f2f5-4e2e-aaa9-cbfa58727364"
+        },
+        "effectiveDateTime": "2026-08-27",
+        "valueBoolean": true
+      }
+    }
+  ]
+}

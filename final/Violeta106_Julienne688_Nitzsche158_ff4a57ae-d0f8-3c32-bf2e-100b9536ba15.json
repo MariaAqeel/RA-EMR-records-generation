@@ -175596,40 +175596,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "75fe03fa-c4f3-4361-8af5-e6ea7aabdec7",
+        "id": "63987a6e-5f91-4938-98c3-50c9fa03cdea",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/ff4a57ae-d0f8-3c32-bf2e-100b9536ba15"
         },
         "payor": [
           {
-            "display": "Aetna"
+            "display": "Cigna"
           }
         ],
-        "subscriberId": "339554112"
+        "subscriberId": "445960123"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "b2817522-2b37-442d-9cb2-5b0f85451c61",
+        "id": "3845134b-305d-468d-b149-e339384c7f0c",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327361",
-              "display": "leflunomide"
+              "code": "114194",
+              "display": "hydroxychloroquine"
             }
           ],
-          "text": "leflunomide"
+          "text": "hydroxychloroquine"
         },
         "subject": {
           "reference": "Patient/ff4a57ae-d0f8-3c32-bf2e-100b9536ba15"
         },
         "effectivePeriod": {
-          "start": "2025-07-13",
-          "end": "2026-07-12"
+          "start": "2025-01-04",
+          "end": "2025-07-26"
         },
         "reasonCode": [
           {
@@ -175641,53 +175641,24 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "0aae9b91-68c9-4454-97e0-a874b0ba7589",
+        "id": "930b2bd4-354c-485e-b1a1-61875f571684",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "373747",
-              "display": "etanercept"
+              "code": "114194",
+              "display": "hydroxychloroquine"
             }
           ],
-          "text": "etanercept"
+          "text": "hydroxychloroquine"
         },
         "subject": {
           "reference": "Patient/ff4a57ae-d0f8-3c32-bf2e-100b9536ba15"
         },
         "effectivePeriod": {
-          "start": "2025-05-15",
-          "end": "2025-10-23"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "493b2e2e-f324-4a36-90e6-629f90516dae",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "105585",
-              "display": "methotrexate"
-            }
-          ],
-          "text": "methotrexate"
-        },
-        "subject": {
-          "reference": "Patient/ff4a57ae-d0f8-3c32-bf2e-100b9536ba15"
-        },
-        "effectivePeriod": {
-          "start": "2025-10-17",
-          "end": "2026-03-19"
+          "start": "2025-05-11",
+          "end": "2025-12-18"
         },
         "reasonCode": [
           {
@@ -175699,7 +175670,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "ec540705-ec01-4933-b2ae-740d2ab86aaa",
+        "id": "d9fefd3f-974e-4acc-95a1-56ddbdf6383b",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

@@ -185534,40 +185534,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "b02ebde8-0829-4492-b764-13c51f61813d",
+        "id": "d5252152-086d-44f0-a2c7-73d5cea5ffcc",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/5736bc99-768d-1519-d435-e72328f9fbd0"
         },
         "payor": [
           {
-            "display": "Aetna"
+            "display": "Humana"
           }
         ],
-        "subscriberId": "329390752"
+        "subscriberId": "229798005"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "4a374752-fc12-4406-9187-81970850649c",
+        "id": "3796d155-fe3e-42b8-a16d-da38bcdf40b9",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327361",
-              "display": "leflunomide"
+              "code": "105585",
+              "display": "methotrexate"
             }
           ],
-          "text": "leflunomide"
+          "text": "methotrexate"
         },
         "subject": {
           "reference": "Patient/5736bc99-768d-1519-d435-e72328f9fbd0"
         },
         "effectivePeriod": {
-          "start": "2024-10-05",
-          "end": "2025-09-18"
+          "start": "2025-04-02",
+          "end": "2025-10-16"
         },
         "reasonCode": [
           {
@@ -185579,24 +185579,24 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "e96cc78c-d689-43c9-b8a9-16a3e625668a",
+        "id": "0ec9c981-c4d6-4c4b-a4e2-d6971f7efcbb",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327361",
-              "display": "leflunomide"
+              "code": "114194",
+              "display": "hydroxychloroquine"
             }
           ],
-          "text": "leflunomide"
+          "text": "hydroxychloroquine"
         },
         "subject": {
           "reference": "Patient/5736bc99-768d-1519-d435-e72328f9fbd0"
         },
         "effectivePeriod": {
-          "start": "2025-03-29",
-          "end": "2025-07-31"
+          "start": "2025-02-06",
+          "end": "2025-05-17"
         },
         "reasonCode": [
           {
@@ -185608,24 +185608,24 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "7338899e-5b41-4701-ba09-53aa661d01a0",
+        "id": "6da5ee56-d044-4397-a9b8-dca8016f89b4",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "373747",
-              "display": "etanercept"
+              "code": "327362",
+              "display": "adalimumab"
             }
           ],
-          "text": "etanercept"
+          "text": "adalimumab"
         },
         "subject": {
           "reference": "Patient/5736bc99-768d-1519-d435-e72328f9fbd0"
         },
         "effectivePeriod": {
-          "start": "2024-10-30",
-          "end": "2025-10-23"
+          "start": "2024-08-17",
+          "end": "2025-04-25"
         },
         "reasonCode": [
           {
@@ -185637,18 +185637,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "30a125d7-f59a-4383-919e-43f598775bb6",
+        "id": "c9398618-b33d-445e-8297-d590d930a89d",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "614391",
-              "display": "Simponi Aria (golimumab)"
+              "code": "356248",
+              "display": "Cimzia (certolizumab pegol)"
             }
           ],
-          "text": "Simponi Aria (golimumab)"
+          "text": "Cimzia (certolizumab pegol)"
         },
         "subject": {
           "reference": "Patient/5736bc99-768d-1519-d435-e72328f9fbd0"

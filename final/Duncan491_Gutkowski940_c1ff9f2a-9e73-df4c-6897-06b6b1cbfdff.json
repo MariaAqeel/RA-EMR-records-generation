@@ -1115313,40 +1115313,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "86fd82cd-9861-40dd-9b22-801b0754f1e8",
+        "id": "82dcfa45-2034-4121-aee1-df53b96c3804",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/c1ff9f2a-9e73-df4c-6897-06b6b1cbfdff"
         },
         "payor": [
           {
-            "display": "UnitedHealthcare"
+            "display": "Cigna"
           }
         ],
-        "subscriberId": "834448595"
+        "subscriberId": "579694114"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "97e7ea08-7d38-4099-8f70-8223232ef8c8",
+        "id": "7c81c7ff-838d-4471-af71-85c484d95c6c",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "105585",
-              "display": "methotrexate"
+              "code": "114194",
+              "display": "hydroxychloroquine"
             }
           ],
-          "text": "methotrexate"
+          "text": "hydroxychloroquine"
         },
         "subject": {
           "reference": "Patient/c1ff9f2a-9e73-df4c-6897-06b6b1cbfdff"
         },
         "effectivePeriod": {
-          "start": "2024-10-16",
-          "end": "2025-04-17"
+          "start": "2025-10-03",
+          "end": "2026-06-17"
         },
         "reasonCode": [
           {
@@ -1115358,24 +1115358,24 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "ea17603f-0d3b-4b66-b5ae-5ebfc4400e6d",
+        "id": "76d48145-b73a-4b0a-8499-ca42d9f1942e",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327361",
-              "display": "leflunomide"
+              "code": "114194",
+              "display": "hydroxychloroquine"
             }
           ],
-          "text": "leflunomide"
+          "text": "hydroxychloroquine"
         },
         "subject": {
           "reference": "Patient/c1ff9f2a-9e73-df4c-6897-06b6b1cbfdff"
         },
         "effectivePeriod": {
-          "start": "2024-06-04",
-          "end": "2025-03-11"
+          "start": "2025-08-19",
+          "end": "2026-05-02"
         },
         "reasonCode": [
           {
@@ -1115387,18 +1115387,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "1cbbc92a-9278-4f24-882d-790d4bd559b2",
+        "id": "7c684963-f07f-40c7-8e4f-578a95cbb411",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "356248",
-              "display": "Cimzia (certolizumab pegol)"
+              "code": "358258",
+              "display": "Orencia (abatacept)"
             }
           ],
-          "text": "Cimzia (certolizumab pegol)"
+          "text": "Orencia (abatacept)"
         },
         "subject": {
           "reference": "Patient/c1ff9f2a-9e73-df4c-6897-06b6b1cbfdff"

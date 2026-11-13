@@ -162510,23 +162510,81 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "8bd6d135-d5ee-4f5d-81e2-e5277d576e82",
+        "id": "2f171315-66d3-48eb-a64d-c37eeab1f0c0",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/602810da-e9fe-d906-ca52-1cf58e592f4f"
         },
         "payor": [
           {
-            "display": "Aetna"
+            "display": "Humana"
           }
         ],
-        "subscriberId": "281642682"
+        "subscriberId": "849466065"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "5f5a5948-66a9-4d6a-b6d7-1223c2a717f8",
+        "id": "b8757aed-9caa-4048-ae74-afbdf63c898e",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "114194",
+              "display": "hydroxychloroquine"
+            }
+          ],
+          "text": "hydroxychloroquine"
+        },
+        "subject": {
+          "reference": "Patient/602810da-e9fe-d906-ca52-1cf58e592f4f"
+        },
+        "effectivePeriod": {
+          "start": "2025-03-17",
+          "end": "2025-12-05"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "4a14fcb8-f54b-4a1e-a0bb-8d0dcb954a3e",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "114194",
+              "display": "hydroxychloroquine"
+            }
+          ],
+          "text": "hydroxychloroquine"
+        },
+        "subject": {
+          "reference": "Patient/602810da-e9fe-d906-ca52-1cf58e592f4f"
+        },
+        "effectivePeriod": {
+          "start": "2025-02-12",
+          "end": "2025-05-20"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "ddb2704c-1874-4546-a762-17393bb843ab",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -162542,37 +162600,8 @@
           "reference": "Patient/602810da-e9fe-d906-ca52-1cf58e592f4f"
         },
         "effectivePeriod": {
-          "start": "2025-01-22",
-          "end": "2025-07-27"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "b01a8b9a-de0f-4e10-b71c-201cbec9368b",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "105585",
-              "display": "methotrexate"
-            }
-          ],
-          "text": "methotrexate"
-        },
-        "subject": {
-          "reference": "Patient/602810da-e9fe-d906-ca52-1cf58e592f4f"
-        },
-        "effectivePeriod": {
-          "start": "2025-09-24",
-          "end": "2026-01-16"
+          "start": "2024-07-26",
+          "end": "2025-01-22"
         },
         "reasonCode": [
           {
@@ -162584,18 +162613,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "a86e94e8-b8cf-43e6-bf30-109c6878f964",
+        "id": "dd7f3bd2-c4e7-40ad-8047-1a485f20a2b2",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "358258",
-              "display": "Orencia (abatacept)"
+              "code": "356248",
+              "display": "Cimzia (certolizumab pegol)"
             }
           ],
-          "text": "Orencia (abatacept)"
+          "text": "Cimzia (certolizumab pegol)"
         },
         "subject": {
           "reference": "Patient/602810da-e9fe-d906-ca52-1cf58e592f4f"

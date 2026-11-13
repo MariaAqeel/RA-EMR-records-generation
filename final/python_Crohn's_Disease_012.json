@@ -1,0 +1,269 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "c19a526d-1ed9-4b75-a164-9d8ed51caccf",
+        "name": [
+          {
+            "use": "official",
+            "family": "Edwards",
+            "given": [
+              "Jose"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1989-11-16",
+        "address": [
+          {
+            "line": [
+              "40472 Garcia Dam"
+            ],
+            "city": "Lake Teresa",
+            "state": "MN",
+            "postalCode": "55653",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "ba4c4d93-79c0-4266-8de4-499b72dffee7",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "34000006",
+              "display": "Crohn's Disease"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "K50.90",
+              "display": "Crohn's Disease"
+            }
+          ],
+          "text": "Crohn's Disease"
+        },
+        "subject": {
+          "reference": "Patient/c19a526d-1ed9-4b75-a164-9d8ed51caccf"
+        },
+        "onsetDateTime": "2022-07-13"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "abf303a9-2575-46f2-a631-d53ffa090b42",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/c19a526d-1ed9-4b75-a164-9d8ed51caccf"
+        },
+        "payor": [
+          {
+            "display": "Cigna"
+          }
+        ],
+        "subscriberId": "678493335"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "2911ea28-9c4f-4b3b-ae65-dce642794f49",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/c19a526d-1ed9-4b75-a164-9d8ed51caccf"
+        },
+        "effectiveDateTime": "2026-08-15",
+        "valueQuantity": {
+          "value": 20.1,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "7510d9ea-885a-4163-9c84-ee4979232873",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/c19a526d-1ed9-4b75-a164-9d8ed51caccf"
+        },
+        "effectiveDateTime": "2026-09-07",
+        "valueBoolean": false
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "8f71c979-5e87-4023-b2fb-54f3d184ea6c",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/c19a526d-1ed9-4b75-a164-9d8ed51caccf"
+        },
+        "effectiveDateTime": "2026-10-18",
+        "valueBoolean": false
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "623770a3-12e7-4133-bc26-f944796100e0",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/c19a526d-1ed9-4b75-a164-9d8ed51caccf"
+        },
+        "effectiveDateTime": "2026-09-28",
+        "valueBoolean": false
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "2b375ae0-facf-422f-8d7c-7d26f0841df1",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "327361",
+              "display": "leflunomide"
+            }
+          ],
+          "text": "leflunomide"
+        },
+        "subject": {
+          "reference": "Patient/c19a526d-1ed9-4b75-a164-9d8ed51caccf"
+        },
+        "effectivePeriod": {
+          "start": "2024-11-20",
+          "end": "2025-09-28"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "19c72cf3-f0f1-46de-802e-b4671404e1ae",
+        "status": "draft",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "356248",
+              "display": "Cimzia (certolizumab pegol)"
+            }
+          ],
+          "text": "Cimzia (certolizumab pegol)"
+        },
+        "subject": {
+          "reference": "Patient/c19a526d-1ed9-4b75-a164-9d8ed51caccf"
+        }
+      }
+    }
+  ]
+}

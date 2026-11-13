@@ -1,0 +1,281 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "545a7079-79db-4070-93a2-69ea27f8922e",
+        "name": [
+          {
+            "use": "official",
+            "family": "Henry",
+            "given": [
+              "Erica"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1979-03-04",
+        "address": [
+          {
+            "line": [
+              "76164 Walter Loop"
+            ],
+            "city": "East Victoria",
+            "state": "NV",
+            "postalCode": "77198",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "a3aaeda6-4d89-4374-a188-bb9ea85f61ad",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "201791006",
+              "display": "Seronegative Rheumatoid Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M06.09",
+              "display": "Seronegative Rheumatoid Arthritis"
+            }
+          ],
+          "text": "Seronegative Rheumatoid Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/545a7079-79db-4070-93a2-69ea27f8922e"
+        },
+        "onsetDateTime": "2025-07-22"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "38684862-0147-4650-adf6-ef2c63d49492",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/545a7079-79db-4070-93a2-69ea27f8922e"
+        },
+        "payor": [
+          {
+            "display": "Cigna"
+          }
+        ],
+        "subscriberId": "551746461"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "a266b298-b2c3-413d-a24d-6f2e57f9c5ff",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/545a7079-79db-4070-93a2-69ea27f8922e"
+        },
+        "effectiveDateTime": "2026-09-26",
+        "valueQuantity": {
+          "value": 57.5,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "e103b3f7-f09c-4842-8125-ae40bf751205",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/545a7079-79db-4070-93a2-69ea27f8922e"
+        },
+        "effectiveDateTime": "2026-10-08",
+        "valueQuantity": {
+          "value": 14.6,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "b0d91d42-eefd-4f98-ac3b-f0bdf5ef542e",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/545a7079-79db-4070-93a2-69ea27f8922e"
+        },
+        "effectiveDateTime": "2026-08-23",
+        "valueQuantity": {
+          "value": 66.2,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "af514944-65be-49f1-82cc-eeb7d03b86f5",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/545a7079-79db-4070-93a2-69ea27f8922e"
+        },
+        "effectiveDateTime": "2026-10-11",
+        "valueQuantity": {
+          "value": 5.3,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "869a91af-95c1-4176-bb3e-c00eef1fe76e",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "373747",
+              "display": "etanercept"
+            }
+          ],
+          "text": "etanercept"
+        },
+        "subject": {
+          "reference": "Patient/545a7079-79db-4070-93a2-69ea27f8922e"
+        },
+        "effectivePeriod": {
+          "start": "2024-06-26",
+          "end": "2025-03-19"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "f5493319-d702-452b-9efe-1437ec6ca1ba",
+        "status": "draft",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "614391",
+              "display": "Simponi Aria (golimumab)"
+            }
+          ],
+          "text": "Simponi Aria (golimumab)"
+        },
+        "subject": {
+          "reference": "Patient/545a7079-79db-4070-93a2-69ea27f8922e"
+        }
+      }
+    }
+  ]
+}

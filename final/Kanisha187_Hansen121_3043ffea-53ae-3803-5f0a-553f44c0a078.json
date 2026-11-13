@@ -80853,40 +80853,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "f04540d5-2344-4c6c-a8b3-ff6d0f0ca349",
+        "id": "38456f2f-d227-4082-9c24-94aae039c5e9",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/3043ffea-53ae-3803-5f0a-553f44c0a078"
         },
         "payor": [
           {
-            "display": "Humana"
+            "display": "Aetna"
           }
         ],
-        "subscriberId": "687847943"
+        "subscriberId": "983248552"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "e662ba65-c63b-42ea-ad46-f49fddb0159c",
+        "id": "baa9023b-6d8b-43ea-80ef-c404a7a7d896",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "114194",
-              "display": "hydroxychloroquine"
+              "code": "327361",
+              "display": "leflunomide"
             }
           ],
-          "text": "hydroxychloroquine"
+          "text": "leflunomide"
         },
         "subject": {
           "reference": "Patient/3043ffea-53ae-3803-5f0a-553f44c0a078"
         },
         "effectivePeriod": {
-          "start": "2024-10-28",
-          "end": "2025-04-05"
+          "start": "2025-04-21",
+          "end": "2026-03-21"
         },
         "reasonCode": [
           {
@@ -80898,7 +80898,7 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "7ed8f919-2d96-4989-89de-d53725b41564",
+        "id": "66c259aa-750c-4a8e-862b-fff13e0a156e",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -80914,8 +80914,8 @@
           "reference": "Patient/3043ffea-53ae-3803-5f0a-553f44c0a078"
         },
         "effectivePeriod": {
-          "start": "2024-06-21",
-          "end": "2025-06-15"
+          "start": "2024-10-04",
+          "end": "2025-02-21"
         },
         "reasonCode": [
           {
@@ -80927,7 +80927,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "75c526e9-bbc5-4da1-8c9e-ae005293bf62",
+        "id": "a6a225b9-a2cc-4700-8478-e5867db85b43",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

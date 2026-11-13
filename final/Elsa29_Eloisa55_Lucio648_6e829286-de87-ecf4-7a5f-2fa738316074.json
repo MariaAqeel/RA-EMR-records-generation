@@ -1467232,52 +1467232,23 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "499bc8f9-8ec4-4e89-972b-ce008fcd5b0f",
+        "id": "1f41ff2c-f7e3-437e-8a1e-50ca803e0081",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/6e829286-de87-ecf4-7a5f-2fa738316074"
         },
         "payor": [
           {
-            "display": "Cigna"
+            "display": "Aetna"
           }
         ],
-        "subscriberId": "427466745"
+        "subscriberId": "365806578"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "eb657b4a-33be-40d0-9840-5d217c0fdc15",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327361",
-              "display": "leflunomide"
-            }
-          ],
-          "text": "leflunomide"
-        },
-        "subject": {
-          "reference": "Patient/6e829286-de87-ecf4-7a5f-2fa738316074"
-        },
-        "effectivePeriod": {
-          "start": "2025-06-04",
-          "end": "2026-03-09"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "b775b158-9c50-45b0-b7bd-7d2a70cae8cc",
+        "id": "3d01cd9b-7ca6-492d-b0bf-df1743649e80",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -1467293,37 +1467264,8 @@
           "reference": "Patient/6e829286-de87-ecf4-7a5f-2fa738316074"
         },
         "effectivePeriod": {
-          "start": "2025-02-12",
-          "end": "2025-06-02"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "e073c6eb-9e79-442e-92c4-a174e5c84ecc",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "114194",
-              "display": "hydroxychloroquine"
-            }
-          ],
-          "text": "hydroxychloroquine"
-        },
-        "subject": {
-          "reference": "Patient/6e829286-de87-ecf4-7a5f-2fa738316074"
-        },
-        "effectivePeriod": {
-          "start": "2025-10-01",
-          "end": "2026-04-04"
+          "start": "2025-01-17",
+          "end": "2025-05-04"
         },
         "reasonCode": [
           {
@@ -1467335,7 +1467277,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "59a0cb26-b2aa-44a1-9be4-1bfb33d2f05d",
+        "id": "e184f5fb-5fd7-4765-b6b0-4e3c8757a690",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

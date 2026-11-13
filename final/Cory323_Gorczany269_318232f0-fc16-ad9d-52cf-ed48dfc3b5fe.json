@@ -615511,52 +615511,23 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "a4f72874-6aa9-4ab4-a392-46a16675aec7",
+        "id": "4c92ec3f-e10e-496e-a3bd-f97dbb85c8d2",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/318232f0-fc16-ad9d-52cf-ed48dfc3b5fe"
         },
         "payor": [
           {
-            "display": "UnitedHealthcare"
+            "display": "Humana"
           }
         ],
-        "subscriberId": "920490601"
+        "subscriberId": "381584768"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "d864b735-2e7f-452d-90cd-00d01eeda9cb",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "373747",
-              "display": "etanercept"
-            }
-          ],
-          "text": "etanercept"
-        },
-        "subject": {
-          "reference": "Patient/318232f0-fc16-ad9d-52cf-ed48dfc3b5fe"
-        },
-        "effectivePeriod": {
-          "start": "2024-11-12",
-          "end": "2025-04-09"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "0920a02c-5665-4aa1-bf80-98c24088240c",
+        "id": "be35c948-a30a-40e1-b117-8a7b022e9be8",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -615572,37 +615543,8 @@
           "reference": "Patient/318232f0-fc16-ad9d-52cf-ed48dfc3b5fe"
         },
         "effectivePeriod": {
-          "start": "2025-09-11",
-          "end": "2026-06-16"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "19e8de96-fce3-4d6e-8547-8f8955c653e4",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "373747",
-              "display": "etanercept"
-            }
-          ],
-          "text": "etanercept"
-        },
-        "subject": {
-          "reference": "Patient/318232f0-fc16-ad9d-52cf-ed48dfc3b5fe"
-        },
-        "effectivePeriod": {
-          "start": "2025-01-31",
-          "end": "2025-08-22"
+          "start": "2024-09-10",
+          "end": "2025-08-11"
         },
         "reasonCode": [
           {
@@ -615614,18 +615556,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "9c3d10ed-6713-4dbc-a225-59de6199d4c5",
+        "id": "8a06796f-0597-4d6e-8d8c-2cb8d9f7e5d1",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "614391",
-              "display": "Simponi Aria (golimumab)"
+              "code": "356248",
+              "display": "Cimzia (certolizumab pegol)"
             }
           ],
-          "text": "Simponi Aria (golimumab)"
+          "text": "Cimzia (certolizumab pegol)"
         },
         "subject": {
           "reference": "Patient/318232f0-fc16-ad9d-52cf-ed48dfc3b5fe"

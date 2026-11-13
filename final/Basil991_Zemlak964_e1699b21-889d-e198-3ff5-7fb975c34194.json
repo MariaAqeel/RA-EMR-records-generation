@@ -1832890,40 +1832890,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "dd43d725-2897-44f7-8472-384b3258d149",
+        "id": "9e70c158-94f5-4db1-aca2-4caa772232ec",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/e1699b21-889d-e198-3ff5-7fb975c34194"
         },
         "payor": [
           {
-            "display": "Aetna"
+            "display": "UnitedHealthcare"
           }
         ],
-        "subscriberId": "347740826"
+        "subscriberId": "301352618"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "ba307ba1-ceba-4450-a199-a351af55d451",
+        "id": "50596035-e8ca-4cf4-b57f-1c39b3e76fe8",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "114194",
-              "display": "hydroxychloroquine"
+              "code": "373747",
+              "display": "etanercept"
             }
           ],
-          "text": "hydroxychloroquine"
+          "text": "etanercept"
         },
         "subject": {
           "reference": "Patient/e1699b21-889d-e198-3ff5-7fb975c34194"
         },
         "effectivePeriod": {
-          "start": "2025-01-31",
-          "end": "2025-05-18"
+          "start": "2025-08-12",
+          "end": "2026-05-30"
         },
         "reasonCode": [
           {
@@ -1832935,7 +1832935,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "a22f48da-0fea-46b4-8564-8c572c13fad8",
+        "id": "8ade9a14-a97e-4f7d-914b-cc32434ce611",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

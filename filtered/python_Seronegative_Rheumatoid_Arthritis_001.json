@@ -1,0 +1,196 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "a168a217-a677-4be4-a3eb-bde1ba0ae72e",
+        "name": [
+          {
+            "use": "official",
+            "family": "Smith",
+            "given": [
+              "Mary"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1967-08-07",
+        "address": [
+          {
+            "line": [
+              "6333 Timothy Parks Suite 231"
+            ],
+            "city": "Nortonmouth",
+            "state": "VI",
+            "postalCode": "62258",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "3f3de529-cc26-47d1-8748-7404c6c2f199",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "201791006",
+              "display": "Seronegative Rheumatoid Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M06.09",
+              "display": "Seronegative Rheumatoid Arthritis"
+            }
+          ],
+          "text": "Seronegative Rheumatoid Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/a168a217-a677-4be4-a3eb-bde1ba0ae72e"
+        },
+        "onsetDateTime": "2022-05-25"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "b4efc1a5-57c3-4976-ab96-866d78faf5f3",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/a168a217-a677-4be4-a3eb-bde1ba0ae72e"
+        },
+        "payor": [
+          {
+            "display": "Cigna"
+          }
+        ],
+        "subscriberId": "993334271"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "a5aa210d-3346-4c91-ad3c-607acd2ba360",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/a168a217-a677-4be4-a3eb-bde1ba0ae72e"
+        },
+        "effectiveDateTime": "2026-10-15",
+        "valueQuantity": {
+          "value": 164.7,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ed386ae4-c987-4a13-89a9-b04849e8ff06",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/a168a217-a677-4be4-a3eb-bde1ba0ae72e"
+        },
+        "effectiveDateTime": "2026-10-09",
+        "valueQuantity": {
+          "value": 27.8,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f2d49a8b-d2d1-41e2-ada4-bd733545d563",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/a168a217-a677-4be4-a3eb-bde1ba0ae72e"
+        },
+        "effectiveDateTime": "2026-10-25",
+        "valueQuantity": {
+          "value": 197.4,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    }
+  ]
+}

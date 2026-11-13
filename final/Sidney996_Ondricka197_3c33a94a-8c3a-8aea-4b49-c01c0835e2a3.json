@@ -306169,40 +306169,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "72c73030-0436-4bf9-979b-121d167fc62b",
+        "id": "4a3325bd-b829-4ad7-8d20-af759dc5f808",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/3c33a94a-8c3a-8aea-4b49-c01c0835e2a3"
         },
         "payor": [
           {
-            "display": "Blue Shield of California"
+            "display": "UnitedHealthcare"
           }
         ],
-        "subscriberId": "711400801"
+        "subscriberId": "288228979"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "97c0c8a5-dc40-495c-b657-8e0eb8e4c3de",
+        "id": "6f18a731-102c-4e64-97ac-98f614252591",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "373747",
-              "display": "etanercept"
+              "code": "327362",
+              "display": "adalimumab"
             }
           ],
-          "text": "etanercept"
+          "text": "adalimumab"
         },
         "subject": {
           "reference": "Patient/3c33a94a-8c3a-8aea-4b49-c01c0835e2a3"
         },
         "effectivePeriod": {
-          "start": "2024-08-21",
-          "end": "2025-07-10"
+          "start": "2025-02-25",
+          "end": "2026-01-24"
         },
         "reasonCode": [
           {
@@ -306214,24 +306214,53 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "f7309078-c218-4dfe-bfe6-7c94e446f0d2",
+        "id": "edc94ca3-fa06-449c-8932-28663c551752",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327361",
-              "display": "leflunomide"
+              "code": "327362",
+              "display": "adalimumab"
             }
           ],
-          "text": "leflunomide"
+          "text": "adalimumab"
         },
         "subject": {
           "reference": "Patient/3c33a94a-8c3a-8aea-4b49-c01c0835e2a3"
         },
         "effectivePeriod": {
-          "start": "2025-10-27",
-          "end": "2026-02-21"
+          "start": "2025-05-07",
+          "end": "2026-02-14"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "cfe4bd4d-90b3-44d0-879d-14973159bb05",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "114194",
+              "display": "hydroxychloroquine"
+            }
+          ],
+          "text": "hydroxychloroquine"
+        },
+        "subject": {
+          "reference": "Patient/3c33a94a-8c3a-8aea-4b49-c01c0835e2a3"
+        },
+        "effectivePeriod": {
+          "start": "2025-06-26",
+          "end": "2026-05-21"
         },
         "reasonCode": [
           {
@@ -306243,18 +306272,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "e5f417e1-8c68-4f9f-9c23-d504308145cc",
+        "id": "8d055b5a-8252-42d8-9a7e-700b4c535ef6",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "356248",
-              "display": "Cimzia (certolizumab pegol)"
+              "code": "358258",
+              "display": "Orencia (abatacept)"
             }
           ],
-          "text": "Cimzia (certolizumab pegol)"
+          "text": "Orencia (abatacept)"
         },
         "subject": {
           "reference": "Patient/3c33a94a-8c3a-8aea-4b49-c01c0835e2a3"

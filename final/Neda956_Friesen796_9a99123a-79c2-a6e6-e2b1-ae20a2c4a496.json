@@ -435292,69 +435292,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "614bed2a-9a5c-4eb0-b4b0-48a490bd67fe",
+        "id": "b5bc3427-5824-4de2-bb7a-a304d5fac94d",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/9a99123a-79c2-a6e6-e2b1-ae20a2c4a496"
         },
         "payor": [
           {
-            "display": "Blue Shield of California"
+            "display": "UnitedHealthcare"
           }
         ],
-        "subscriberId": "588135664"
+        "subscriberId": "682077737"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "e54e070e-1d80-4147-aeed-7e98780bbeda",
+        "id": "ac0da405-ecc5-4bbe-9dbd-df83e765b620",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "373747",
-              "display": "etanercept"
+              "code": "114194",
+              "display": "hydroxychloroquine"
             }
           ],
-          "text": "etanercept"
+          "text": "hydroxychloroquine"
         },
         "subject": {
           "reference": "Patient/9a99123a-79c2-a6e6-e2b1-ae20a2c4a496"
         },
         "effectivePeriod": {
-          "start": "2025-11-09",
-          "end": "2026-09-09"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "79071e70-73a8-4210-8ae2-08ade15dd41a",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "105585",
-              "display": "methotrexate"
-            }
-          ],
-          "text": "methotrexate"
-        },
-        "subject": {
-          "reference": "Patient/9a99123a-79c2-a6e6-e2b1-ae20a2c4a496"
-        },
-        "effectivePeriod": {
-          "start": "2024-08-17",
-          "end": "2025-04-09"
+          "start": "2025-01-21",
+          "end": "2025-09-26"
         },
         "reasonCode": [
           {
@@ -435366,18 +435337,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "e736d915-cf05-49d4-85fa-0b77918df5b5",
+        "id": "cd1f26be-8a1c-40d5-9750-f9c6838b9d92",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "356248",
-              "display": "Cimzia (certolizumab pegol)"
+              "code": "614391",
+              "display": "Simponi Aria (golimumab)"
             }
           ],
-          "text": "Cimzia (certolizumab pegol)"
+          "text": "Simponi Aria (golimumab)"
         },
         "subject": {
           "reference": "Patient/9a99123a-79c2-a6e6-e2b1-ae20a2c4a496"

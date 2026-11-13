@@ -1,0 +1,304 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "f834e71e-42d4-4a88-9309-7b4e48996025",
+        "name": [
+          {
+            "use": "official",
+            "family": "Moreno",
+            "given": [
+              "Rachel"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1983-09-23",
+        "address": [
+          {
+            "line": [
+              "90511 Oconnell Flat"
+            ],
+            "city": "Lake Toddmouth",
+            "state": "OK",
+            "postalCode": "49717",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "ade2b504-1d6f-4206-b6be-f107f0db4d38",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "201791006",
+              "display": "Seronegative Rheumatoid Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M06.09",
+              "display": "Seronegative Rheumatoid Arthritis"
+            }
+          ],
+          "text": "Seronegative Rheumatoid Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/f834e71e-42d4-4a88-9309-7b4e48996025"
+        },
+        "onsetDateTime": "2022-11-04"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "c42b47b8-7eab-4093-b890-a3962bdd6340",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/f834e71e-42d4-4a88-9309-7b4e48996025"
+        },
+        "payor": [
+          {
+            "display": "Aetna"
+          }
+        ],
+        "subscriberId": "190702278"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "17baf796-3680-4bb5-97d8-fe44e085182e",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/f834e71e-42d4-4a88-9309-7b4e48996025"
+        },
+        "effectiveDateTime": "2026-10-09",
+        "valueQuantity": {
+          "value": 79.8,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "8f7e6c05-228b-4ac9-ab6a-557352b30004",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/f834e71e-42d4-4a88-9309-7b4e48996025"
+        },
+        "effectiveDateTime": "2026-09-18",
+        "valueQuantity": {
+          "value": 35.4,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "e1be0a1e-f0d9-4b51-b433-ae138f24734c",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/f834e71e-42d4-4a88-9309-7b4e48996025"
+        },
+        "effectiveDateTime": "2026-10-25",
+        "valueQuantity": {
+          "value": 18.3,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "00fc27ca-8ea9-43f6-add2-015ce329d935",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "114194",
+              "display": "hydroxychloroquine"
+            }
+          ],
+          "text": "hydroxychloroquine"
+        },
+        "subject": {
+          "reference": "Patient/f834e71e-42d4-4a88-9309-7b4e48996025"
+        },
+        "effectivePeriod": {
+          "start": "2025-11-11",
+          "end": "2026-04-06"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "7cbfa4bc-5acb-4055-bc97-7ecc7301b9b7",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "373747",
+              "display": "etanercept"
+            }
+          ],
+          "text": "etanercept"
+        },
+        "subject": {
+          "reference": "Patient/f834e71e-42d4-4a88-9309-7b4e48996025"
+        },
+        "effectivePeriod": {
+          "start": "2025-07-07",
+          "end": "2026-03-20"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "24b6ed71-cc3a-4427-a43f-bde656343cbe",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "373747",
+              "display": "etanercept"
+            }
+          ],
+          "text": "etanercept"
+        },
+        "subject": {
+          "reference": "Patient/f834e71e-42d4-4a88-9309-7b4e48996025"
+        },
+        "effectivePeriod": {
+          "start": "2025-05-30",
+          "end": "2026-03-23"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "e6b74054-4e9f-4c2e-ae68-22068f93bd9f",
+        "status": "draft",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "358258",
+              "display": "Orencia (abatacept)"
+            }
+          ],
+          "text": "Orencia (abatacept)"
+        },
+        "subject": {
+          "reference": "Patient/f834e71e-42d4-4a88-9309-7b4e48996025"
+        }
+      }
+    }
+  ]
+}

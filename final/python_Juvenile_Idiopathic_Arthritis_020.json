@@ -1,0 +1,246 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "ffdb50d4-36fe-4765-9e64-24a95f9f3902",
+        "name": [
+          {
+            "use": "official",
+            "family": "Powell",
+            "given": [
+              "Joanna"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2011-07-11",
+        "address": [
+          {
+            "line": [
+              "175 Richard Highway Apt. 121"
+            ],
+            "city": "West Rebeccaport",
+            "state": "MO",
+            "postalCode": "01420",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "674a5c3f-3ed2-4c07-8445-35e904647758",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "57160005",
+              "display": "Juvenile Idiopathic Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M08.00",
+              "display": "Juvenile Idiopathic Arthritis"
+            }
+          ],
+          "text": "Juvenile Idiopathic Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/ffdb50d4-36fe-4765-9e64-24a95f9f3902"
+        },
+        "onsetDateTime": "2024-11-30"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "51241e0b-536a-4f09-bc9c-84ebd652ca39",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/ffdb50d4-36fe-4765-9e64-24a95f9f3902"
+        },
+        "payor": [
+          {
+            "display": "Aetna"
+          }
+        ],
+        "subscriberId": "438371280"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d51c0962-9408-4d12-8d19-e94d0ec336dc",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/ffdb50d4-36fe-4765-9e64-24a95f9f3902"
+        },
+        "effectiveDateTime": "2026-08-17",
+        "valueQuantity": {
+          "value": 70.0,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "7b21bc5e-6929-4fe2-89bf-0ee252e586e2",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/ffdb50d4-36fe-4765-9e64-24a95f9f3902"
+        },
+        "effectiveDateTime": "2026-09-10",
+        "valueQuantity": {
+          "value": 185.4,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "dfefcb22-bb09-4e1d-aa80-e750d6ed93c4",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/ffdb50d4-36fe-4765-9e64-24a95f9f3902"
+        },
+        "effectiveDateTime": "2026-08-16",
+        "valueQuantity": {
+          "value": 172.9,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "28076b3c-b011-493e-9a85-1b4a6b4661ef",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "114194",
+              "display": "hydroxychloroquine"
+            }
+          ],
+          "text": "hydroxychloroquine"
+        },
+        "subject": {
+          "reference": "Patient/ffdb50d4-36fe-4765-9e64-24a95f9f3902"
+        },
+        "effectivePeriod": {
+          "start": "2025-01-04",
+          "end": "2025-08-28"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "3d628215-80fd-4db5-8baf-ce307d000a88",
+        "status": "draft",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "358258",
+              "display": "Orencia (abatacept)"
+            }
+          ],
+          "text": "Orencia (abatacept)"
+        },
+        "subject": {
+          "reference": "Patient/ffdb50d4-36fe-4765-9e64-24a95f9f3902"
+        }
+      }
+    }
+  ]
+}

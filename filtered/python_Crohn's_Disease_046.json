@@ -1,0 +1,227 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "14b8322a-f951-4621-91b2-34fc7e2ff41f",
+        "name": [
+          {
+            "use": "official",
+            "family": "Rice",
+            "given": [
+              "Jessica"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1990-08-28",
+        "address": [
+          {
+            "line": [
+              "5316 Byrd Walk Apt. 059"
+            ],
+            "city": "Shelbymouth",
+            "state": "GA",
+            "postalCode": "88357",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "78369304-4ce9-44ff-bb55-330d499b854c",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "34000006",
+              "display": "Crohn's Disease"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "K50.90",
+              "display": "Crohn's Disease"
+            }
+          ],
+          "text": "Crohn's Disease"
+        },
+        "subject": {
+          "reference": "Patient/14b8322a-f951-4621-91b2-34fc7e2ff41f"
+        },
+        "onsetDateTime": "2024-10-09"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "e03f8739-a9dc-4d5e-855a-99d30947c918",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/14b8322a-f951-4621-91b2-34fc7e2ff41f"
+        },
+        "payor": [
+          {
+            "display": "Humana"
+          }
+        ],
+        "subscriberId": "708343224"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "02ff2646-61bd-42b8-a394-37da73611015",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/14b8322a-f951-4621-91b2-34fc7e2ff41f"
+        },
+        "effectiveDateTime": "2026-10-03",
+        "valueQuantity": {
+          "value": 159.6,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ec04d877-87bf-49bf-b103-ba28cedc28e7",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/14b8322a-f951-4621-91b2-34fc7e2ff41f"
+        },
+        "effectiveDateTime": "2026-09-01",
+        "valueQuantity": {
+          "value": 37.7,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "581d2988-13cc-4d0d-973e-44880d248dd2",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/14b8322a-f951-4621-91b2-34fc7e2ff41f"
+        },
+        "effectiveDateTime": "2026-11-09",
+        "valueBoolean": false
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "e7c50a02-9432-4057-a007-27247b13bd01",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/14b8322a-f951-4621-91b2-34fc7e2ff41f"
+        },
+        "effectiveDateTime": "2026-08-19",
+        "valueQuantity": {
+          "value": 104.9,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    }
+  ]
+}

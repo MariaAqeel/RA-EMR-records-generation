@@ -1,0 +1,227 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "1ccfbe57-15d3-4906-9bae-36425ba292c3",
+        "name": [
+          {
+            "use": "official",
+            "family": "Sandoval",
+            "given": [
+              "Sean"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1985-12-18",
+        "address": [
+          {
+            "line": [
+              "05565 Mendoza Cove Suite 969"
+            ],
+            "city": "New Amy",
+            "state": "NC",
+            "postalCode": "91256",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "80cffec8-81c9-49f7-9ca9-248f7572a2c9",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "9631008",
+              "display": "Psoriatic Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M07.60",
+              "display": "Psoriatic Arthritis"
+            }
+          ],
+          "text": "Psoriatic Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/1ccfbe57-15d3-4906-9bae-36425ba292c3"
+        },
+        "onsetDateTime": "2025-03-10"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "c784425f-b209-476e-a4d1-8788321aaab2",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/1ccfbe57-15d3-4906-9bae-36425ba292c3"
+        },
+        "payor": [
+          {
+            "display": "Cigna"
+          }
+        ],
+        "subscriberId": "263346047"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "5aed8249-76f0-4081-9087-9f0ce2c704b6",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/1ccfbe57-15d3-4906-9bae-36425ba292c3"
+        },
+        "effectiveDateTime": "2026-08-23",
+        "valueQuantity": {
+          "value": 50.1,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "209d2a00-71c6-4888-85a3-fcee80ff49b1",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/1ccfbe57-15d3-4906-9bae-36425ba292c3"
+        },
+        "effectiveDateTime": "2026-10-15",
+        "valueBoolean": false
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "306e1165-ce89-4380-875a-8e968fbb98ee",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/1ccfbe57-15d3-4906-9bae-36425ba292c3"
+        },
+        "effectiveDateTime": "2026-09-03",
+        "valueQuantity": {
+          "value": 55.3,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "211e29ee-3cac-4d79-8414-bb7bdc2720bc",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/1ccfbe57-15d3-4906-9bae-36425ba292c3"
+        },
+        "effectiveDateTime": "2026-09-17",
+        "valueQuantity": {
+          "value": 49.4,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    }
+  ]
+}

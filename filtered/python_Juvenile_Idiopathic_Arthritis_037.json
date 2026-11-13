@@ -1,0 +1,192 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "4b16ba49-61dc-450c-9856-03f264547eaa",
+        "name": [
+          {
+            "use": "official",
+            "family": "Smith",
+            "given": [
+              "Melissa"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2020-08-19",
+        "address": [
+          {
+            "line": [
+              "8321 Justin Keys"
+            ],
+            "city": "Estradaville",
+            "state": "KY",
+            "postalCode": "37458",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "63fc1441-3b3a-4e66-8618-a26a8df5516e",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "57160005",
+              "display": "Juvenile Idiopathic Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M08.00",
+              "display": "Juvenile Idiopathic Arthritis"
+            }
+          ],
+          "text": "Juvenile Idiopathic Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/4b16ba49-61dc-450c-9856-03f264547eaa"
+        },
+        "onsetDateTime": "2022-03-17"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "f3a2c32c-fb50-4bbf-9c4b-f3a7c4080834",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/4b16ba49-61dc-450c-9856-03f264547eaa"
+        },
+        "payor": [
+          {
+            "display": "Cigna"
+          }
+        ],
+        "subscriberId": "930837496"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "5e8aed78-4a0a-496a-a0ed-ab54f84cdf99",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4b16ba49-61dc-450c-9856-03f264547eaa"
+        },
+        "effectiveDateTime": "2026-10-21",
+        "valueQuantity": {
+          "value": 47.3,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4e729c8b-ef2c-4d38-aa39-b2d945257fcf",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4b16ba49-61dc-450c-9856-03f264547eaa"
+        },
+        "effectiveDateTime": "2026-10-07",
+        "valueQuantity": {
+          "value": 44.3,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "9f781b55-5ab5-4515-a1d6-b6b8d9bb14ca",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4b16ba49-61dc-450c-9856-03f264547eaa"
+        },
+        "effectiveDateTime": "2026-10-19",
+        "valueBoolean": true
+      }
+    }
+  ]
+}

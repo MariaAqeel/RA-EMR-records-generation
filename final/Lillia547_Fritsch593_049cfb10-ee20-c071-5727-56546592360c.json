@@ -398322,23 +398322,52 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "538c433c-3429-4895-a727-1df516f555c7",
+        "id": "11712275-e19b-448a-958c-9dbe19e7f1e9",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/049cfb10-ee20-c071-5727-56546592360c"
         },
         "payor": [
           {
-            "display": "Aetna"
+            "display": "Humana"
           }
         ],
-        "subscriberId": "320843641"
+        "subscriberId": "270444319"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "87863055-695c-45c8-a4ee-f21aaed3006f",
+        "id": "20c509ef-bbef-4a6e-9ec6-36d68fd4d40a",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "373747",
+              "display": "etanercept"
+            }
+          ],
+          "text": "etanercept"
+        },
+        "subject": {
+          "reference": "Patient/049cfb10-ee20-c071-5727-56546592360c"
+        },
+        "effectivePeriod": {
+          "start": "2025-07-21",
+          "end": "2026-06-25"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "290b9868-1bbd-4052-a693-7e91f387e84c",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -398354,8 +398383,8 @@
           "reference": "Patient/049cfb10-ee20-c071-5727-56546592360c"
         },
         "effectivePeriod": {
-          "start": "2024-06-12",
-          "end": "2024-10-08"
+          "start": "2025-09-17",
+          "end": "2026-05-06"
         },
         "reasonCode": [
           {
@@ -398367,7 +398396,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "8c2d056d-7f0a-4644-82fd-ca72e3bb966d",
+        "id": "7961e4d4-fd65-4bfb-9070-c1e486ed9f67",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

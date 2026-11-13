@@ -301739,40 +301739,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "db1bbf37-939e-4982-8e20-5b8dad7451c0",
+        "id": "caeaf34e-21b5-4048-9f86-cbbc7d5e9df8",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/b39cccb7-4874-97cd-7110-8871450e1462"
         },
         "payor": [
           {
-            "display": "Humana"
+            "display": "Blue Shield of California"
           }
         ],
-        "subscriberId": "580104987"
+        "subscriberId": "908147036"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "918a889e-e9b9-4deb-8171-127e2ef871fe",
+        "id": "c060de8e-b09b-4d4d-8bbe-bd5e83645c3f",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "105585",
-              "display": "methotrexate"
+              "code": "327361",
+              "display": "leflunomide"
             }
           ],
-          "text": "methotrexate"
+          "text": "leflunomide"
         },
         "subject": {
           "reference": "Patient/b39cccb7-4874-97cd-7110-8871450e1462"
         },
         "effectivePeriod": {
-          "start": "2025-09-28",
-          "end": "2026-09-19"
+          "start": "2025-08-28",
+          "end": "2026-02-15"
         },
         "reasonCode": [
           {
@@ -301784,24 +301784,53 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "694179bc-c784-4e90-9532-39edf328c0d5",
+        "id": "574d254a-ab75-4c4d-9946-ccf064fd5303",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "105585",
-              "display": "methotrexate"
+              "code": "373747",
+              "display": "etanercept"
             }
           ],
-          "text": "methotrexate"
+          "text": "etanercept"
         },
         "subject": {
           "reference": "Patient/b39cccb7-4874-97cd-7110-8871450e1462"
         },
         "effectivePeriod": {
-          "start": "2024-10-29",
-          "end": "2025-10-07"
+          "start": "2024-12-15",
+          "end": "2025-10-26"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "c1839931-536b-41f3-85e9-a4a8dcafc479",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "327362",
+              "display": "adalimumab"
+            }
+          ],
+          "text": "adalimumab"
+        },
+        "subject": {
+          "reference": "Patient/b39cccb7-4874-97cd-7110-8871450e1462"
+        },
+        "effectivePeriod": {
+          "start": "2024-08-01",
+          "end": "2024-10-31"
         },
         "reasonCode": [
           {
@@ -301813,7 +301842,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "8f83027b-1f22-40dd-b963-b94a2cec2b89",
+        "id": "a34da410-b53f-4a94-bde8-af9d62464a2a",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

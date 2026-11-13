@@ -159004,23 +159004,23 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "227ced99-01cb-464c-90b8-4a21f32b5fe7",
+        "id": "840761f8-d985-4543-b755-d1578c565e5a",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/2af013af-5a8b-af1c-9535-2e437c8b960b"
         },
         "payor": [
           {
-            "display": "Cigna"
+            "display": "Blue Shield of California"
           }
         ],
-        "subscriberId": "329057899"
+        "subscriberId": "593420135"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "8560a81f-13eb-4915-88cd-2f85f5ae3dc4",
+        "id": "d2646f5c-dcde-4b72-861c-de6b5d606b88",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -159036,8 +159036,8 @@
           "reference": "Patient/2af013af-5a8b-af1c-9535-2e437c8b960b"
         },
         "effectivePeriod": {
-          "start": "2024-12-27",
-          "end": "2025-11-04"
+          "start": "2024-07-01",
+          "end": "2025-05-23"
         },
         "reasonCode": [
           {
@@ -159049,7 +159049,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "a840372f-a1cf-4da7-9308-b90fc8bcd13f",
+        "id": "f7be1493-6278-4f77-a402-203a59e5bb38",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

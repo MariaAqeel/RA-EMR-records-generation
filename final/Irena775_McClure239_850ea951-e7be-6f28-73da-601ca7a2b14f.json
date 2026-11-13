@@ -145903,40 +145903,98 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "7723980f-447a-455c-806f-2a9510d00c4e",
+        "id": "de723874-798d-4836-ab5d-a0e2d514a4aa",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/850ea951-e7be-6f28-73da-601ca7a2b14f"
         },
         "payor": [
           {
-            "display": "Cigna"
+            "display": "Blue Shield of California"
           }
         ],
-        "subscriberId": "223004343"
+        "subscriberId": "275795322"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "e5f7c8c5-3427-4b64-ae1d-bbdbce7ac990",
+        "id": "67edfd86-85b3-4e84-8c54-f4c36c34feba",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "114194",
-              "display": "hydroxychloroquine"
+              "code": "105585",
+              "display": "methotrexate"
             }
           ],
-          "text": "hydroxychloroquine"
+          "text": "methotrexate"
         },
         "subject": {
           "reference": "Patient/850ea951-e7be-6f28-73da-601ca7a2b14f"
         },
         "effectivePeriod": {
-          "start": "2024-06-26",
-          "end": "2024-12-25"
+          "start": "2024-12-26",
+          "end": "2025-08-17"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "d467f9a4-c921-4a98-b62e-69c7259d9d1e",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "327361",
+              "display": "leflunomide"
+            }
+          ],
+          "text": "leflunomide"
+        },
+        "subject": {
+          "reference": "Patient/850ea951-e7be-6f28-73da-601ca7a2b14f"
+        },
+        "effectivePeriod": {
+          "start": "2025-09-08",
+          "end": "2026-07-16"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "6c5d8880-b582-4f58-87fb-d416f8b2a58e",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "105585",
+              "display": "methotrexate"
+            }
+          ],
+          "text": "methotrexate"
+        },
+        "subject": {
+          "reference": "Patient/850ea951-e7be-6f28-73da-601ca7a2b14f"
+        },
+        "effectivePeriod": {
+          "start": "2024-06-01",
+          "end": "2025-04-09"
         },
         "reasonCode": [
           {
@@ -145948,18 +146006,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "85592383-8b0d-4eb4-aef5-b5aab81463d9",
+        "id": "77c7b2a0-0a06-4944-a248-ac69a2447fff",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "614391",
-              "display": "Simponi Aria (golimumab)"
+              "code": "356248",
+              "display": "Cimzia (certolizumab pegol)"
             }
           ],
-          "text": "Simponi Aria (golimumab)"
+          "text": "Cimzia (certolizumab pegol)"
         },
         "subject": {
           "reference": "Patient/850ea951-e7be-6f28-73da-601ca7a2b14f"

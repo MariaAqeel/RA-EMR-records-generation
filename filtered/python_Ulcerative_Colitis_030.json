@@ -1,0 +1,153 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "7502cb5a-aaf0-447f-aee0-3f076d372a8f",
+        "name": [
+          {
+            "use": "official",
+            "family": "Miller",
+            "given": [
+              "Vincent"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1991-11-03",
+        "address": [
+          {
+            "line": [
+              "796 Lopez Curve Suite 326"
+            ],
+            "city": "Hancockfort",
+            "state": "TX",
+            "postalCode": "78892",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "d1847c2c-7228-4efc-9db0-b10bc7507b90",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "64766004",
+              "display": "Ulcerative Colitis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "K51.90",
+              "display": "Ulcerative Colitis"
+            }
+          ],
+          "text": "Ulcerative Colitis"
+        },
+        "subject": {
+          "reference": "Patient/7502cb5a-aaf0-447f-aee0-3f076d372a8f"
+        },
+        "onsetDateTime": "2025-05-14"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "0d403ae4-fa99-4283-8c42-2520054951ed",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/7502cb5a-aaf0-447f-aee0-3f076d372a8f"
+        },
+        "payor": [
+          {
+            "display": "UnitedHealthcare"
+          }
+        ],
+        "subscriberId": "590891953"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "71393078-784c-4ac3-b762-9c03bfc050ee",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/7502cb5a-aaf0-447f-aee0-3f076d372a8f"
+        },
+        "effectiveDateTime": "2026-11-03",
+        "valueBoolean": false
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "2f445500-1f00-4bf1-968c-e066b83eb4d6",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/7502cb5a-aaf0-447f-aee0-3f076d372a8f"
+        },
+        "effectiveDateTime": "2026-11-07",
+        "valueBoolean": false
+      }
+    }
+  ]
+}

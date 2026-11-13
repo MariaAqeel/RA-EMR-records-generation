@@ -1,0 +1,240 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "543d68f7-2c5e-4d3a-90ea-22e0f24fc2c8",
+        "name": [
+          {
+            "use": "official",
+            "family": "Lee",
+            "given": [
+              "Tiffany"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2016-01-21",
+        "address": [
+          {
+            "line": [
+              "6326 Landry Isle"
+            ],
+            "city": "Andersonfort",
+            "state": "KS",
+            "postalCode": "75976",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "e911ae0a-f24c-41ff-9ce4-da1ea09e7bb2",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "57160005",
+              "display": "Juvenile Idiopathic Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M08.00",
+              "display": "Juvenile Idiopathic Arthritis"
+            }
+          ],
+          "text": "Juvenile Idiopathic Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/543d68f7-2c5e-4d3a-90ea-22e0f24fc2c8"
+        },
+        "onsetDateTime": "2026-04-22"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "c01eed05-1f9f-483f-b132-7567a658b10e",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/543d68f7-2c5e-4d3a-90ea-22e0f24fc2c8"
+        },
+        "payor": [
+          {
+            "display": "UnitedHealthcare"
+          }
+        ],
+        "subscriberId": "361265827"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "a2a6f3d7-32af-4e63-80d8-61fc6a870ad8",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/543d68f7-2c5e-4d3a-90ea-22e0f24fc2c8"
+        },
+        "effectiveDateTime": "2026-09-07",
+        "valueQuantity": {
+          "value": 24.2,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d76f4b3f-5ef1-4af9-a0a6-5d12158585fa",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/543d68f7-2c5e-4d3a-90ea-22e0f24fc2c8"
+        },
+        "effectiveDateTime": "2026-09-09",
+        "valueQuantity": {
+          "value": 26.1,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "6d197b44-bd78-48d9-a5a0-6d23b41cc9f5",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "327361",
+              "display": "leflunomide"
+            }
+          ],
+          "text": "leflunomide"
+        },
+        "subject": {
+          "reference": "Patient/543d68f7-2c5e-4d3a-90ea-22e0f24fc2c8"
+        },
+        "effectivePeriod": {
+          "start": "2024-12-25",
+          "end": "2025-08-12"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "7cba4aba-d907-40be-8c91-d8e3a18309f6",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "114194",
+              "display": "hydroxychloroquine"
+            }
+          ],
+          "text": "hydroxychloroquine"
+        },
+        "subject": {
+          "reference": "Patient/543d68f7-2c5e-4d3a-90ea-22e0f24fc2c8"
+        },
+        "effectivePeriod": {
+          "start": "2024-11-19",
+          "end": "2025-10-14"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "fa21f3b4-59a9-46c0-804b-81326855401d",
+        "status": "draft",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "614391",
+              "display": "Simponi Aria (golimumab)"
+            }
+          ],
+          "text": "Simponi Aria (golimumab)"
+        },
+        "subject": {
+          "reference": "Patient/543d68f7-2c5e-4d3a-90ea-22e0f24fc2c8"
+        }
+      }
+    }
+  ]
+}

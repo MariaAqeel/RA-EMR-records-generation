@@ -1,0 +1,240 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "e5e92bf9-6717-4a61-95da-ada10104c5be",
+        "name": [
+          {
+            "use": "official",
+            "family": "Smith",
+            "given": [
+              "Maurice"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1993-03-15",
+        "address": [
+          {
+            "line": [
+              "57807 Heather Mills"
+            ],
+            "city": "Kimberlyton",
+            "state": "RI",
+            "postalCode": "94018",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "321e0515-2e8e-42d6-a739-52f81840d57c",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "34000006",
+              "display": "Crohn's Disease"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "K50.90",
+              "display": "Crohn's Disease"
+            }
+          ],
+          "text": "Crohn's Disease"
+        },
+        "subject": {
+          "reference": "Patient/e5e92bf9-6717-4a61-95da-ada10104c5be"
+        },
+        "onsetDateTime": "2022-05-22"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "b65de1ca-fb5e-4a85-bd4e-8eb03a35d8b9",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/e5e92bf9-6717-4a61-95da-ada10104c5be"
+        },
+        "payor": [
+          {
+            "display": "Cigna"
+          }
+        ],
+        "subscriberId": "228619104"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "18ccb674-2b4d-4fc1-853d-bf77f124ee6a",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/e5e92bf9-6717-4a61-95da-ada10104c5be"
+        },
+        "effectiveDateTime": "2026-08-16",
+        "valueQuantity": {
+          "value": 65.2,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "b2289806-e273-41c8-9491-ba74eb78c78a",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/e5e92bf9-6717-4a61-95da-ada10104c5be"
+        },
+        "effectiveDateTime": "2026-09-27",
+        "valueQuantity": {
+          "value": 75.3,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "45230bef-7042-4306-8a35-33a5fe2c9f15",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "373747",
+              "display": "etanercept"
+            }
+          ],
+          "text": "etanercept"
+        },
+        "subject": {
+          "reference": "Patient/e5e92bf9-6717-4a61-95da-ada10104c5be"
+        },
+        "effectivePeriod": {
+          "start": "2025-09-08",
+          "end": "2026-03-20"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "2dfdcd2b-c292-4a75-9e0a-9af30c61a095",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "114194",
+              "display": "hydroxychloroquine"
+            }
+          ],
+          "text": "hydroxychloroquine"
+        },
+        "subject": {
+          "reference": "Patient/e5e92bf9-6717-4a61-95da-ada10104c5be"
+        },
+        "effectivePeriod": {
+          "start": "2024-06-12",
+          "end": "2024-12-10"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "f00ce338-562d-45b2-a77b-659cbc72c206",
+        "status": "draft",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "356248",
+              "display": "Cimzia (certolizumab pegol)"
+            }
+          ],
+          "text": "Cimzia (certolizumab pegol)"
+        },
+        "subject": {
+          "reference": "Patient/e5e92bf9-6717-4a61-95da-ada10104c5be"
+        }
+      }
+    }
+  ]
+}

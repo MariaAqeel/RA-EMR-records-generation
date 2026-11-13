@@ -145930,40 +145930,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "3753c781-1894-4b18-b2a6-24a92883ac20",
+        "id": "8b7f254b-6777-4e24-800f-e876ca21b0c2",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/d4296aa2-ab93-4c8f-9519-16f0235b939a"
         },
         "payor": [
           {
-            "display": "Cigna"
+            "display": "UnitedHealthcare"
           }
         ],
-        "subscriberId": "932244720"
+        "subscriberId": "819439013"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "81c8aa74-b4af-4924-a1ac-711cfa8f7351",
+        "id": "540443b1-da69-4f27-bba3-625cacb74c61",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "373747",
-              "display": "etanercept"
+              "code": "105585",
+              "display": "methotrexate"
             }
           ],
-          "text": "etanercept"
+          "text": "methotrexate"
         },
         "subject": {
           "reference": "Patient/d4296aa2-ab93-4c8f-9519-16f0235b939a"
         },
         "effectivePeriod": {
-          "start": "2025-03-07",
-          "end": "2025-09-26"
+          "start": "2025-11-11",
+          "end": "2026-06-15"
         },
         "reasonCode": [
           {
@@ -145975,18 +145975,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "b4e5922e-6b9c-4f46-acd8-4dda95b6cf96",
+        "id": "28830519-1932-4c25-a470-71ace66e2c45",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "356248",
-              "display": "Cimzia (certolizumab pegol)"
+              "code": "358258",
+              "display": "Orencia (abatacept)"
             }
           ],
-          "text": "Cimzia (certolizumab pegol)"
+          "text": "Orencia (abatacept)"
         },
         "subject": {
           "reference": "Patient/d4296aa2-ab93-4c8f-9519-16f0235b939a"

@@ -1,0 +1,192 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "9fafe6e5-89d2-4a45-b07e-fee275463230",
+        "name": [
+          {
+            "use": "official",
+            "family": "Trujillo",
+            "given": [
+              "Melissa"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1993-10-11",
+        "address": [
+          {
+            "line": [
+              "1724 Lawson Ports"
+            ],
+            "city": "East Stacy",
+            "state": "IL",
+            "postalCode": "93040",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "a2737bf0-02a6-41d9-a5e3-4059056eec11",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "34000006",
+              "display": "Crohn's Disease"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "K50.90",
+              "display": "Crohn's Disease"
+            }
+          ],
+          "text": "Crohn's Disease"
+        },
+        "subject": {
+          "reference": "Patient/9fafe6e5-89d2-4a45-b07e-fee275463230"
+        },
+        "onsetDateTime": "2025-01-09"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "65bc85b1-2746-403c-829f-a00efcd24518",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/9fafe6e5-89d2-4a45-b07e-fee275463230"
+        },
+        "payor": [
+          {
+            "display": "Cigna"
+          }
+        ],
+        "subscriberId": "111950754"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "2a2e9154-e04b-4bc5-a735-7874661ba1f5",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/9fafe6e5-89d2-4a45-b07e-fee275463230"
+        },
+        "effectiveDateTime": "2026-08-29",
+        "valueQuantity": {
+          "value": 43.3,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "bf29094e-6e26-4ee1-ae7a-42fba1f40eb0",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/9fafe6e5-89d2-4a45-b07e-fee275463230"
+        },
+        "effectiveDateTime": "2026-09-26",
+        "valueQuantity": {
+          "value": 20.7,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "7731dd9e-5be0-4203-9192-0c25e9032fa6",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/9fafe6e5-89d2-4a45-b07e-fee275463230"
+        },
+        "effectiveDateTime": "2026-10-19",
+        "valueBoolean": true
+      }
+    }
+  ]
+}

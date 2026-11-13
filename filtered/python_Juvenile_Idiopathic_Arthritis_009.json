@@ -1,0 +1,161 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "305d39b1-6b76-4c25-9118-726cab821852",
+        "name": [
+          {
+            "use": "official",
+            "family": "Williams",
+            "given": [
+              "Jennifer"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2019-09-28",
+        "address": [
+          {
+            "line": [
+              "798 Andrews Turnpike Apt. 219"
+            ],
+            "city": "South Cassandraberg",
+            "state": "KY",
+            "postalCode": "02071",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "27016e19-0c14-4d59-b1ad-21a40a4c61f2",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "57160005",
+              "display": "Juvenile Idiopathic Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M08.00",
+              "display": "Juvenile Idiopathic Arthritis"
+            }
+          ],
+          "text": "Juvenile Idiopathic Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/305d39b1-6b76-4c25-9118-726cab821852"
+        },
+        "onsetDateTime": "2024-11-03"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "a9374538-c532-4706-96d2-1de0012e387c",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/305d39b1-6b76-4c25-9118-726cab821852"
+        },
+        "payor": [
+          {
+            "display": "Blue Shield of California"
+          }
+        ],
+        "subscriberId": "381731410"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "2bd4a300-56ec-4c9b-90d6-fd4dddbc453e",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/305d39b1-6b76-4c25-9118-726cab821852"
+        },
+        "effectiveDateTime": "2026-10-04",
+        "valueQuantity": {
+          "value": 33.7,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ebe00cb9-ea5b-4899-9bb4-30446ab43865",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/305d39b1-6b76-4c25-9118-726cab821852"
+        },
+        "effectiveDateTime": "2026-09-02",
+        "valueQuantity": {
+          "value": 67.1,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    }
+  ]
+}

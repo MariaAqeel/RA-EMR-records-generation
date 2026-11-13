@@ -143955,23 +143955,23 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "b16e0fc9-a3f7-498e-889a-1cdf944a05fb",
+        "id": "d394945e-c15c-48eb-a0f0-0f4cd81797ed",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/4240ceb2-e0f4-c478-d715-4f68f6de14ca"
         },
         "payor": [
           {
-            "display": "Blue Shield of California"
+            "display": "Humana"
           }
         ],
-        "subscriberId": "964234766"
+        "subscriberId": "252870299"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "d5da2a60-32b5-48bc-9ee4-91626bbcbf23",
+        "id": "371d64e7-cbb6-442c-a4fe-bd4c065831f2",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -143987,66 +143987,8 @@
           "reference": "Patient/4240ceb2-e0f4-c478-d715-4f68f6de14ca"
         },
         "effectivePeriod": {
-          "start": "2024-06-05",
-          "end": "2025-02-20"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "0b40ea1a-557e-4f13-9f91-05a3f7eaf296",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "373747",
-              "display": "etanercept"
-            }
-          ],
-          "text": "etanercept"
-        },
-        "subject": {
-          "reference": "Patient/4240ceb2-e0f4-c478-d715-4f68f6de14ca"
-        },
-        "effectivePeriod": {
-          "start": "2025-07-14",
-          "end": "2026-01-15"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "3833d10b-daf5-458a-8593-41d43bff3235",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "114194",
-              "display": "hydroxychloroquine"
-            }
-          ],
-          "text": "hydroxychloroquine"
-        },
-        "subject": {
-          "reference": "Patient/4240ceb2-e0f4-c478-d715-4f68f6de14ca"
-        },
-        "effectivePeriod": {
-          "start": "2025-06-27",
-          "end": "2025-10-14"
+          "start": "2025-10-06",
+          "end": "2026-10-02"
         },
         "reasonCode": [
           {
@@ -144058,18 +144000,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "343ff9c5-6c87-4ebc-96bc-e818ddf684cc",
+        "id": "f71cc25b-1ced-49ce-8199-8c0c28a28159",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "358258",
-              "display": "Orencia (abatacept)"
+              "code": "614391",
+              "display": "Simponi Aria (golimumab)"
             }
           ],
-          "text": "Orencia (abatacept)"
+          "text": "Simponi Aria (golimumab)"
         },
         "subject": {
           "reference": "Patient/4240ceb2-e0f4-c478-d715-4f68f6de14ca"

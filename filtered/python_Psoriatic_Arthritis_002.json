@@ -1,0 +1,227 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "292f5255-9132-4398-9bff-28f339416da4",
+        "name": [
+          {
+            "use": "official",
+            "family": "Morales",
+            "given": [
+              "Maurice"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1982-04-12",
+        "address": [
+          {
+            "line": [
+              "730 Hoffman Vista"
+            ],
+            "city": "West Katie",
+            "state": "VA",
+            "postalCode": "11814",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "e4ef129a-5869-4c26-961d-fba79096b304",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "9631008",
+              "display": "Psoriatic Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M07.60",
+              "display": "Psoriatic Arthritis"
+            }
+          ],
+          "text": "Psoriatic Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/292f5255-9132-4398-9bff-28f339416da4"
+        },
+        "onsetDateTime": "2025-06-27"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "a9c4ad7d-6c84-4b58-8bcb-c5daa0285d7c",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/292f5255-9132-4398-9bff-28f339416da4"
+        },
+        "payor": [
+          {
+            "display": "Aetna"
+          }
+        ],
+        "subscriberId": "913166124"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "9d76acbe-c846-4f1b-a1c3-18d13b371576",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/292f5255-9132-4398-9bff-28f339416da4"
+        },
+        "effectiveDateTime": "2026-10-15",
+        "valueBoolean": false
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "265d87ab-6b35-4568-bc5e-b86f0e175072",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/292f5255-9132-4398-9bff-28f339416da4"
+        },
+        "effectiveDateTime": "2026-08-25",
+        "valueQuantity": {
+          "value": 40.5,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "46db4911-a1e7-49f8-abf0-41094225fb8d",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/292f5255-9132-4398-9bff-28f339416da4"
+        },
+        "effectiveDateTime": "2026-10-28",
+        "valueQuantity": {
+          "value": 65.3,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "c44bb833-583d-4f61-a0bc-dc1fcb99793f",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/292f5255-9132-4398-9bff-28f339416da4"
+        },
+        "effectiveDateTime": "2026-10-05",
+        "valueQuantity": {
+          "value": 24.1,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    }
+  ]
+}

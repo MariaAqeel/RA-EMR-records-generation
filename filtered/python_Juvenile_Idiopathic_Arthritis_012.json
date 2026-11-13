@@ -1,0 +1,192 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "65392670-231f-4af1-9e57-81ff273d6b20",
+        "name": [
+          {
+            "use": "official",
+            "family": "Hansen",
+            "given": [
+              "Kimberly"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2014-02-19",
+        "address": [
+          {
+            "line": [
+              "68052 Preston Flats Apt. 547"
+            ],
+            "city": "Beverlyshire",
+            "state": "FM",
+            "postalCode": "11797",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "a3840e55-458f-419a-b26c-794e6c78fb62",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "57160005",
+              "display": "Juvenile Idiopathic Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M08.00",
+              "display": "Juvenile Idiopathic Arthritis"
+            }
+          ],
+          "text": "Juvenile Idiopathic Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/65392670-231f-4af1-9e57-81ff273d6b20"
+        },
+        "onsetDateTime": "2022-04-15"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "f84aaacd-646c-4041-93a1-d1ab84449f63",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/65392670-231f-4af1-9e57-81ff273d6b20"
+        },
+        "payor": [
+          {
+            "display": "Blue Shield of California"
+          }
+        ],
+        "subscriberId": "990632322"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "7bf19a8e-c444-47b9-8fa7-52d7c1468a08",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/65392670-231f-4af1-9e57-81ff273d6b20"
+        },
+        "effectiveDateTime": "2026-10-20",
+        "valueQuantity": {
+          "value": 47.0,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "419a5d15-3db5-4910-b772-fe94e84d61c8",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/65392670-231f-4af1-9e57-81ff273d6b20"
+        },
+        "effectiveDateTime": "2026-09-04",
+        "valueBoolean": true
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "7bb8adab-0bd4-48b9-b8be-aaf2acb28f0c",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/65392670-231f-4af1-9e57-81ff273d6b20"
+        },
+        "effectiveDateTime": "2026-11-03",
+        "valueQuantity": {
+          "value": 40.7,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    }
+  ]
+}

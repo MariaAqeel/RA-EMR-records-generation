@@ -175782,7 +175782,7 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "c83cb725-5ae4-496a-b67d-bbef0901b229",
+        "id": "2d8a65fc-12e4-4813-b7e4-074638acef60",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/832de37a-f87c-8006-0885-3c0291ad0e25"
@@ -175792,13 +175792,13 @@
             "display": "Blue Shield of California"
           }
         ],
-        "subscriberId": "496623661"
+        "subscriberId": "590192288"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "c7ac3ce8-989d-47c3-907d-9c9f65818e6f",
+        "id": "6fb4b493-b0b5-4809-8f92-34facd878b40",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -175814,8 +175814,37 @@
           "reference": "Patient/832de37a-f87c-8006-0885-3c0291ad0e25"
         },
         "effectivePeriod": {
-          "start": "2025-02-27",
-          "end": "2025-10-20"
+          "start": "2025-10-24",
+          "end": "2026-05-27"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "4b65caef-9f10-496b-9e32-f8efdbb48393",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "114194",
+              "display": "hydroxychloroquine"
+            }
+          ],
+          "text": "hydroxychloroquine"
+        },
+        "subject": {
+          "reference": "Patient/832de37a-f87c-8006-0885-3c0291ad0e25"
+        },
+        "effectivePeriod": {
+          "start": "2025-09-25",
+          "end": "2026-04-17"
         },
         "reasonCode": [
           {
@@ -175827,7 +175856,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "dfef61b4-cc9b-4d4d-82e5-2da92cd30a42",
+        "id": "afe2e8e1-2462-4bd9-a96c-aa899bb48d0b",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

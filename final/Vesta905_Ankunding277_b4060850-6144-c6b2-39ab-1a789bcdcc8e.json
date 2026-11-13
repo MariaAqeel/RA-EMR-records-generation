@@ -294398,40 +294398,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "2eba0a77-bb41-4615-8b37-0cf44af248b7",
+        "id": "d60b558e-508d-41f8-a74e-89b5011f39bd",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/b4060850-6144-c6b2-39ab-1a789bcdcc8e"
         },
         "payor": [
           {
-            "display": "Aetna"
+            "display": "UnitedHealthcare"
           }
         ],
-        "subscriberId": "731827716"
+        "subscriberId": "454350923"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "bfc5c722-6e51-431a-90ba-87a4f8bac43f",
+        "id": "c6f7af39-2d24-4f51-bee0-922ed7f5258d",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327362",
-              "display": "adalimumab"
+              "code": "373747",
+              "display": "etanercept"
             }
           ],
-          "text": "adalimumab"
+          "text": "etanercept"
         },
         "subject": {
           "reference": "Patient/b4060850-6144-c6b2-39ab-1a789bcdcc8e"
         },
         "effectivePeriod": {
-          "start": "2025-02-08",
-          "end": "2025-10-22"
+          "start": "2024-08-01",
+          "end": "2025-06-29"
         },
         "reasonCode": [
           {
@@ -294443,24 +294443,53 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "272ad9df-d164-4ed1-9432-ee88893b6b3b",
+        "id": "637d8477-fcef-49db-8796-b4a3c2b04aa2",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "105585",
-              "display": "methotrexate"
+              "code": "373747",
+              "display": "etanercept"
             }
           ],
-          "text": "methotrexate"
+          "text": "etanercept"
         },
         "subject": {
           "reference": "Patient/b4060850-6144-c6b2-39ab-1a789bcdcc8e"
         },
         "effectivePeriod": {
-          "start": "2025-05-12",
-          "end": "2025-12-17"
+          "start": "2025-08-12",
+          "end": "2026-07-10"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "a86097d6-269f-45eb-80b3-92f9d0e3a0dd",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "373747",
+              "display": "etanercept"
+            }
+          ],
+          "text": "etanercept"
+        },
+        "subject": {
+          "reference": "Patient/b4060850-6144-c6b2-39ab-1a789bcdcc8e"
+        },
+        "effectivePeriod": {
+          "start": "2025-03-19",
+          "end": "2026-03-02"
         },
         "reasonCode": [
           {
@@ -294472,18 +294501,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "4deb3200-adbd-4287-ab68-2dab307fdffc",
+        "id": "59d733ad-b8c3-4283-b6bd-1cbbacd5367c",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "356248",
-              "display": "Cimzia (certolizumab pegol)"
+              "code": "358258",
+              "display": "Orencia (abatacept)"
             }
           ],
-          "text": "Cimzia (certolizumab pegol)"
+          "text": "Orencia (abatacept)"
         },
         "subject": {
           "reference": "Patient/b4060850-6144-c6b2-39ab-1a789bcdcc8e"

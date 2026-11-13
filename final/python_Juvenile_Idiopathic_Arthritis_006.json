@@ -1,0 +1,298 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "a9b28c27-ff0e-4e4f-ba06-cae945b4fc42",
+        "name": [
+          {
+            "use": "official",
+            "family": "Huynh",
+            "given": [
+              "Jamie"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2011-12-19",
+        "address": [
+          {
+            "line": [
+              "70676 Michael Mountain"
+            ],
+            "city": "Kaylahaven",
+            "state": "CO",
+            "postalCode": "71781",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "ee5375aa-76ed-4b68-b5d5-35f1295fe63c",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "57160005",
+              "display": "Juvenile Idiopathic Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M08.00",
+              "display": "Juvenile Idiopathic Arthritis"
+            }
+          ],
+          "text": "Juvenile Idiopathic Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/a9b28c27-ff0e-4e4f-ba06-cae945b4fc42"
+        },
+        "onsetDateTime": "2023-11-20"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "5cc94907-e6ec-4c80-9881-49ea30d7ca83",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/a9b28c27-ff0e-4e4f-ba06-cae945b4fc42"
+        },
+        "payor": [
+          {
+            "display": "Humana"
+          }
+        ],
+        "subscriberId": "225751139"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0269af9f-a7e8-426f-8493-1e509ff53335",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/a9b28c27-ff0e-4e4f-ba06-cae945b4fc42"
+        },
+        "effectiveDateTime": "2026-09-10",
+        "valueBoolean": true
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "59a2480a-2323-41ae-876a-43840cb8d0e3",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/a9b28c27-ff0e-4e4f-ba06-cae945b4fc42"
+        },
+        "effectiveDateTime": "2026-10-24",
+        "valueBoolean": true
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "28d0f73c-494e-4ea5-adc9-f0d5bcf72383",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/a9b28c27-ff0e-4e4f-ba06-cae945b4fc42"
+        },
+        "effectiveDateTime": "2026-09-03",
+        "valueQuantity": {
+          "value": 29.3,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ac697e16-8bd4-4e24-8d54-456f1201381a",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/a9b28c27-ff0e-4e4f-ba06-cae945b4fc42"
+        },
+        "effectiveDateTime": "2026-09-06",
+        "valueBoolean": true
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "131c8dfb-1e20-47c4-a4ad-70c385a7b06a",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "114194",
+              "display": "hydroxychloroquine"
+            }
+          ],
+          "text": "hydroxychloroquine"
+        },
+        "subject": {
+          "reference": "Patient/a9b28c27-ff0e-4e4f-ba06-cae945b4fc42"
+        },
+        "effectivePeriod": {
+          "start": "2025-08-08",
+          "end": "2026-02-01"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "ee941446-5049-40ee-a3f8-66d3baf44bbd",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "105585",
+              "display": "methotrexate"
+            }
+          ],
+          "text": "methotrexate"
+        },
+        "subject": {
+          "reference": "Patient/a9b28c27-ff0e-4e4f-ba06-cae945b4fc42"
+        },
+        "effectivePeriod": {
+          "start": "2025-04-14",
+          "end": "2025-07-29"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "8b47a360-8b38-412e-97de-1189ab9b7505",
+        "status": "draft",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "358258",
+              "display": "Orencia (abatacept)"
+            }
+          ],
+          "text": "Orencia (abatacept)"
+        },
+        "subject": {
+          "reference": "Patient/a9b28c27-ff0e-4e4f-ba06-cae945b4fc42"
+        }
+      }
+    }
+  ]
+}

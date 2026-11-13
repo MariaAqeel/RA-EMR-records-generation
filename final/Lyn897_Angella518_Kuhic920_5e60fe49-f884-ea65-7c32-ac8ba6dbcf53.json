@@ -340047,40 +340047,98 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "4dbdc66e-0f87-422a-a525-58a6e9614aa0",
+        "id": "838dc120-2013-44bf-b9fa-6198ce565433",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/5e60fe49-f884-ea65-7c32-ac8ba6dbcf53"
         },
         "payor": [
           {
-            "display": "Humana"
+            "display": "Aetna"
           }
         ],
-        "subscriberId": "773501318"
+        "subscriberId": "900552823"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "01f1e9e1-c9b0-4568-a305-f5df75b9a146",
+        "id": "9be53008-117f-4c5d-8094-d30b4ec8f11a",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327362",
-              "display": "adalimumab"
+              "code": "105585",
+              "display": "methotrexate"
             }
           ],
-          "text": "adalimumab"
+          "text": "methotrexate"
         },
         "subject": {
           "reference": "Patient/5e60fe49-f884-ea65-7c32-ac8ba6dbcf53"
         },
         "effectivePeriod": {
-          "start": "2025-09-17",
-          "end": "2026-03-10"
+          "start": "2025-05-22",
+          "end": "2026-01-16"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "cb49766e-53b8-4adc-9d64-8550c785acc4",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "105585",
+              "display": "methotrexate"
+            }
+          ],
+          "text": "methotrexate"
+        },
+        "subject": {
+          "reference": "Patient/5e60fe49-f884-ea65-7c32-ac8ba6dbcf53"
+        },
+        "effectivePeriod": {
+          "start": "2024-07-02",
+          "end": "2025-03-30"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "2a50b824-c129-43b6-83e7-5a69520e2521",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "105585",
+              "display": "methotrexate"
+            }
+          ],
+          "text": "methotrexate"
+        },
+        "subject": {
+          "reference": "Patient/5e60fe49-f884-ea65-7c32-ac8ba6dbcf53"
+        },
+        "effectivePeriod": {
+          "start": "2025-08-24",
+          "end": "2026-05-02"
         },
         "reasonCode": [
           {
@@ -340092,18 +340150,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "a588c7a1-5a8e-439f-8062-d5ba6acc446b",
+        "id": "a5ccde73-9757-451a-ac2e-98d2381da50c",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "614391",
-              "display": "Simponi Aria (golimumab)"
+              "code": "358258",
+              "display": "Orencia (abatacept)"
             }
           ],
-          "text": "Simponi Aria (golimumab)"
+          "text": "Orencia (abatacept)"
         },
         "subject": {
           "reference": "Patient/5e60fe49-f884-ea65-7c32-ac8ba6dbcf53"

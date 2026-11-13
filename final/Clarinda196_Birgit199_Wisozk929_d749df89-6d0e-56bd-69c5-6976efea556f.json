@@ -167886,7 +167886,7 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "e91df394-9e7d-4144-b646-6b44e0330a54",
+        "id": "82743902-ebb4-46aa-9318-d3cc2ced0be8",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/d749df89-6d0e-56bd-69c5-6976efea556f"
@@ -167896,30 +167896,30 @@
             "display": "Humana"
           }
         ],
-        "subscriberId": "258269775"
+        "subscriberId": "874453006"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "bff94c84-9eea-46f9-969d-dc7bbb3a8a34",
+        "id": "9bd3fc27-31f3-41c9-8530-3c200c2afd31",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "114194",
-              "display": "hydroxychloroquine"
+              "code": "373747",
+              "display": "etanercept"
             }
           ],
-          "text": "hydroxychloroquine"
+          "text": "etanercept"
         },
         "subject": {
           "reference": "Patient/d749df89-6d0e-56bd-69c5-6976efea556f"
         },
         "effectivePeriod": {
-          "start": "2024-06-02",
-          "end": "2025-05-03"
+          "start": "2024-11-25",
+          "end": "2025-08-17"
         },
         "reasonCode": [
           {
@@ -167931,24 +167931,24 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "89593c58-0a1b-4540-bdaa-ff87e38b331c",
+        "id": "8c5da0cd-6477-4eb8-9188-1870ed98d701",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327361",
-              "display": "leflunomide"
+              "code": "373747",
+              "display": "etanercept"
             }
           ],
-          "text": "leflunomide"
+          "text": "etanercept"
         },
         "subject": {
           "reference": "Patient/d749df89-6d0e-56bd-69c5-6976efea556f"
         },
         "effectivePeriod": {
-          "start": "2024-07-14",
-          "end": "2025-07-09"
+          "start": "2025-08-18",
+          "end": "2026-04-22"
         },
         "reasonCode": [
           {
@@ -167960,24 +167960,24 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "1f4682aa-033f-4ba9-a6ec-9f6cead47f6b",
+        "id": "d399965b-3f2e-4b16-a559-4c19ab8689e5",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "105585",
-              "display": "methotrexate"
+              "code": "373747",
+              "display": "etanercept"
             }
           ],
-          "text": "methotrexate"
+          "text": "etanercept"
         },
         "subject": {
           "reference": "Patient/d749df89-6d0e-56bd-69c5-6976efea556f"
         },
         "effectivePeriod": {
-          "start": "2024-12-12",
-          "end": "2025-05-26"
+          "start": "2024-08-29",
+          "end": "2025-02-26"
         },
         "reasonCode": [
           {
@@ -167989,18 +167989,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "abc41cf5-80bb-43a2-977b-d2551bbd7392",
+        "id": "af781af8-9447-4abf-99e3-3663a4a49b25",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "356248",
-              "display": "Cimzia (certolizumab pegol)"
+              "code": "614391",
+              "display": "Simponi Aria (golimumab)"
             }
           ],
-          "text": "Cimzia (certolizumab pegol)"
+          "text": "Simponi Aria (golimumab)"
         },
         "subject": {
           "reference": "Patient/d749df89-6d0e-56bd-69c5-6976efea556f"

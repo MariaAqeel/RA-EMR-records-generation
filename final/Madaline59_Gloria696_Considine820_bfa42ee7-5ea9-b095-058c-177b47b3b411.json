@@ -223455,7 +223455,7 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "caa2f627-ee43-449d-b697-4059d689d201",
+        "id": "4828ee52-4a33-452c-9ac2-075c9d6d8320",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/bfa42ee7-5ea9-b095-058c-177b47b3b411"
@@ -223465,13 +223465,13 @@
             "display": "Cigna"
           }
         ],
-        "subscriberId": "827697143"
+        "subscriberId": "856522146"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "adb0897a-dd1e-4e97-82d3-353a2592f823",
+        "id": "cafb40e4-cca3-48f2-8f88-a80cedb602f4",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -223487,66 +223487,8 @@
           "reference": "Patient/bfa42ee7-5ea9-b095-058c-177b47b3b411"
         },
         "effectivePeriod": {
-          "start": "2024-10-22",
-          "end": "2025-09-18"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "3bcf7639-6ed6-4a5c-a570-0bdc2ba98d6b",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "114194",
-              "display": "hydroxychloroquine"
-            }
-          ],
-          "text": "hydroxychloroquine"
-        },
-        "subject": {
-          "reference": "Patient/bfa42ee7-5ea9-b095-058c-177b47b3b411"
-        },
-        "effectivePeriod": {
-          "start": "2025-09-02",
-          "end": "2026-03-31"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "cc004acd-9e92-4faf-8295-e17a981f66e9",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "373747",
-              "display": "etanercept"
-            }
-          ],
-          "text": "etanercept"
-        },
-        "subject": {
-          "reference": "Patient/bfa42ee7-5ea9-b095-058c-177b47b3b411"
-        },
-        "effectivePeriod": {
-          "start": "2025-02-17",
-          "end": "2025-07-28"
+          "start": "2025-04-19",
+          "end": "2025-12-24"
         },
         "reasonCode": [
           {
@@ -223558,18 +223500,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "531a865f-e291-4882-8548-1ebb9bfbfcdf",
+        "id": "779d1722-7888-41a4-873c-edd25fa0e9e4",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "358258",
-              "display": "Orencia (abatacept)"
+              "code": "614391",
+              "display": "Simponi Aria (golimumab)"
             }
           ],
-          "text": "Orencia (abatacept)"
+          "text": "Simponi Aria (golimumab)"
         },
         "subject": {
           "reference": "Patient/bfa42ee7-5ea9-b095-058c-177b47b3b411"

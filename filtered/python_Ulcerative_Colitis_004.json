@@ -1,0 +1,223 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "3d2d8ae3-f8df-4738-b9df-e4a0c63ef157",
+        "name": [
+          {
+            "use": "official",
+            "family": "Davis",
+            "given": [
+              "Pamela"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1981-08-17",
+        "address": [
+          {
+            "line": [
+              "16130 Kristi Extensions"
+            ],
+            "city": "Williamsside",
+            "state": "DE",
+            "postalCode": "83915",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "8c8b9039-4f55-4878-8838-d8916a59ba02",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "64766004",
+              "display": "Ulcerative Colitis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "K51.90",
+              "display": "Ulcerative Colitis"
+            }
+          ],
+          "text": "Ulcerative Colitis"
+        },
+        "subject": {
+          "reference": "Patient/3d2d8ae3-f8df-4738-b9df-e4a0c63ef157"
+        },
+        "onsetDateTime": "2026-01-24"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "1f6f6940-835a-4370-8db3-1f3bbac24902",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/3d2d8ae3-f8df-4738-b9df-e4a0c63ef157"
+        },
+        "payor": [
+          {
+            "display": "Aetna"
+          }
+        ],
+        "subscriberId": "338634207"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d542c01a-0f2d-45eb-a265-fd934d5ec914",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/3d2d8ae3-f8df-4738-b9df-e4a0c63ef157"
+        },
+        "effectiveDateTime": "2026-10-15",
+        "valueQuantity": {
+          "value": 17.6,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "9bcbea63-0106-435b-90fc-c3a2b6400f3b",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/3d2d8ae3-f8df-4738-b9df-e4a0c63ef157"
+        },
+        "effectiveDateTime": "2026-10-16",
+        "valueQuantity": {
+          "value": 25.4,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f9202e9b-4d39-40fb-b51a-1922379c9bc7",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/3d2d8ae3-f8df-4738-b9df-e4a0c63ef157"
+        },
+        "effectiveDateTime": "2026-11-13",
+        "valueBoolean": true
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d0da385b-85c9-436e-a6d3-2ec3e12e94c2",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/3d2d8ae3-f8df-4738-b9df-e4a0c63ef157"
+        },
+        "effectiveDateTime": "2026-10-10",
+        "valueBoolean": true
+      }
+    }
+  ]
+}

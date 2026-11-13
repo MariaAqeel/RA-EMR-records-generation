@@ -1,0 +1,161 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "7e0a2e53-4e58-467c-a9ab-5bfd8e20f0f0",
+        "name": [
+          {
+            "use": "official",
+            "family": "Calderon",
+            "given": [
+              "Nathan"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1986-04-12",
+        "address": [
+          {
+            "line": [
+              "857 Harry Spring"
+            ],
+            "city": "North Andrewport",
+            "state": "MD",
+            "postalCode": "98337",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "ad0f40d3-70fb-46f5-819f-6c778c4576d4",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "64766004",
+              "display": "Ulcerative Colitis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "K51.90",
+              "display": "Ulcerative Colitis"
+            }
+          ],
+          "text": "Ulcerative Colitis"
+        },
+        "subject": {
+          "reference": "Patient/7e0a2e53-4e58-467c-a9ab-5bfd8e20f0f0"
+        },
+        "onsetDateTime": "2022-08-09"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "fddefc7d-996e-47a4-89f0-760db59d4026",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/7e0a2e53-4e58-467c-a9ab-5bfd8e20f0f0"
+        },
+        "payor": [
+          {
+            "display": "Aetna"
+          }
+        ],
+        "subscriberId": "618312968"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "938bba3e-ce19-4b55-87e3-40ac9413d517",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/7e0a2e53-4e58-467c-a9ab-5bfd8e20f0f0"
+        },
+        "effectiveDateTime": "2026-09-15",
+        "valueQuantity": {
+          "value": 8.3,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "9da4351d-7a66-4516-808a-8805931fa7cb",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/7e0a2e53-4e58-467c-a9ab-5bfd8e20f0f0"
+        },
+        "effectiveDateTime": "2026-10-30",
+        "valueQuantity": {
+          "value": 42.2,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    }
+  ]
+}

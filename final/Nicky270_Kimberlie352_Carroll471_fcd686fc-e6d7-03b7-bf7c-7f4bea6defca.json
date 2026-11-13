@@ -190694,81 +190694,23 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "5f76477d-9bb6-4115-a21a-aa4aec8262d1",
+        "id": "54e76d87-e24f-4a3a-abed-3bd7dc3b9388",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/fcd686fc-e6d7-03b7-bf7c-7f4bea6defca"
         },
         "payor": [
           {
-            "display": "UnitedHealthcare"
+            "display": "Blue Shield of California"
           }
         ],
-        "subscriberId": "658438817"
+        "subscriberId": "240299280"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "2ec6154b-4f4d-4040-8e7f-e290353286f9",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "114194",
-              "display": "hydroxychloroquine"
-            }
-          ],
-          "text": "hydroxychloroquine"
-        },
-        "subject": {
-          "reference": "Patient/fcd686fc-e6d7-03b7-bf7c-7f4bea6defca"
-        },
-        "effectivePeriod": {
-          "start": "2024-10-23",
-          "end": "2025-03-11"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "42ba50ea-3499-42bb-a577-2d8aba9a9f75",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "373747",
-              "display": "etanercept"
-            }
-          ],
-          "text": "etanercept"
-        },
-        "subject": {
-          "reference": "Patient/fcd686fc-e6d7-03b7-bf7c-7f4bea6defca"
-        },
-        "effectivePeriod": {
-          "start": "2024-11-05",
-          "end": "2025-03-24"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "81c1f08d-0579-4f88-a875-fa2a1e60cb47",
+        "id": "b4a9e0ce-54bc-4fde-b0e6-e6385404e994",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -190784,8 +190726,37 @@
           "reference": "Patient/fcd686fc-e6d7-03b7-bf7c-7f4bea6defca"
         },
         "effectivePeriod": {
-          "start": "2025-07-17",
-          "end": "2026-05-01"
+          "start": "2025-04-15",
+          "end": "2026-01-05"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "2db68b81-80dc-4745-a1cb-834d3891cdbc",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "327361",
+              "display": "leflunomide"
+            }
+          ],
+          "text": "leflunomide"
+        },
+        "subject": {
+          "reference": "Patient/fcd686fc-e6d7-03b7-bf7c-7f4bea6defca"
+        },
+        "effectivePeriod": {
+          "start": "2024-12-28",
+          "end": "2025-10-19"
         },
         "reasonCode": [
           {
@@ -190797,18 +190768,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "3cbfc593-18eb-4c73-8996-c421fbce3308",
+        "id": "86d12646-64c6-4e0c-8bb1-24a602e2868f",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "614391",
-              "display": "Simponi Aria (golimumab)"
+              "code": "356248",
+              "display": "Cimzia (certolizumab pegol)"
             }
           ],
-          "text": "Simponi Aria (golimumab)"
+          "text": "Cimzia (certolizumab pegol)"
         },
         "subject": {
           "reference": "Patient/fcd686fc-e6d7-03b7-bf7c-7f4bea6defca"

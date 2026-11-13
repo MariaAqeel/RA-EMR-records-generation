@@ -99658,81 +99658,23 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "27c65750-9f4c-4a74-a389-b4ebda423990",
+        "id": "317fd066-d6fb-4e7a-9ff0-ce468684cbaa",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/14ee7575-d8bb-28f9-59ff-a04042fda8e9"
         },
         "payor": [
           {
-            "display": "Aetna"
+            "display": "Cigna"
           }
         ],
-        "subscriberId": "324663439"
+        "subscriberId": "291490818"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "5680c62b-3b2c-46fe-9cb5-63577a0671f9",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "105585",
-              "display": "methotrexate"
-            }
-          ],
-          "text": "methotrexate"
-        },
-        "subject": {
-          "reference": "Patient/14ee7575-d8bb-28f9-59ff-a04042fda8e9"
-        },
-        "effectivePeriod": {
-          "start": "2024-06-30",
-          "end": "2024-10-20"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "284c1a49-19cf-4bb2-bb89-4b50801fec8e",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327361",
-              "display": "leflunomide"
-            }
-          ],
-          "text": "leflunomide"
-        },
-        "subject": {
-          "reference": "Patient/14ee7575-d8bb-28f9-59ff-a04042fda8e9"
-        },
-        "effectivePeriod": {
-          "start": "2025-07-05",
-          "end": "2026-05-24"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "ac667cca-44d5-41c7-9eb1-4a546df3919d",
+        "id": "1f7f1a89-4352-4442-9365-112e6ac4568b",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -99748,8 +99690,37 @@
           "reference": "Patient/14ee7575-d8bb-28f9-59ff-a04042fda8e9"
         },
         "effectivePeriod": {
-          "start": "2025-09-28",
-          "end": "2026-05-12"
+          "start": "2024-12-11",
+          "end": "2025-05-26"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "ccdbe69c-220f-4d9a-aa29-c2d894470d05",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "114194",
+              "display": "hydroxychloroquine"
+            }
+          ],
+          "text": "hydroxychloroquine"
+        },
+        "subject": {
+          "reference": "Patient/14ee7575-d8bb-28f9-59ff-a04042fda8e9"
+        },
+        "effectivePeriod": {
+          "start": "2024-08-29",
+          "end": "2025-07-22"
         },
         "reasonCode": [
           {
@@ -99761,18 +99732,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "309568e0-2bb4-4b61-8def-a0e725c65811",
+        "id": "48ec3c3e-cdcf-4636-9e69-26d332a79d3a",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "358258",
-              "display": "Orencia (abatacept)"
+              "code": "614391",
+              "display": "Simponi Aria (golimumab)"
             }
           ],
-          "text": "Orencia (abatacept)"
+          "text": "Simponi Aria (golimumab)"
         },
         "subject": {
           "reference": "Patient/14ee7575-d8bb-28f9-59ff-a04042fda8e9"

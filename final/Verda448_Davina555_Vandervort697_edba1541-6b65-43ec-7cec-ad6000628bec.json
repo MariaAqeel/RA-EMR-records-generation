@@ -172234,40 +172234,98 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "f5f9d85c-7476-47cf-994d-6812728a2f99",
+        "id": "b378cb8f-8ee2-42c8-ba71-cf082d9d38a4",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/edba1541-6b65-43ec-7cec-ad6000628bec"
         },
         "payor": [
           {
-            "display": "Humana"
+            "display": "UnitedHealthcare"
           }
         ],
-        "subscriberId": "727010958"
+        "subscriberId": "525929365"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "c71df85f-7556-4130-a631-b688dc4fdea6",
+        "id": "094c568e-a4fd-4291-a852-2afa524e66ac",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "105585",
-              "display": "methotrexate"
+              "code": "373747",
+              "display": "etanercept"
             }
           ],
-          "text": "methotrexate"
+          "text": "etanercept"
         },
         "subject": {
           "reference": "Patient/edba1541-6b65-43ec-7cec-ad6000628bec"
         },
         "effectivePeriod": {
-          "start": "2025-02-11",
-          "end": "2025-05-16"
+          "start": "2024-07-30",
+          "end": "2025-01-18"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "7c4d42be-8857-4c81-92ee-79c280907c11",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "114194",
+              "display": "hydroxychloroquine"
+            }
+          ],
+          "text": "hydroxychloroquine"
+        },
+        "subject": {
+          "reference": "Patient/edba1541-6b65-43ec-7cec-ad6000628bec"
+        },
+        "effectivePeriod": {
+          "start": "2025-07-03",
+          "end": "2026-05-17"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "c541cd80-b5e5-4749-873f-5a9d6b955433",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "327361",
+              "display": "leflunomide"
+            }
+          ],
+          "text": "leflunomide"
+        },
+        "subject": {
+          "reference": "Patient/edba1541-6b65-43ec-7cec-ad6000628bec"
+        },
+        "effectivePeriod": {
+          "start": "2025-09-12",
+          "end": "2026-06-21"
         },
         "reasonCode": [
           {
@@ -172279,7 +172337,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "eedcec88-7813-4352-86d7-402b3f799cc8",
+        "id": "862d8f2d-6373-4bb0-b82e-ff8b0e2e9bfd",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

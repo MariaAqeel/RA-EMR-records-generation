@@ -1,0 +1,219 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "31a6a713-0d86-4948-92cd-51dfb49b3bb1",
+        "name": [
+          {
+            "use": "official",
+            "family": "Walters",
+            "given": [
+              "Samantha"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2016-06-04",
+        "address": [
+          {
+            "line": [
+              "44067 Mark Shore Suite 771"
+            ],
+            "city": "West Michael",
+            "state": "FL",
+            "postalCode": "07831",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "e804b229-1f65-4b5e-b0d5-434e729a10b6",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "57160005",
+              "display": "Juvenile Idiopathic Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M08.00",
+              "display": "Juvenile Idiopathic Arthritis"
+            }
+          ],
+          "text": "Juvenile Idiopathic Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/31a6a713-0d86-4948-92cd-51dfb49b3bb1"
+        },
+        "onsetDateTime": "2022-11-09"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "5ee5731f-c550-49b8-9154-74a9a3e9707e",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/31a6a713-0d86-4948-92cd-51dfb49b3bb1"
+        },
+        "payor": [
+          {
+            "display": "Humana"
+          }
+        ],
+        "subscriberId": "934883654"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "9d97c6cf-0248-4fe6-af76-e70f22343bd8",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/31a6a713-0d86-4948-92cd-51dfb49b3bb1"
+        },
+        "effectiveDateTime": "2026-10-07",
+        "valueBoolean": true
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "42aed9ee-96ff-48a8-8728-296b1083cd0d",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/31a6a713-0d86-4948-92cd-51dfb49b3bb1"
+        },
+        "effectiveDateTime": "2026-09-15",
+        "valueQuantity": {
+          "value": 58.6,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "24e005b8-421b-45b4-aff9-2a5d8c1ce498",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/31a6a713-0d86-4948-92cd-51dfb49b3bb1"
+        },
+        "effectiveDateTime": "2026-10-20",
+        "valueBoolean": true
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "87c2f86b-bdc0-4a39-9287-b1fed848bc9e",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/31a6a713-0d86-4948-92cd-51dfb49b3bb1"
+        },
+        "effectiveDateTime": "2026-09-01",
+        "valueBoolean": false
+      }
+    }
+  ]
+}

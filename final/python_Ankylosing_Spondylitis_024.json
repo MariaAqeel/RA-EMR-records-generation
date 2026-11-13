@@ -1,0 +1,269 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "57950eba-6a35-47ee-aff2-b4f7402fd9dd",
+        "name": [
+          {
+            "use": "official",
+            "family": "Perkins",
+            "given": [
+              "Roberto"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1994-02-11",
+        "address": [
+          {
+            "line": [
+              "42146 Cabrera Tunnel Suite 828"
+            ],
+            "city": "Danielburgh",
+            "state": "VT",
+            "postalCode": "90194",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "7154e5e7-779b-481b-babe-89445a5830c1",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "9566007",
+              "display": "Ankylosing Spondylitis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M45.9",
+              "display": "Ankylosing Spondylitis"
+            }
+          ],
+          "text": "Ankylosing Spondylitis"
+        },
+        "subject": {
+          "reference": "Patient/57950eba-6a35-47ee-aff2-b4f7402fd9dd"
+        },
+        "onsetDateTime": "2023-05-05"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "2f9cc8a4-5b3c-49ab-8fc6-6f43961d2152",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/57950eba-6a35-47ee-aff2-b4f7402fd9dd"
+        },
+        "payor": [
+          {
+            "display": "Aetna"
+          }
+        ],
+        "subscriberId": "343726453"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f3efa357-e833-4f1c-8dcf-8682175dc086",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/57950eba-6a35-47ee-aff2-b4f7402fd9dd"
+        },
+        "effectiveDateTime": "2026-09-19",
+        "valueBoolean": true
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "30961f38-39e8-4ee6-993f-d60f15aaa601",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/57950eba-6a35-47ee-aff2-b4f7402fd9dd"
+        },
+        "effectiveDateTime": "2026-09-10",
+        "valueBoolean": true
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "2056a1cd-88ee-4332-ba05-55cae0e18aaa",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/57950eba-6a35-47ee-aff2-b4f7402fd9dd"
+        },
+        "effectiveDateTime": "2026-09-19",
+        "valueBoolean": true
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ccec4b59-f60a-4031-ae2e-0cd4a36c73b6",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/57950eba-6a35-47ee-aff2-b4f7402fd9dd"
+        },
+        "effectiveDateTime": "2026-09-23",
+        "valueQuantity": {
+          "value": 29.6,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "8aa12ae1-04f8-4f81-9646-01b67be638f2",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "105585",
+              "display": "methotrexate"
+            }
+          ],
+          "text": "methotrexate"
+        },
+        "subject": {
+          "reference": "Patient/57950eba-6a35-47ee-aff2-b4f7402fd9dd"
+        },
+        "effectivePeriod": {
+          "start": "2024-07-23",
+          "end": "2025-04-01"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "8aab1af0-38aa-4c31-84b1-f3dce3166df5",
+        "status": "draft",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "358258",
+              "display": "Orencia (abatacept)"
+            }
+          ],
+          "text": "Orencia (abatacept)"
+        },
+        "subject": {
+          "reference": "Patient/57950eba-6a35-47ee-aff2-b4f7402fd9dd"
+        }
+      }
+    }
+  ]
+}

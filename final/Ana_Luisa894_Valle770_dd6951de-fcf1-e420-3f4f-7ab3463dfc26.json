@@ -76832,52 +76832,23 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "0b17bdb2-fd8e-4c6b-8695-250308f5cdd8",
+        "id": "67c2c61a-437e-48ad-b7f1-dd2e93e56065",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/dd6951de-fcf1-e420-3f4f-7ab3463dfc26"
         },
         "payor": [
           {
-            "display": "Cigna"
+            "display": "Humana"
           }
         ],
-        "subscriberId": "718600746"
+        "subscriberId": "666884155"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "05b51db5-595d-4827-bcc0-5924f3528a2f",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327362",
-              "display": "adalimumab"
-            }
-          ],
-          "text": "adalimumab"
-        },
-        "subject": {
-          "reference": "Patient/dd6951de-fcf1-e420-3f4f-7ab3463dfc26"
-        },
-        "effectivePeriod": {
-          "start": "2025-10-03",
-          "end": "2026-04-24"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "439a56c6-4712-4289-b249-25b9eef7d0b5",
+        "id": "81cfb9d4-9b38-4b93-be7b-ca656e211911",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -76893,8 +76864,37 @@
           "reference": "Patient/dd6951de-fcf1-e420-3f4f-7ab3463dfc26"
         },
         "effectivePeriod": {
-          "start": "2024-10-20",
-          "end": "2025-05-14"
+          "start": "2024-06-19",
+          "end": "2024-10-22"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "ba1352cc-24a4-4334-80a8-c016768a8106",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "114194",
+              "display": "hydroxychloroquine"
+            }
+          ],
+          "text": "hydroxychloroquine"
+        },
+        "subject": {
+          "reference": "Patient/dd6951de-fcf1-e420-3f4f-7ab3463dfc26"
+        },
+        "effectivePeriod": {
+          "start": "2024-05-27",
+          "end": "2025-01-21"
         },
         "reasonCode": [
           {
@@ -76906,18 +76906,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "8d158a45-85ef-4248-80fb-9f15dc44d620",
+        "id": "cca9ece6-3d5d-46a2-9452-60da9bcd4a19",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "614391",
-              "display": "Simponi Aria (golimumab)"
+              "code": "358258",
+              "display": "Orencia (abatacept)"
             }
           ],
-          "text": "Simponi Aria (golimumab)"
+          "text": "Orencia (abatacept)"
         },
         "subject": {
           "reference": "Patient/dd6951de-fcf1-e420-3f4f-7ab3463dfc26"

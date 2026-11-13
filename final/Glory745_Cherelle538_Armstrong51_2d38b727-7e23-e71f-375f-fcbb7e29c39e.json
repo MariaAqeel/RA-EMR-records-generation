@@ -122236,52 +122236,23 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "85a03e2d-5877-41c8-aac0-b97427ed66cd",
+        "id": "f3394344-100f-420a-9bbf-a361ec2adb30",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/2d38b727-7e23-e71f-375f-fcbb7e29c39e"
         },
         "payor": [
           {
-            "display": "Cigna"
+            "display": "UnitedHealthcare"
           }
         ],
-        "subscriberId": "154293827"
+        "subscriberId": "482041131"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "72273b63-f573-4ea7-b62b-41d29ab7d6db",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327361",
-              "display": "leflunomide"
-            }
-          ],
-          "text": "leflunomide"
-        },
-        "subject": {
-          "reference": "Patient/2d38b727-7e23-e71f-375f-fcbb7e29c39e"
-        },
-        "effectivePeriod": {
-          "start": "2024-07-31",
-          "end": "2025-05-23"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "2239698b-2371-4eef-a468-2e34ab48eb84",
+        "id": "7a7cc780-f9e2-401e-a56b-1ce21441b5b9",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -122297,8 +122268,8 @@
           "reference": "Patient/2d38b727-7e23-e71f-375f-fcbb7e29c39e"
         },
         "effectivePeriod": {
-          "start": "2024-12-15",
-          "end": "2025-06-16"
+          "start": "2025-06-27",
+          "end": "2026-05-19"
         },
         "reasonCode": [
           {
@@ -122310,7 +122281,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "f94ea161-70ed-4ca9-8fef-59a7c9fbb094",
+        "id": "44e209c5-6657-4010-9be5-ec2e65b48ff9",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

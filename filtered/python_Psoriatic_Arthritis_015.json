@@ -1,0 +1,227 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "2c5b5e59-385c-4837-ac99-4a18760e35bc",
+        "name": [
+          {
+            "use": "official",
+            "family": "Jones",
+            "given": [
+              "Victoria"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1985-07-27",
+        "address": [
+          {
+            "line": [
+              "9873 Rachel Estates"
+            ],
+            "city": "Gonzalezside",
+            "state": "ME",
+            "postalCode": "95009",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "bc439b44-f262-472f-ab88-60466d98af03",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "9631008",
+              "display": "Psoriatic Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M07.60",
+              "display": "Psoriatic Arthritis"
+            }
+          ],
+          "text": "Psoriatic Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/2c5b5e59-385c-4837-ac99-4a18760e35bc"
+        },
+        "onsetDateTime": "2025-01-15"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "2f934c95-7dc9-4d8b-9333-72a32088959d",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/2c5b5e59-385c-4837-ac99-4a18760e35bc"
+        },
+        "payor": [
+          {
+            "display": "UnitedHealthcare"
+          }
+        ],
+        "subscriberId": "646694315"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "c0f51ddb-01fe-40d3-a7c9-5b5522d1c40b",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2c5b5e59-385c-4837-ac99-4a18760e35bc"
+        },
+        "effectiveDateTime": "2026-09-14",
+        "valueQuantity": {
+          "value": 30.7,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "3411d9ee-128f-4332-8d44-96aa239e046a",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2c5b5e59-385c-4837-ac99-4a18760e35bc"
+        },
+        "effectiveDateTime": "2026-11-13",
+        "valueBoolean": false
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "7de5eef0-7cd8-48e9-abed-841f96aebdf4",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2c5b5e59-385c-4837-ac99-4a18760e35bc"
+        },
+        "effectiveDateTime": "2026-11-01",
+        "valueQuantity": {
+          "value": 46.2,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f7087c5c-faee-4c90-a517-11a1bfed40df",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2c5b5e59-385c-4837-ac99-4a18760e35bc"
+        },
+        "effectiveDateTime": "2026-08-31",
+        "valueQuantity": {
+          "value": 22.2,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "f37c56d5-a22a-4884-bd3b-828cc7075121",
+        "name": [
+          {
+            "use": "official",
+            "family": "Jimenez",
+            "given": [
+              "Tina"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2014-12-03",
+        "address": [
+          {
+            "line": [
+              "7412 Morris Forks Apt. 090"
+            ],
+            "city": "Ryanburgh",
+            "state": "KY",
+            "postalCode": "93089",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cdeb1a9d-37cd-4811-a8ba-beae2f48aba8",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "57160005",
+              "display": "Juvenile Idiopathic Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M08.00",
+              "display": "Juvenile Idiopathic Arthritis"
+            }
+          ],
+          "text": "Juvenile Idiopathic Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/f37c56d5-a22a-4884-bd3b-828cc7075121"
+        },
+        "onsetDateTime": "2023-11-02"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "d358d9e8-c877-437b-81b7-0c486a2cd0a0",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/f37c56d5-a22a-4884-bd3b-828cc7075121"
+        },
+        "payor": [
+          {
+            "display": "Humana"
+          }
+        ],
+        "subscriberId": "771860944"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "34cf341a-6220-46be-b9b6-93104f9d9c29",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/f37c56d5-a22a-4884-bd3b-828cc7075121"
+        },
+        "effectiveDateTime": "2026-11-10",
+        "valueQuantity": {
+          "value": 45.9,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "421a4877-2dc6-4245-9eab-abc9d2389cd1",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/f37c56d5-a22a-4884-bd3b-828cc7075121"
+        },
+        "effectiveDateTime": "2026-11-11",
+        "valueQuantity": {
+          "value": 44.6,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    }
+  ]
+}

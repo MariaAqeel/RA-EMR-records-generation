@@ -1,0 +1,161 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "15c1352a-5a0b-406e-b932-9c9bd3cc64b1",
+        "name": [
+          {
+            "use": "official",
+            "family": "Mclean",
+            "given": [
+              "Elizabeth"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1982-02-22",
+        "address": [
+          {
+            "line": [
+              "465 Heather Summit Suite 411"
+            ],
+            "city": "Cohentown",
+            "state": "ND",
+            "postalCode": "04459",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "3e3530bb-56fb-4f94-9672-f930ac99d831",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "201791006",
+              "display": "Seronegative Rheumatoid Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M06.09",
+              "display": "Seronegative Rheumatoid Arthritis"
+            }
+          ],
+          "text": "Seronegative Rheumatoid Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/15c1352a-5a0b-406e-b932-9c9bd3cc64b1"
+        },
+        "onsetDateTime": "2024-04-19"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "dd06cb0f-244b-4c54-aa65-a611696e12e8",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/15c1352a-5a0b-406e-b932-9c9bd3cc64b1"
+        },
+        "payor": [
+          {
+            "display": "Blue Shield of California"
+          }
+        ],
+        "subscriberId": "473864296"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "2b6dbce1-931d-4338-8fa4-d1d386bae676",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/15c1352a-5a0b-406e-b932-9c9bd3cc64b1"
+        },
+        "effectiveDateTime": "2026-08-23",
+        "valueQuantity": {
+          "value": 27.5,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "2c12d63e-273f-4cb4-8c6a-1dcc74a76ab7",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/15c1352a-5a0b-406e-b932-9c9bd3cc64b1"
+        },
+        "effectiveDateTime": "2026-11-04",
+        "valueQuantity": {
+          "value": 56.3,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    }
+  ]
+}

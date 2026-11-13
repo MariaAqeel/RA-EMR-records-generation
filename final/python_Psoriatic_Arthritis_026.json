@@ -1,0 +1,240 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "540e3763-9bc0-46b2-8987-45c4de651a40",
+        "name": [
+          {
+            "use": "official",
+            "family": "Jackson",
+            "given": [
+              "Rachel"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1985-12-19",
+        "address": [
+          {
+            "line": [
+              "2868 Fernandez Trace"
+            ],
+            "city": "Youngport",
+            "state": "FM",
+            "postalCode": "30079",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "3a264b5f-b625-49be-bd9f-03e621f6d72e",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "9631008",
+              "display": "Psoriatic Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M07.60",
+              "display": "Psoriatic Arthritis"
+            }
+          ],
+          "text": "Psoriatic Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/540e3763-9bc0-46b2-8987-45c4de651a40"
+        },
+        "onsetDateTime": "2024-07-27"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "8f117d63-feb2-40fe-8ce7-a1657739d471",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/540e3763-9bc0-46b2-8987-45c4de651a40"
+        },
+        "payor": [
+          {
+            "display": "Aetna"
+          }
+        ],
+        "subscriberId": "546220305"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0b0c4136-11bc-43ee-90df-7678a2f36857",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/540e3763-9bc0-46b2-8987-45c4de651a40"
+        },
+        "effectiveDateTime": "2026-08-30",
+        "valueQuantity": {
+          "value": 127.8,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "41dd88ce-65fe-408d-8723-f15609173570",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/540e3763-9bc0-46b2-8987-45c4de651a40"
+        },
+        "effectiveDateTime": "2026-10-18",
+        "valueQuantity": {
+          "value": 21.3,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "8bc7ba21-8fa2-49c3-a773-22cd130b5d74",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "327361",
+              "display": "leflunomide"
+            }
+          ],
+          "text": "leflunomide"
+        },
+        "subject": {
+          "reference": "Patient/540e3763-9bc0-46b2-8987-45c4de651a40"
+        },
+        "effectivePeriod": {
+          "start": "2024-08-29",
+          "end": "2025-03-09"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "d0398a0a-53b7-48a8-84b0-6b06a7cd2491",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "327361",
+              "display": "leflunomide"
+            }
+          ],
+          "text": "leflunomide"
+        },
+        "subject": {
+          "reference": "Patient/540e3763-9bc0-46b2-8987-45c4de651a40"
+        },
+        "effectivePeriod": {
+          "start": "2025-01-06",
+          "end": "2025-09-27"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "b4784277-0ed8-4dbc-a430-46a9e0e0b9d3",
+        "status": "draft",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "356248",
+              "display": "Cimzia (certolizumab pegol)"
+            }
+          ],
+          "text": "Cimzia (certolizumab pegol)"
+        },
+        "subject": {
+          "reference": "Patient/540e3763-9bc0-46b2-8987-45c4de651a40"
+        }
+      }
+    }
+  ]
+}

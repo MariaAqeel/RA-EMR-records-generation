@@ -112217,40 +112217,40 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "343c2778-ffdb-47f9-9f2a-2e5339ff5466",
+        "id": "3359ec0f-2fa0-42c2-9f70-817460ac39ed",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/3708c1ee-2ec6-8709-e890-5636919e1f00"
         },
         "payor": [
           {
-            "display": "Aetna"
+            "display": "Humana"
           }
         ],
-        "subscriberId": "615494130"
+        "subscriberId": "369989925"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "eedf065d-510c-460a-bd93-e5d4bb4f44ee",
+        "id": "0660c49e-618d-4edf-ab2f-bd67ab636103",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327362",
-              "display": "adalimumab"
+              "code": "327361",
+              "display": "leflunomide"
             }
           ],
-          "text": "adalimumab"
+          "text": "leflunomide"
         },
         "subject": {
           "reference": "Patient/3708c1ee-2ec6-8709-e890-5636919e1f00"
         },
         "effectivePeriod": {
-          "start": "2025-02-27",
-          "end": "2025-11-19"
+          "start": "2024-10-02",
+          "end": "2025-03-31"
         },
         "reasonCode": [
           {
@@ -112262,7 +112262,7 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "583bef16-5e29-4eb6-9c93-04bcafeef367",
+        "id": "e7da2c6c-0b82-4e48-9831-bfcea2c607f2",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -112278,8 +112278,8 @@
           "reference": "Patient/3708c1ee-2ec6-8709-e890-5636919e1f00"
         },
         "effectivePeriod": {
-          "start": "2025-09-14",
-          "end": "2026-02-02"
+          "start": "2025-09-12",
+          "end": "2025-12-22"
         },
         "reasonCode": [
           {
@@ -112291,24 +112291,24 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "2f15e923-4fd3-4fd9-a392-d2d1c3680d0b",
+        "id": "945b384e-ba93-41b1-b9c8-0e7dd5f822d6",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "114194",
-              "display": "hydroxychloroquine"
+              "code": "373747",
+              "display": "etanercept"
             }
           ],
-          "text": "hydroxychloroquine"
+          "text": "etanercept"
         },
         "subject": {
           "reference": "Patient/3708c1ee-2ec6-8709-e890-5636919e1f00"
         },
         "effectivePeriod": {
-          "start": "2025-02-07",
-          "end": "2026-01-09"
+          "start": "2025-10-10",
+          "end": "2026-02-27"
         },
         "reasonCode": [
           {
@@ -112320,7 +112320,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "fcdec4c4-a042-48df-b3c7-c52f92dd872f",
+        "id": "24526d15-a370-4501-9a65-6598e8269ed0",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

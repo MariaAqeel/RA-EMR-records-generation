@@ -1,0 +1,188 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "a19f992c-c85e-4d9c-bdb1-c5eacc7e60b3",
+        "name": [
+          {
+            "use": "official",
+            "family": "Taylor",
+            "given": [
+              "Julia"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1995-03-06",
+        "address": [
+          {
+            "line": [
+              "959 Pearson Dale Apt. 999"
+            ],
+            "city": "North Spencer",
+            "state": "IN",
+            "postalCode": "40381",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "e526f164-2b57-4ddd-bcc0-9dd7148f3ecd",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "9631008",
+              "display": "Psoriatic Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M07.60",
+              "display": "Psoriatic Arthritis"
+            }
+          ],
+          "text": "Psoriatic Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/a19f992c-c85e-4d9c-bdb1-c5eacc7e60b3"
+        },
+        "onsetDateTime": "2024-09-06"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "89ca257b-9ee4-4ee9-ae47-811caef543f4",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/a19f992c-c85e-4d9c-bdb1-c5eacc7e60b3"
+        },
+        "payor": [
+          {
+            "display": "Aetna"
+          }
+        ],
+        "subscriberId": "701704304"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "11a5579d-c36a-4eab-aa56-021140d1e10d",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/a19f992c-c85e-4d9c-bdb1-c5eacc7e60b3"
+        },
+        "effectiveDateTime": "2026-09-12",
+        "valueQuantity": {
+          "value": 22.6,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "e7db086b-a998-4ddd-91ab-0aa79a1b2403",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/a19f992c-c85e-4d9c-bdb1-c5eacc7e60b3"
+        },
+        "effectiveDateTime": "2026-08-24",
+        "valueBoolean": true
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "a2f158ca-f493-48a0-870d-6f11595315a5",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/a19f992c-c85e-4d9c-bdb1-c5eacc7e60b3"
+        },
+        "effectiveDateTime": "2026-09-07",
+        "valueBoolean": false
+      }
+    }
+  ]
+}

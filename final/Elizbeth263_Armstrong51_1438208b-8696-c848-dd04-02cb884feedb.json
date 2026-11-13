@@ -167893,23 +167893,23 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "649b05bb-0ff6-449e-b89a-24d6f36cee8d",
+        "id": "93746c53-2405-4f4c-a9ff-934444a6ee57",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/1438208b-8696-c848-dd04-02cb884feedb"
         },
         "payor": [
           {
-            "display": "Aetna"
+            "display": "Cigna"
           }
         ],
-        "subscriberId": "335102463"
+        "subscriberId": "531316841"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "b9f152cf-7127-4453-8711-da5770d8011e",
+        "id": "5c9b43c1-9546-4494-93a7-0df0a5ba959b",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -167925,37 +167925,8 @@
           "reference": "Patient/1438208b-8696-c848-dd04-02cb884feedb"
         },
         "effectivePeriod": {
-          "start": "2024-12-27",
-          "end": "2025-07-23"
-        },
-        "reasonCode": [
-          {
-            "text": "Inadequate response or intolerance"
-          }
-        ]
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "afb8275f-02b6-4cec-9568-35242b2a949a",
-        "status": "stopped",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "114194",
-              "display": "hydroxychloroquine"
-            }
-          ],
-          "text": "hydroxychloroquine"
-        },
-        "subject": {
-          "reference": "Patient/1438208b-8696-c848-dd04-02cb884feedb"
-        },
-        "effectivePeriod": {
-          "start": "2024-08-19",
-          "end": "2024-12-10"
+          "start": "2024-09-22",
+          "end": "2025-05-08"
         },
         "reasonCode": [
           {
@@ -167967,7 +167938,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "14b0cf22-70ea-4c64-9993-0f65a1106d63",
+        "id": "f1130b23-09ba-4960-9abe-dd9ebe769ca4",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

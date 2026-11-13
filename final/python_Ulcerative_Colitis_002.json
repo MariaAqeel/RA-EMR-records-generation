@@ -1,0 +1,304 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "302f4da1-bb06-4377-9ad4-7e1c25a41625",
+        "name": [
+          {
+            "use": "official",
+            "family": "Ross",
+            "given": [
+              "Samantha"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1992-09-30",
+        "address": [
+          {
+            "line": [
+              "722 Cochran Camp"
+            ],
+            "city": "Jacobfurt",
+            "state": "PR",
+            "postalCode": "32557",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "f16ff6ed-d06e-4b1b-a4bb-b5c644c70d06",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "64766004",
+              "display": "Ulcerative Colitis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "K51.90",
+              "display": "Ulcerative Colitis"
+            }
+          ],
+          "text": "Ulcerative Colitis"
+        },
+        "subject": {
+          "reference": "Patient/302f4da1-bb06-4377-9ad4-7e1c25a41625"
+        },
+        "onsetDateTime": "2025-01-15"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "4b310c96-82e7-4b43-b6a1-f85881c56821",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/302f4da1-bb06-4377-9ad4-7e1c25a41625"
+        },
+        "payor": [
+          {
+            "display": "Cigna"
+          }
+        ],
+        "subscriberId": "570731007"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "c782334f-7358-4c84-899a-a401e650168c",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/302f4da1-bb06-4377-9ad4-7e1c25a41625"
+        },
+        "effectiveDateTime": "2026-10-26",
+        "valueQuantity": {
+          "value": 72.5,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "438e1ff1-8473-466e-a91f-842a635ea99d",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/302f4da1-bb06-4377-9ad4-7e1c25a41625"
+        },
+        "effectiveDateTime": "2026-11-10",
+        "valueQuantity": {
+          "value": 143.6,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "643e4ac6-a437-4722-a1be-3dc0d7059b7f",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/302f4da1-bb06-4377-9ad4-7e1c25a41625"
+        },
+        "effectiveDateTime": "2026-10-02",
+        "valueQuantity": {
+          "value": 46.6,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "301be007-1645-417a-8fb3-a4121b29e5e2",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "105585",
+              "display": "methotrexate"
+            }
+          ],
+          "text": "methotrexate"
+        },
+        "subject": {
+          "reference": "Patient/302f4da1-bb06-4377-9ad4-7e1c25a41625"
+        },
+        "effectivePeriod": {
+          "start": "2025-10-07",
+          "end": "2026-04-16"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "e277eb34-03d4-4fc7-ab68-4e1c1fd3ca6d",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "373747",
+              "display": "etanercept"
+            }
+          ],
+          "text": "etanercept"
+        },
+        "subject": {
+          "reference": "Patient/302f4da1-bb06-4377-9ad4-7e1c25a41625"
+        },
+        "effectivePeriod": {
+          "start": "2025-08-17",
+          "end": "2026-06-18"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "d29e29d3-7c0e-4aa3-9010-a5d464ee4ce2",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "373747",
+              "display": "etanercept"
+            }
+          ],
+          "text": "etanercept"
+        },
+        "subject": {
+          "reference": "Patient/302f4da1-bb06-4377-9ad4-7e1c25a41625"
+        },
+        "effectivePeriod": {
+          "start": "2025-05-19",
+          "end": "2025-11-04"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "4bfaae3d-3c6d-47f9-bd14-cd9485bd4d10",
+        "status": "draft",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "358258",
+              "display": "Orencia (abatacept)"
+            }
+          ],
+          "text": "Orencia (abatacept)"
+        },
+        "subject": {
+          "reference": "Patient/302f4da1-bb06-4377-9ad4-7e1c25a41625"
+        }
+      }
+    }
+  ]
+}

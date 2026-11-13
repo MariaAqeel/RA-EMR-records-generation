@@ -1,0 +1,231 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "f8cd4c1f-d5c0-4da2-b359-6f4c4d3d702d",
+        "name": [
+          {
+            "use": "official",
+            "family": "Gilbert",
+            "given": [
+              "Jorge"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1991-10-31",
+        "address": [
+          {
+            "line": [
+              "5580 Todd Keys Suite 393"
+            ],
+            "city": "North Jacobfurt",
+            "state": "DC",
+            "postalCode": "75223",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "15c227a3-e94b-4a3d-a8dd-0073aef0c755",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "9566007",
+              "display": "Ankylosing Spondylitis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M45.9",
+              "display": "Ankylosing Spondylitis"
+            }
+          ],
+          "text": "Ankylosing Spondylitis"
+        },
+        "subject": {
+          "reference": "Patient/f8cd4c1f-d5c0-4da2-b359-6f4c4d3d702d"
+        },
+        "onsetDateTime": "2024-12-21"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "e3a453ae-b50d-4c10-ada2-4f6d8dee0117",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/f8cd4c1f-d5c0-4da2-b359-6f4c4d3d702d"
+        },
+        "payor": [
+          {
+            "display": "Aetna"
+          }
+        ],
+        "subscriberId": "679144927"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "eb8435bd-8bdf-486e-b098-80f2984f258a",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/f8cd4c1f-d5c0-4da2-b359-6f4c4d3d702d"
+        },
+        "effectiveDateTime": "2026-09-09",
+        "valueQuantity": {
+          "value": 73.5,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f75a48df-5ef5-4a6d-ad44-c7f429131d73",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/f8cd4c1f-d5c0-4da2-b359-6f4c4d3d702d"
+        },
+        "effectiveDateTime": "2026-09-26",
+        "valueQuantity": {
+          "value": 124.7,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f4bd67f8-4153-4ef7-8ba5-993b9b5d0caf",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/f8cd4c1f-d5c0-4da2-b359-6f4c4d3d702d"
+        },
+        "effectiveDateTime": "2026-09-08",
+        "valueQuantity": {
+          "value": 46.9,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "c3364216-7f6d-4e13-a536-97e065d2c156",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/f8cd4c1f-d5c0-4da2-b359-6f4c4d3d702d"
+        },
+        "effectiveDateTime": "2026-10-28",
+        "valueQuantity": {
+          "value": 26.3,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    }
+  ]
+}

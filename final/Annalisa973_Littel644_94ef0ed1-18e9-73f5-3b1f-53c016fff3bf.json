@@ -170186,23 +170186,23 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "bbd7f305-6fbd-40a6-9afc-52fff307c805",
+        "id": "2dd426d2-93fd-4d05-88d7-0ced9b97a7d1",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/94ef0ed1-18e9-73f5-3b1f-53c016fff3bf"
         },
         "payor": [
           {
-            "display": "Cigna"
+            "display": "Aetna"
           }
         ],
-        "subscriberId": "861028719"
+        "subscriberId": "391081398"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "b9b4f60d-0509-492c-a65a-970611ed21eb",
+        "id": "6973e9b1-6af7-4c15-9a9a-116500be695b",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -170218,8 +170218,8 @@
           "reference": "Patient/94ef0ed1-18e9-73f5-3b1f-53c016fff3bf"
         },
         "effectivePeriod": {
-          "start": "2025-05-30",
-          "end": "2026-05-13"
+          "start": "2025-09-27",
+          "end": "2026-01-03"
         },
         "reasonCode": [
           {
@@ -170231,24 +170231,24 @@
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "18bd4f71-7ddc-465c-9bc5-d2545f5c2c6f",
+        "id": "7ae4eb5b-6f30-42b0-8bf3-8da941bf5317",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327362",
-              "display": "adalimumab"
+              "code": "114194",
+              "display": "hydroxychloroquine"
             }
           ],
-          "text": "adalimumab"
+          "text": "hydroxychloroquine"
         },
         "subject": {
           "reference": "Patient/94ef0ed1-18e9-73f5-3b1f-53c016fff3bf"
         },
         "effectivePeriod": {
-          "start": "2025-10-23",
-          "end": "2026-07-28"
+          "start": "2025-08-14",
+          "end": "2026-04-13"
         },
         "reasonCode": [
           {
@@ -170260,7 +170260,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "40a204cc-1be0-447e-b60e-5c62d6427308",
+        "id": "ae13dafa-aea1-4ce5-bf84-71e3035815eb",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

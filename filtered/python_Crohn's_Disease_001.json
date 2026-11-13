@@ -1,0 +1,219 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "cc8701d7-a7d9-4558-888d-9966ceb89f27",
+        "name": [
+          {
+            "use": "official",
+            "family": "Brown",
+            "given": [
+              "Laurie"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1980-12-10",
+        "address": [
+          {
+            "line": [
+              "99560 Ray Cliff Suite 410"
+            ],
+            "city": "Leonchester",
+            "state": "UT",
+            "postalCode": "51656",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "996121e7-98b2-495a-ad94-5dc8d3f41b70",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "34000006",
+              "display": "Crohn's Disease"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "K50.90",
+              "display": "Crohn's Disease"
+            }
+          ],
+          "text": "Crohn's Disease"
+        },
+        "subject": {
+          "reference": "Patient/cc8701d7-a7d9-4558-888d-9966ceb89f27"
+        },
+        "onsetDateTime": "2025-11-16"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "d78192ac-9af2-478f-9c0f-f4e3ebf932fe",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/cc8701d7-a7d9-4558-888d-9966ceb89f27"
+        },
+        "payor": [
+          {
+            "display": "UnitedHealthcare"
+          }
+        ],
+        "subscriberId": "608693332"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "092d1825-f5b0-449a-b8da-d6ad1b782414",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/cc8701d7-a7d9-4558-888d-9966ceb89f27"
+        },
+        "effectiveDateTime": "2026-10-04",
+        "valueBoolean": false
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "7e2d685b-cd19-494a-836f-1559c48efd7c",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/cc8701d7-a7d9-4558-888d-9966ceb89f27"
+        },
+        "effectiveDateTime": "2026-09-26",
+        "valueBoolean": true
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "523c6f3a-6086-4979-b4f9-a127950262da",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/cc8701d7-a7d9-4558-888d-9966ceb89f27"
+        },
+        "effectiveDateTime": "2026-10-18",
+        "valueQuantity": {
+          "value": 26.9,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d178bb41-4fb8-483b-a21d-2b1f533c75cf",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/cc8701d7-a7d9-4558-888d-9966ceb89f27"
+        },
+        "effectiveDateTime": "2026-09-17",
+        "valueBoolean": false
+      }
+    }
+  ]
+}

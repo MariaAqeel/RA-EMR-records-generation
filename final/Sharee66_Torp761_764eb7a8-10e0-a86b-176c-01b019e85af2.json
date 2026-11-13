@@ -80676,7 +80676,7 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "c75e9990-912e-4070-872d-336a5f4121fe",
+        "id": "c5117512-e9d0-4ff9-8401-f08d450772d4",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/764eb7a8-10e0-a86b-176c-01b019e85af2"
@@ -80686,13 +80686,13 @@
             "display": "Cigna"
           }
         ],
-        "subscriberId": "754521984"
+        "subscriberId": "800646301"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "88ab6879-ff18-421e-a085-fd16ae1558b8",
+        "id": "eb5c298a-b51b-4b09-b5f9-ebaf11c1bd6b",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -80708,8 +80708,37 @@
           "reference": "Patient/764eb7a8-10e0-a86b-176c-01b019e85af2"
         },
         "effectivePeriod": {
-          "start": "2024-10-04",
-          "end": "2025-07-08"
+          "start": "2025-10-28",
+          "end": "2026-08-23"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "23ebe953-3b08-45dd-b1a7-f402cd13447c",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "105585",
+              "display": "methotrexate"
+            }
+          ],
+          "text": "methotrexate"
+        },
+        "subject": {
+          "reference": "Patient/764eb7a8-10e0-a86b-176c-01b019e85af2"
+        },
+        "effectivePeriod": {
+          "start": "2025-03-03",
+          "end": "2025-12-17"
         },
         "reasonCode": [
           {
@@ -80721,18 +80750,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "ae973bb6-9f86-44d3-aebc-ebeccb7ed045",
+        "id": "58928efa-e08f-4148-bede-e6ed3f5bba97",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "614391",
-              "display": "Simponi Aria (golimumab)"
+              "code": "356248",
+              "display": "Cimzia (certolizumab pegol)"
             }
           ],
-          "text": "Simponi Aria (golimumab)"
+          "text": "Cimzia (certolizumab pegol)"
         },
         "subject": {
           "reference": "Patient/764eb7a8-10e0-a86b-176c-01b019e85af2"

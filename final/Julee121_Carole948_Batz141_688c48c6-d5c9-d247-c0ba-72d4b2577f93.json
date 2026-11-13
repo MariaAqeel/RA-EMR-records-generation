@@ -149863,40 +149863,69 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "2e979158-e2b8-4359-9002-82a375820ac3",
+        "id": "8f910e47-1f23-494a-937e-b06cd32fd1cb",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/688c48c6-d5c9-d247-c0ba-72d4b2577f93"
         },
         "payor": [
           {
-            "display": "Blue Shield of California"
+            "display": "Humana"
           }
         ],
-        "subscriberId": "385634851"
+        "subscriberId": "135419599"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "5c4e4dda-1442-496e-be0e-620e6027025b",
+        "id": "44a16271-d6d1-48bf-a260-cc3f51b8dbaa",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "327362",
-              "display": "adalimumab"
+              "code": "114194",
+              "display": "hydroxychloroquine"
             }
           ],
-          "text": "adalimumab"
+          "text": "hydroxychloroquine"
         },
         "subject": {
           "reference": "Patient/688c48c6-d5c9-d247-c0ba-72d4b2577f93"
         },
         "effectivePeriod": {
-          "start": "2024-10-20",
-          "end": "2025-08-18"
+          "start": "2024-06-30",
+          "end": "2025-03-16"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "89b5877b-012c-4478-bef6-3ae0b53710e9",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "114194",
+              "display": "hydroxychloroquine"
+            }
+          ],
+          "text": "hydroxychloroquine"
+        },
+        "subject": {
+          "reference": "Patient/688c48c6-d5c9-d247-c0ba-72d4b2577f93"
+        },
+        "effectivePeriod": {
+          "start": "2024-12-08",
+          "end": "2025-07-30"
         },
         "reasonCode": [
           {
@@ -149908,18 +149937,18 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "6edf1755-91a2-4bf6-bf6a-e9b5f45ccdb6",
+        "id": "f0974a55-f1af-4367-985b-8419f1ea9b4d",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "614391",
-              "display": "Simponi Aria (golimumab)"
+              "code": "356248",
+              "display": "Cimzia (certolizumab pegol)"
             }
           ],
-          "text": "Simponi Aria (golimumab)"
+          "text": "Cimzia (certolizumab pegol)"
         },
         "subject": {
           "reference": "Patient/688c48c6-d5c9-d247-c0ba-72d4b2577f93"

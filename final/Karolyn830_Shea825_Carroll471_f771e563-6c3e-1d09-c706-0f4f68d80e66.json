@@ -166746,23 +166746,23 @@
     {
       "resource": {
         "resourceType": "Coverage",
-        "id": "9fbdd0d5-e416-4b74-a32a-5c174bc022fe",
+        "id": "8fc2106b-6b04-4774-b3ec-a361c98e78d3",
         "status": "active",
         "beneficiary": {
           "reference": "Patient/f771e563-6c3e-1d09-c706-0f4f68d80e66"
         },
         "payor": [
           {
-            "display": "UnitedHealthcare"
+            "display": "Blue Shield of California"
           }
         ],
-        "subscriberId": "207798329"
+        "subscriberId": "850630084"
       }
     },
     {
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "7853c7c1-3f43-457b-b9c7-59c3747af115",
+        "id": "0c68017a-e666-46dd-ba75-a4093c2916fa",
         "status": "stopped",
         "medicationCodeableConcept": {
           "coding": [
@@ -166778,8 +166778,37 @@
           "reference": "Patient/f771e563-6c3e-1d09-c706-0f4f68d80e66"
         },
         "effectivePeriod": {
-          "start": "2025-08-30",
-          "end": "2026-03-27"
+          "start": "2025-09-24",
+          "end": "2026-03-22"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "860f0b73-5904-44eb-95f2-00a8d7da91bf",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "105585",
+              "display": "methotrexate"
+            }
+          ],
+          "text": "methotrexate"
+        },
+        "subject": {
+          "reference": "Patient/f771e563-6c3e-1d09-c706-0f4f68d80e66"
+        },
+        "effectivePeriod": {
+          "start": "2024-07-27",
+          "end": "2025-04-03"
         },
         "reasonCode": [
           {
@@ -166791,7 +166820,7 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "0c4f0c91-5d04-43fa-b3af-4bfef4193069",
+        "id": "a6401251-61c0-42e3-ab3e-42c38c533dcd",
         "status": "draft",
         "intent": "proposal",
         "medicationCodeableConcept": {

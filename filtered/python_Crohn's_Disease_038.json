@@ -1,0 +1,192 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "197e7f1a-e285-4e9d-89ac-430fc5b2aa44",
+        "name": [
+          {
+            "use": "official",
+            "family": "Matthews",
+            "given": [
+              "Alyssa"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1988-11-09",
+        "address": [
+          {
+            "line": [
+              "9161 Joshua Inlet Apt. 999"
+            ],
+            "city": "Port Kristen",
+            "state": "IA",
+            "postalCode": "02704",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "33ebde14-6c2f-482e-934d-972f0cb8c025",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "34000006",
+              "display": "Crohn's Disease"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "K50.90",
+              "display": "Crohn's Disease"
+            }
+          ],
+          "text": "Crohn's Disease"
+        },
+        "subject": {
+          "reference": "Patient/197e7f1a-e285-4e9d-89ac-430fc5b2aa44"
+        },
+        "onsetDateTime": "2024-03-13"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "9d1fea13-b2e3-48dc-a8fc-964cddafdc2e",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/197e7f1a-e285-4e9d-89ac-430fc5b2aa44"
+        },
+        "payor": [
+          {
+            "display": "Blue Shield of California"
+          }
+        ],
+        "subscriberId": "308437222"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "b8471ffe-6fa2-4e8c-a0a3-42319fd39735",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/197e7f1a-e285-4e9d-89ac-430fc5b2aa44"
+        },
+        "effectiveDateTime": "2026-08-15",
+        "valueQuantity": {
+          "value": 29.4,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "a42b2326-119c-4770-b059-1edcf7754741",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/197e7f1a-e285-4e9d-89ac-430fc5b2aa44"
+        },
+        "effectiveDateTime": "2026-11-12",
+        "valueQuantity": {
+          "value": 25.0,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "a0976d68-190d-48d6-bfeb-e0df9956d309",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/197e7f1a-e285-4e9d-89ac-430fc5b2aa44"
+        },
+        "effectiveDateTime": "2026-08-18",
+        "valueBoolean": true
+      }
+    }
+  ]
+}

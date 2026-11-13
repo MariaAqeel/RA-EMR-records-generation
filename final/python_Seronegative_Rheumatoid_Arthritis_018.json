@@ -1,0 +1,267 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "45eee49f-f8d8-498b-a7b4-135b141cc16c",
+        "name": [
+          {
+            "use": "official",
+            "family": "Gonzalez",
+            "given": [
+              "Grace"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1986-08-13",
+        "address": [
+          {
+            "line": [
+              "1747 Hunter Manors"
+            ],
+            "city": "Port Sarah",
+            "state": "CA",
+            "postalCode": "40736",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "c4446e9d-c755-4a83-8b27-f28b072f0480",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "201791006",
+              "display": "Seronegative Rheumatoid Arthritis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M06.09",
+              "display": "Seronegative Rheumatoid Arthritis"
+            }
+          ],
+          "text": "Seronegative Rheumatoid Arthritis"
+        },
+        "subject": {
+          "reference": "Patient/45eee49f-f8d8-498b-a7b4-135b141cc16c"
+        },
+        "onsetDateTime": "2024-05-14"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "669ea733-7131-4081-ba61-7026d0748299",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/45eee49f-f8d8-498b-a7b4-135b141cc16c"
+        },
+        "payor": [
+          {
+            "display": "Aetna"
+          }
+        ],
+        "subscriberId": "781052119"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "845fe641-03b6-48d3-b834-befa950017e0",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5",
+              "display": "C-reactive protein"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/45eee49f-f8d8-498b-a7b4-135b141cc16c"
+        },
+        "effectiveDateTime": "2026-11-06",
+        "valueQuantity": {
+          "value": 11.4,
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "24def11c-3fb5-4ab7-82cc-1be584c87d5f",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/45eee49f-f8d8-498b-a7b4-135b141cc16c"
+        },
+        "effectiveDateTime": "2026-11-04",
+        "valueBoolean": false
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "dfe708b2-97d9-48ce-9088-d8dc383ae46d",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14334-7",
+              "display": "HLA-B27 Ag"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/45eee49f-f8d8-498b-a7b4-135b141cc16c"
+        },
+        "effectiveDateTime": "2026-10-05",
+        "valueBoolean": true
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "27d1b6b7-1f27-4938-a5cd-8505c114b3b0",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "373747",
+              "display": "etanercept"
+            }
+          ],
+          "text": "etanercept"
+        },
+        "subject": {
+          "reference": "Patient/45eee49f-f8d8-498b-a7b4-135b141cc16c"
+        },
+        "effectivePeriod": {
+          "start": "2024-07-13",
+          "end": "2024-11-23"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "cd5f2b02-52ac-4f4b-8c61-d33de9ad480d",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "105585",
+              "display": "methotrexate"
+            }
+          ],
+          "text": "methotrexate"
+        },
+        "subject": {
+          "reference": "Patient/45eee49f-f8d8-498b-a7b4-135b141cc16c"
+        },
+        "effectivePeriod": {
+          "start": "2025-07-06",
+          "end": "2026-04-09"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "a2e21e34-6d47-4be2-9e96-1b38d41395e0",
+        "status": "draft",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "358258",
+              "display": "Orencia (abatacept)"
+            }
+          ],
+          "text": "Orencia (abatacept)"
+        },
+        "subject": {
+          "reference": "Patient/45eee49f-f8d8-498b-a7b4-135b141cc16c"
+        }
+      }
+    }
+  ]
+}

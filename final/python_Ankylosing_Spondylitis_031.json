@@ -1,0 +1,304 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "66bd3e1b-48a8-43f2-aaa2-5ef5e73a18ea",
+        "name": [
+          {
+            "use": "official",
+            "family": "Bowen",
+            "given": [
+              "Justin"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "2003-04-04",
+        "address": [
+          {
+            "line": [
+              "732 Steven Light"
+            ],
+            "city": "South Zachary",
+            "state": "AK",
+            "postalCode": "40438",
+            "country": "US"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "156bb12a-6eb0-4206-8652-907a9755d29a",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "9566007",
+              "display": "Ankylosing Spondylitis"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M45.9",
+              "display": "Ankylosing Spondylitis"
+            }
+          ],
+          "text": "Ankylosing Spondylitis"
+        },
+        "subject": {
+          "reference": "Patient/66bd3e1b-48a8-43f2-aaa2-5ef5e73a18ea"
+        },
+        "onsetDateTime": "2022-07-06"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "c52abcfc-311f-4e82-ab42-f1d0b46801d6",
+        "status": "active",
+        "beneficiary": {
+          "reference": "Patient/66bd3e1b-48a8-43f2-aaa2-5ef5e73a18ea"
+        },
+        "payor": [
+          {
+            "display": "Aetna"
+          }
+        ],
+        "subscriberId": "961441728"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "9097f603-de8d-4c26-b072-7d715f31d011",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/66bd3e1b-48a8-43f2-aaa2-5ef5e73a18ea"
+        },
+        "effectiveDateTime": "2026-08-27",
+        "valueQuantity": {
+          "value": 72.1,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "46a053cc-b61e-480a-94fe-6143c95533c8",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11039-5",
+              "display": "Erythrocyte sedimentation rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/66bd3e1b-48a8-43f2-aaa2-5ef5e73a18ea"
+        },
+        "effectiveDateTime": "2026-10-29",
+        "valueQuantity": {
+          "value": 22.1,
+          "unit": "mm/h",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "86f7cfb2-7793-4ca5-88ff-82b48988843d",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4537-7",
+              "display": "Rheumatoid factor"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/66bd3e1b-48a8-43f2-aaa2-5ef5e73a18ea"
+        },
+        "effectiveDateTime": "2026-10-07",
+        "valueQuantity": {
+          "value": 62.7,
+          "unit": "IU/mL",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "04453cba-ec1a-4cf7-acbe-076dde769541",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "114194",
+              "display": "hydroxychloroquine"
+            }
+          ],
+          "text": "hydroxychloroquine"
+        },
+        "subject": {
+          "reference": "Patient/66bd3e1b-48a8-43f2-aaa2-5ef5e73a18ea"
+        },
+        "effectivePeriod": {
+          "start": "2024-11-10",
+          "end": "2025-03-06"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "4ca374fc-b2b6-4f8b-af37-fce3aae7f2a4",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "105585",
+              "display": "methotrexate"
+            }
+          ],
+          "text": "methotrexate"
+        },
+        "subject": {
+          "reference": "Patient/66bd3e1b-48a8-43f2-aaa2-5ef5e73a18ea"
+        },
+        "effectivePeriod": {
+          "start": "2025-03-31",
+          "end": "2025-12-05"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "74260853-fb7a-4344-978a-05005e3cc24e",
+        "status": "stopped",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "105585",
+              "display": "methotrexate"
+            }
+          ],
+          "text": "methotrexate"
+        },
+        "subject": {
+          "reference": "Patient/66bd3e1b-48a8-43f2-aaa2-5ef5e73a18ea"
+        },
+        "effectivePeriod": {
+          "start": "2025-08-16",
+          "end": "2026-02-04"
+        },
+        "reasonCode": [
+          {
+            "text": "Inadequate response or intolerance"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "4814af48-5806-4908-b692-b473e150ffa1",
+        "status": "draft",
+        "intent": "proposal",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "358258",
+              "display": "Orencia (abatacept)"
+            }
+          ],
+          "text": "Orencia (abatacept)"
+        },
+        "subject": {
+          "reference": "Patient/66bd3e1b-48a8-43f2-aaa2-5ef5e73a18ea"
+        }
+      }
+    }
+  ]
+}
